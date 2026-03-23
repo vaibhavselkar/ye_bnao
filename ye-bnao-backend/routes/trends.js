@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getLocalTrends } = require('../services/claudeService');
+const { getLocalTrends } = require('../services/geminiService');
 
 router.post('/local', async (req, res) => {
   try {

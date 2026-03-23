@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getLeftoverSuggestions } = require('../services/claudeService');
+const { getLeftoverSuggestions } = require('../services/geminiService');
 
 router.post('/suggestions', async (req, res) => {
   try {

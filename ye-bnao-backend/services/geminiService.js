@@ -3,17 +3,17 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({
   model: 'gemini-2.5-flash',
-  generationConfig: {
-    temperature: 0.7,
-    responseMimeType: 'application/json', // ask Gemini to return pure JSON
-  },
 });
 
 // Helper: call Gemini and parse the JSON response
-async function callGemini(prompt, maxOutputTokens = 2000) {
+async function callGemini(prompt, maxOutputTokens = 8192) {
   const result = await model.generateContent({
     contents: [{ role: 'user', parts: [{ text: prompt }] }],
-    generationConfig: { maxOutputTokens },
+    generationConfig: {
+      temperature: 0.7,
+      maxOutputTokens,
+      responseMimeType: 'application/json',
+    },
   });
   const text = result.response.text();
   // Strip markdown code fences if present (```json ... ```)

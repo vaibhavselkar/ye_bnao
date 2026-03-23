@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { generateMealPlan } = require('../services/claudeService');
+const { generateMealPlan } = require('../services/geminiService');
 
 router.post('/generate', async (req, res) => {
   try {

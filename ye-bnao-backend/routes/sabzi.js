@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getSeasonalVegetables } = require('../services/claudeService');
+const { getSeasonalVegetables } = require('../services/geminiService');
 
 router.post('/seasonal', async (req, res) => {
   try {
