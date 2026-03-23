@@ -92,7 +92,7 @@ Return ONLY this JSON (no extra text):
 Make dishes authentic to ${profile.cuisine || 'Indian'} cuisine, appropriate for the season (${monthName}), practical to cook at home, and varied across meals.
 ${healthConditions.includes('PCOS') || healthConditions.includes('pregnancy') ? 'Include appropriate health disclaimer in healthNote.' : ''}`;
 
-  return callGemini(prompt, 2000);
+  return callGemini(prompt, 8192);
 }
 
 // ─── Seasonal Vegetables ─────────────────────────────────────────────────────

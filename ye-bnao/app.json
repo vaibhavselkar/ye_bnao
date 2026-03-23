@@ -54,7 +54,7 @@
       "policy": "appVersion"
     },
     "extra": {
-      "apiUrl": "https://ye-bnao.vercel.app",
+      "apiUrl": "https://ye-bnao-backend.vercel.app",
       "eas": {
         "projectId": "d33a4e15-ad07-4464-9cde-55196fb968c3"
       }
