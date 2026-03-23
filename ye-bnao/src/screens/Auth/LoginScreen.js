@@ -3,7 +3,6 @@ import {
   View, Text, StyleSheet, TextInput, TouchableOpacity,
   SafeAreaView, KeyboardAvoidingView, Platform, ActivityIndicator, Alert,
 } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTranslation } from 'react-i18next';
 import { COLORS } from '../../constants/colors';
 import { sendOTP, verifyOTP } from '../../services/firebaseAuth';
@@ -54,14 +53,6 @@ export default function LoginScreen({ navigation }) {
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleSkip = async () => {
-    const guestData = { uid: 'guest', phone: 'guest', isGuest: true };
-    await AsyncStorage.setItem('user_data', JSON.stringify(guestData));
-    setUser(guestData);
-    await initTrial();
-    navigation.replace('Onboarding');
   };
 
   return (
@@ -117,9 +108,9 @@ export default function LoginScreen({ navigation }) {
             </>
           )}
 
-          <TouchableOpacity onPress={handleSkip} style={styles.skipBtn}>
-            <Text style={styles.skipText}>{t('auth.skip', 'Skip for now →')}</Text>
-          </TouchableOpacity>
+          <Text style={styles.privacyNote}>
+            We use your phone number only for login. No spam, ever.
+          </Text>
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -158,6 +149,5 @@ const styles = StyleSheet.create({
   btnText: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
   changeBtn: { alignItems: 'center', marginTop: 12 },
   changeBtnText: { color: COLORS.primary, fontSize: 14 },
-  skipBtn: { alignItems: 'center', marginTop: 20 },
-  skipText: { color: COLORS.text.muted, fontSize: 14 },
+  privacyNote: { textAlign: 'center', marginTop: 16, fontSize: 12, color: COLORS.text.muted },
 });
