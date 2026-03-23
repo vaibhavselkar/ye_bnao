@@ -44,13 +44,21 @@
         }
       ],
       "@react-native-firebase/app",
-      "@react-native-firebase/auth"
+      "@react-native-firebase/auth",
+      "expo-updates"
     ],
+    "updates": {
+      "url": "https://u.expo.dev/d33a4e15-ad07-4464-9cde-55196fb968c3"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "extra": {
-      "apiUrl": "https://ye-bnao-backend.vercel.app",
+      "apiUrl": "https://ye-bnao.vercel.app",
       "eas": {
-        "projectId": "your-eas-project-id"
+        "projectId": "d33a4e15-ad07-4464-9cde-55196fb968c3"
       }
-    }
+    },
+    "owner": "vaibhavselkar"
   }
 }
