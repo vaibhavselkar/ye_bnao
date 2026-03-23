@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "ഇത് ഉണ്ടാക്കൂ", "loading": "ലോഡ് ചെയ്യുന്നു...", "error": "എന്തോ തകരാർ സംഭവിച്ചു", "retry": "വീണ്ടും ശ്രമിക്കൂ",
+    "save": "സേവ് ചെയ്യൂ", "cancel": "റദ്ദാക്കൂ", "done": "പൂർത്തിയായി", "next": "അടുത്തത്", "back": "പിന്നോട്ട്", "share": "ഷെയർ ചെയ്യൂ",
+    "edit": "തിരുത്തൂ", "delete": "ഇല്ലാതാക്കൂ", "add": "ചേർക്കൂ", "remove": "നീക്കൂ", "search": "തിരയൂ",
+    "filter": "ഫിൽട്ടർ", "close": "അടയ്ക്കൂ", "ok": "ശരി", "yes": "അതെ", "no": "ഇല്ല", "submit": "സമർപ്പിക്കൂ",
+    "update": "അപ്ഡേറ്റ് ചെയ്യൂ", "refresh": "പുതുക്കൂ", "viewAll": "എല്ലാം കാണൂ", "seeMore": "കൂടുതൽ കാണൂ",
+    "noData": "ഡേറ്റ ലഭ്യമല്ല",
+    "priceDisclaimer": "ഇവ ഏകദേശ പ്രാദേശിക വിപണി വിലകളാണ്, മാറാം",
+    "doctorDisclaimer": "ഈ ഭക്ഷണ പദ്ധതി പിന്തുടരുന്നതിന് മുൻപ് ഡോക്ടറെ കാണൂ"
+  },
+  "nav": { "home": "ഹോം", "sabziGuide": "പച്ചക്കറി ഗൈഡ്", "grocery": "കടകളിൽ നിന്ന്", "trends": "ട്രെൻഡുകൾ", "profile": "പ്രൊഫൈൽ" },
+  "language": {
+    "selectLanguage": "നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കൂ", "changeLanguage": "ഭാഷ മാറ്റൂ",
+    "languageChanged": "ഭാഷ വിജയകരമായി മാറ്റി",
+    "rtlRestartNote": "പുതിയ ലേഔട്ട് പ്രയോഗിക്കാൻ ആപ്പ് ഒരു തവണ പുനരാരംഭിക്കും"
+  },
+  "auth": {
+    "login": "ലോഗിൻ", "logout": "ലോഗ് ഔട്ട്", "phoneLogin": "ഫോൺ കൊണ്ട് ലോഗിൻ", "googleLogin": "Google കൊണ്ട് ലോഗിൻ",
+    "enterPhone": "നിങ്ങളുടെ ഫോൺ നമ്പർ നൽകൂ", "enterOTP": "OTP നൽകൂ", "sendOTP": "OTP അയക്കൂ",
+    "verifyOTP": "OTP സ്ഥിരീകരിക്കൂ", "resendOTP": "OTP വീണ്ടും അയക്കൂ", "otpSent": "നിങ്ങളുടെ നമ്പറിലേക്ക് OTP അയച്ചു",
+    "loginSuccess": "ലോഗിൻ വിജയകരമായി", "loginFailed": "ലോഗിൻ പരാജയമായി, വീണ്ടും ശ്രമിക്കൂ"
+  },
+  "onboarding": {
+    "welcome": "ഇത് ഉണ്ടാക്കൂ-ലേക്ക് സ്വാഗതം", "subtitle": "നിങ്ങളുടെ AI പാചക സഹായി",
+    "step1Title": "നിങ്ങളുടെ കുടുംബത്തെക്കുറിച്ച് പറയൂ", "step2Title": "നിങ്ങളുടെ പ്രദേശവും പാചകശൈലിയും",
+    "yourName": "നിങ്ങളുടെ പേര്", "yourCity": "നിങ്ങളുടെ നഗരം", "yourState": "നിങ്ങളുടെ സംസ്ഥാനം",
+    "cuisineStyle": "പാചകശൈലി", "addFamilyMember": "കുടുംബാംഗത്തെ ചേർക്കൂ",
+    "memberName": "അംഗത്തിന്റെ പേര്", "memberAge": "പ്രായം", "dietType": "ഭക്ഷണ തരം",
+    "vegetarian": "സസ്യഭക്ഷണി", "nonVegetarian": "മാംസഭക്ഷണി", "eggetarian": "മുട്ടഭക്ഷണി",
+    "spiceTolerance": "എരിവ് സഹിക്കാനുള്ള ശേഷി", "mild": "മൃദുവായ", "medium": "മധ്യമ", "spicy": "എരിവുള്ള",
+    "verySpicy": "വളരെ എരിവുള്ള", "extraSpicy": "അതിശയ എരിവ്",
+    "healthConditions": "ആരോഗ്യ അവസ്ഥകൾ", "noConditions": "അവസ്ഥകൾ ഒന്നുമില്ല",
+    "getStarted": "ആരംഭിക്കൂ", "completeProfile": "പ്രൊഫൈൽ പൂർത്തിയാക്കൂ"
+  },
+  "home": {
+    "goodMorning": "സുപ്രഭാതം", "goodAfternoon": "ശുഭ ഉച്ചക്ക്", "goodEvening": "ശുഭ സന്ധ്യ",
+    "todaysMealPlan": "ഇന്നത്തെ ഭക്ഷണ പദ്ധതി", "breakfast": "പ്രാതൽ", "lunch": "ഉച്ചഭക്ഷണം",
+    "eveningSnack": "വൈകുന്നേരത്തെ ലഘുഭക്ഷണം", "dinner": "അത്താഴം", "generatePlan": "ഭക്ഷണ പദ്ധതി ഉണ്ടാക്കൂ",
+    "regenerate": "വീണ്ടും ഉണ്ടാക്കൂ", "confirmMade": "ഞാൻ ഉണ്ടാക്കി", "rateMeal": "ഭക്ഷണം റേറ്റ് ചെയ്യൂ",
+    "leftovers": "ബാക്കി ഭക്ഷണം ഉപയോഗിക്കൂ", "festivalMode": "ഉത്സവ മോഡ്", "fastingMode": "ഉപവാസ മോഡ്",
+    "weekendSpecial": "വാരാന്ത്യ സ്പെഷ്യൽ", "tryNewRecipe": "പുതിയത് പരീക്ഷിക്കൂ",
+    "weekendSabziList": "വാരാന്ത്യ പച്ചക്കറി ലിസ്റ്റ്", "buyThisWeekend": "ഈ വാരാന്ത്യം വാങ്ങൂ",
+    "buyBeforeGone": "സീസൺ തീരുന്നതിന് മുൻപ് വാങ്ങൂ", "comingSoon": "ഉടൻ വരുന്നു",
+    "generatingPlan": "ഭക്ഷണ പദ്ധതി ഉണ്ടാക്കുന്നു...", "planGenerated": "നിങ്ങളുടെ ഭക്ഷണ പദ്ധതി തയ്യാർ!",
+    "cookTime": "പാചക സമയം", "serves": "എത്ര പേർക്ക്", "costEstimate": "ഏകദേശ ചെലവ്",
+    "inSeason": "സീസണിൽ ഉണ്ട്", "endingSoon": "സീസൺ തീർന്നുകൊണ്ടിരിക്കുന്നു"
+  },
+  "sabziGuide": {
+    "title": "പച്ചക്കറി ഗൈഡ്", "seasonalVegetables": "ഋതു പച്ചക്കറികൾ",
+    "inSeason": "സീസണിൽ", "endingSoon": "ഉടൻ തീരും", "comingSoon": "ഉടൻ വരുന്നു",
+    "seasonalCalendar": "ഋതു കലണ്ടർ", "pricePerKg": "കിലോഗ്രാമിന്", "storageTip": "സൂക്ഷിക്കൽ നുറുങ്ങ്",
+    "healthNote": "ആരോഗ്യ കുറിപ്പ്", "dishSuggestions": "വിഭവ നിർദേശങ്ങൾ", "weeklyTips": "ആഴ്ചതോറും ഋതു നുറുങ്ങുകൾ",
+    "loadingVegetables": "ഋതു പച്ചക്കറികൾ ലോഡ് ചെയ്യുന്നു...",
+    "jan": "ജന", "feb": "ഫെബ്", "mar": "മാർ", "apr": "ഏപ്ര", "may": "മേ", "jun": "ജൂൺ",
+    "jul": "ജൂലൈ", "aug": "ഓഗ", "sep": "സെപ്", "oct": "ഒക്ടോ", "nov": "നവ", "dec": "ഡിസ"
+  },
+  "grocery": {
+    "title": "കടകളിൽ നിന്ന് ലിസ്റ്റ്", "vegetables": "പച്ചക്കറികൾ", "dalAndGrains": "പരിപ്പും ധാന്യങ്ങളും",
+    "spices": "മസാലകൾ", "dairy": "ക്ഷീര ഉൽപ്പന്നങ്ങൾ", "miscellaneous": "മറ്റുള്ളവ",
+    "addItem": "ഇനം ചേർക്കൂ", "clearAll": "എല്ലാം ക്ലിയർ ചെയ്യൂ", "shareOnWhatsApp": "WhatsApp-ൽ ഷെയർ ചെയ്യൂ",
+    "itemAdded": "ഇനം ചേർത്തു", "itemRemoved": "ഇനം നീക്കി", "listCleared": "ലിസ്റ്റ് ക്ലിയർ ചെയ്തു",
+    "emptyList": "ഗ്രോസറി ലിസ്റ്റ് ശൂന്യം", "generateFromPlan": "ഭക്ഷണ പദ്ധതിയിൽ നിന്ന് ഉണ്ടാക്കൂ",
+    "whatsappMessage": "ഈ ആഴ്ചത്തെ ഗ്രോസറി ലിസ്റ്റ്"
+  },
+  "trends": {
+    "title": "ഭക്ഷണ ട്രെൻഡുകൾ", "trendingNow": "ഇപ്പോൾ ട്രെൻഡിൽ", "localTrends": "നിങ്ങളുടെ പ്രദേശത്ത് ട്രെൻഡ്",
+    "nationalTrends": "ദേശീയ ട്രെൻഡ്", "seasonal": "ഋതു തിരഞ്ഞെടുക്കലുകൾ", "loadingTrends": "ട്രെൻഡുകൾ ലോഡ് ചെയ്യുന്നു..."
+  },
+  "profile": {
+    "title": "പ്രൊഫൈൽ", "settings": "ക്രമീകരണങ്ങൾ", "familyMembers": "കുടുംബാംഗങ്ങൾ",
+    "editProfile": "പ്രൊഫൈൽ തിരുത്തൂ", "notifications": "അറിയിപ്പുകൾ", "language": "ഭാഷ",
+    "subscription": "സബ്‌സ്‌ക്രിപ്‌ഷൻ", "freePlan": "സൗജന്യ പദ്ധതി", "premiumPlan": "പ്രീമിയം – ₹49/മാസം",
+    "upgradeToPremium": "പ്രീമിയം എടുക്കൂ", "recipeHistory": "റെസിപ്പി ചരിത്രം",
+    "about": "ഞങ്ങളെക്കുറിച്ച്", "helpSupport": "സഹായം", "logout": "ലോഗ് ഔട്ട്", "deleteAccount": "അക്കൗണ്ട് ഇല്ലാതാക്കൂ"
+  },
+  "health": {
+    "diabetes": "പ്രമേഹം", "hypertension": "ഉയർന്ന രക്തസമ്മർദ്ദം", "hypothyroidism": "ഹൈപ്പോതൈറോയ്ഡിസം",
+    "pcos": "PCOS", "heartDisease": "ഹൃദ്രോഗം", "anaemia": "അനീമിയ",
+    "pregnancy": "ഗർഭാവസ്ഥ", "kidneyDisease": "വൃക്കരോഗം",
+    "healthAdjusted": "ആരോഗ്യ അവസ്ഥകൾക്ക് അനുസരിച്ച് ഭക്ഷണ പദ്ധതി ക്രമീകരിച്ചു",
+    "pcosDisclaimer": "ഈ പദ്ധതി പിന്തുടരുന്നതിന് മുൻപ് ഡോക്ടറെ കാണൂ",
+    "pregnancyDisclaimer": "ഈ പദ്ധതി പിന്തുടരുന്നതിന് മുൻപ് ഡോക്ടറെ കാണൂ"
+  },
+  "notifications": {
+    "morningPlan": "ഇന്നത്തെ ഭക്ഷണ പദ്ധതി തയ്യാർ!",
+    "morningReminder": "നിങ്ങളുടെ ഭക്ഷണ പദ്ധതി നോക്കാൻ മറക്കാതിരിക്കൂ",
+    "eveningGrocery": "ഗ്രോസറി ലിസ്റ്റ് നോക്കാൻ സമയമായി",
+    "fridaySabzi": "നിങ്ങളുടെ വാരാന്ത്യ പച്ചക്കറി ലിസ്റ്റ് തയ്യാർ!",
+    "saturdayMarket": "ഷോപ്പിംഗ് ആശംസകൾ! മാർക്കറ്റ് ലിസ്റ്റ് തയ്യാർ",
+    "sundaySpecial": "വാരാന്ത്യ സ്പെഷ്യൽ ഭക്ഷണ പദ്ധതി തയ്യാർ",
+    "mondayRecipes": "ഈ ആഴ്ച പരീക്ഷിക്കാൻ 5 പുതിയ റെസിപ്പികൾ",
+    "festivalEve": "ഉത്സവ ഭക്ഷണ പദ്ധതി തയ്യാർ"
+  },
+  "recipe": {
+    "ingredients": "ചേരുവകൾ", "instructions": "പാചകവിധം", "prepTime": "തയ്യാറാക്കൽ സമയം",
+    "cookTime": "പാചക സമയം", "servings": "എത്ര പേർക്ക്", "cuisine": "പാചകശൈലി", "mealType": "ഭക്ഷണ തരം",
+    "difficulty": "ബുദ്ധിമുട്ട്", "easy": "എളുപ്പം", "medium": "മധ്യമ", "hard": "ബുദ്ധിമുട്ടുള്ള",
+    "costPerServing": "ഒരു സർവ്വിംഗിന് ചെലവ്", "history": "റെസിപ്പി ചരിത്രം", "last15Days": "കഴിഞ്ഞ 15 ദിവസം",
+    "madeOn": "ഉണ്ടാക്കിയ ദിവസം", "rating": "റേറ്റിംഗ്", "noHistory": "ഇതുവരെ റെസിപ്പി ചരിത്രമില്ല"
+  },
+  "festival": {
+    "title": "ഉത്സവങ്ങളും ഉപവാസങ്ങളും", "upcomingFestivals": "വരാനിരിക്കുന്ന ഉത്സവങ്ങൾ",
+    "fastingPlan": "ഉപവാസ ഭക്ഷണ പദ്ധതി", "festivalPlan": "ഉത്സവ സ്പെഷ്യൽ പദ്ധതി",
+    "today": "ഇന്ന്", "tomorrow": "നാളെ"
+  },
+  "leftover": {
+    "title": "ബാക്കി ഭക്ഷണം ഉപയോഗിക്കൂ", "whatHaveYou": "ഫ്രിഡ്ജിൽ എന്തുണ്ട്?",
+    "addIngredient": "ചേരുവ ചേർക്കൂ", "getSuggestions": "നിർദേശങ്ങൾ നേടൂ",
+    "suggestions": "റെസിപ്പി നിർദേശങ്ങൾ", "loadingSuggestions": "നിങ്ങളുടെ ചേരുവകൾക്കായി റെസിപ്പികൾ തിരയുന്നു..."
+  }
+}

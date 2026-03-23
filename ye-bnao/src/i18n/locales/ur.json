@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "یہ بناؤ", "loading": "لوڈ ہو رہا ہے...", "error": "کچھ غلط ہوا", "retry": "دوبارہ کوشش کریں",
+    "save": "محفوظ کریں", "cancel": "منسوخ کریں", "done": "ہو گیا", "next": "اگلا", "back": "پیچھے", "share": "شیئر کریں",
+    "edit": "ترمیم کریں", "delete": "حذف کریں", "add": "شامل کریں", "remove": "ہٹائیں", "search": "تلاش کریں",
+    "filter": "فلٹر", "close": "بند کریں", "ok": "ٹھیک ہے", "yes": "ہاں", "no": "نہیں", "submit": "جمع کریں",
+    "update": "اپ ڈیٹ کریں", "refresh": "تازہ کریں", "viewAll": "سب دیکھیں", "seeMore": "مزید دیکھیں",
+    "noData": "کوئی ڈیٹا دستیاب نہیں",
+    "priceDisclaimer": "یہ مقامی بازار کے تقریبی نرخ ہیں، بدل سکتے ہیں",
+    "doctorDisclaimer": "یہ غذائی منصوبہ اپنانے سے پہلے ڈاکٹر سے مشورہ کریں"
+  },
+  "nav": { "home": "ہوم", "sabziGuide": "سبزی گائیڈ", "grocery": "کریانہ", "trends": "رجحانات", "profile": "پروفائل" },
+  "language": {
+    "selectLanguage": "اپنی زبان منتخب کریں", "changeLanguage": "زبان بدلیں",
+    "languageChanged": "زبان کامیابی سے تبدیل ہوئی",
+    "rtlRestartNote": "نیا لے آؤٹ لاگو کرنے کے لیے ایپ ایک بار دوبارہ شروع ہوگی"
+  },
+  "auth": {
+    "login": "لاگ ان", "logout": "لاگ آؤٹ", "phoneLogin": "فون سے لاگ ان", "googleLogin": "Google سے لاگ ان",
+    "enterPhone": "اپنا فون نمبر درج کریں", "enterOTP": "OTP درج کریں", "sendOTP": "OTP بھیجیں",
+    "verifyOTP": "OTP تصدیق کریں", "resendOTP": "OTP دوبارہ بھیجیں", "otpSent": "آپ کے نمبر پر OTP بھیجا گیا",
+    "loginSuccess": "لاگ ان کامیاب", "loginFailed": "لاگ ان ناکام، دوبارہ کوشش کریں"
+  },
+  "onboarding": {
+    "welcome": "یہ بناؤ میں خوش آمدید", "subtitle": "آپ کا AI کھانا پکانے کا ساتھی",
+    "step1Title": "اپنے خاندان کے بارے میں بتائیں", "step2Title": "آپ کا علاقہ اور کھانا پکانے کا انداز",
+    "yourName": "آپ کا نام", "yourCity": "آپ کا شہر", "yourState": "آپ کی ریاست",
+    "cuisineStyle": "کھانا پکانے کا انداز", "addFamilyMember": "خاندان کا رکن شامل کریں",
+    "memberName": "رکن کا نام", "memberAge": "عمر", "dietType": "غذائی قسم",
+    "vegetarian": "سبزی خور", "nonVegetarian": "گوشت خور", "eggetarian": "انڈہ خور",
+    "spiceTolerance": "مسالے برداشت کرنے کی صلاحیت", "mild": "ہلکا", "medium": "درمیانہ", "spicy": "مسالیدار",
+    "verySpicy": "بہت مسالیدار", "extraSpicy": "انتہائی مسالیدار",
+    "healthConditions": "صحت کی حالتیں", "noConditions": "کوئی حالت نہیں",
+    "getStarted": "شروع کریں", "completeProfile": "پروفائل مکمل کریں"
+  },
+  "home": {
+    "goodMorning": "صبح بخیر", "goodAfternoon": "دوپہر بخیر", "goodEvening": "شام بخیر",
+    "todaysMealPlan": "آج کا کھانے کا منصوبہ", "breakfast": "ناشتہ", "lunch": "دوپہر کا کھانا",
+    "eveningSnack": "شام کا ناشتہ", "dinner": "رات کا کھانا", "generatePlan": "کھانے کا منصوبہ بنائیں",
+    "regenerate": "دوبارہ بنائیں", "confirmMade": "میں نے بنایا", "rateMeal": "کھانے کو ریٹ کریں",
+    "leftovers": "بچا ہوا کھانا استعمال کریں", "festivalMode": "تہوار موڈ", "fastingMode": "روزہ موڈ",
+    "weekendSpecial": "ویک اینڈ سپیشل", "tryNewRecipe": "کچھ نیا آزمائیں",
+    "weekendSabziList": "ویک اینڈ سبزی فہرست", "buyThisWeekend": "اس ویک اینڈ خریدیں",
+    "buyBeforeGone": "سیزن ختم ہونے سے پہلے خریدیں", "comingSoon": "جلد آ رہا ہے",
+    "generatingPlan": "کھانے کا منصوبہ بن رہا ہے...", "planGenerated": "آپ کا کھانے کا منصوبہ تیار ہے!",
+    "cookTime": "پکانے کا وقت", "serves": "کتنے لوگوں کے لیے", "costEstimate": "تخمینہ لاگت",
+    "inSeason": "سیزن میں ہے", "endingSoon": "سیزن ختم ہو رہا ہے"
+  },
+  "sabziGuide": {
+    "title": "سبزی گائیڈ", "seasonalVegetables": "موسمی سبزیاں",
+    "inSeason": "سیزن میں", "endingSoon": "جلد ختم", "comingSoon": "جلد آ رہا ہے",
+    "seasonalCalendar": "موسمی تقویم", "pricePerKg": "فی کلو", "storageTip": "ذخیرہ کرنے کی تجویز",
+    "healthNote": "صحت نوٹ", "dishSuggestions": "کھانے کی تجاویز", "weeklyTips": "ہفتہ وار موسمی تجاویز",
+    "loadingVegetables": "موسمی سبزیاں لوڈ ہو رہی ہیں...",
+    "jan": "جن", "feb": "فر", "mar": "مارچ", "apr": "اپر", "may": "مئی", "jun": "جون",
+    "jul": "جول", "aug": "اگ", "sep": "ستم", "oct": "اکت", "nov": "نو", "dec": "دسم"
+  },
+  "grocery": {
+    "title": "کریانہ فہرست", "vegetables": "سبزیاں", "dalAndGrains": "دال اور اناج",
+    "spices": "مسالے", "dairy": "دودھ کی مصنوعات", "miscellaneous": "دیگر",
+    "addItem": "چیز شامل کریں", "clearAll": "سب صاف کریں", "shareOnWhatsApp": "WhatsApp پر شیئر کریں",
+    "itemAdded": "چیز شامل ہوئی", "itemRemoved": "چیز ہٹائی گئی", "listCleared": "فہرست صاف کی",
+    "emptyList": "کریانہ فہرست خالی ہے", "generateFromPlan": "کھانے کے منصوبے سے بنائیں",
+    "whatsappMessage": "اس ہفتے کی کریانہ فہرست"
+  },
+  "trends": {
+    "title": "کھانے کے رجحانات", "trendingNow": "ابھی ٹرینڈ میں", "localTrends": "آپ کے علاقے میں ٹرینڈ",
+    "nationalTrends": "قومی رجحان", "seasonal": "موسمی انتخاب", "loadingTrends": "رجحانات لوڈ ہو رہے ہیں..."
+  },
+  "profile": {
+    "title": "پروفائل", "settings": "ترتیبات", "familyMembers": "خاندان کے اراکین",
+    "editProfile": "پروفائل ترمیم کریں", "notifications": "اطلاعات", "language": "زبان",
+    "subscription": "رکنیت", "freePlan": "مفت منصوبہ", "premiumPlan": "پریمیم – ₹49/مہینہ",
+    "upgradeToPremium": "پریمیم لیں", "recipeHistory": "ترکیب کی تاریخ",
+    "about": "ہمارے بارے میں", "helpSupport": "مدد", "logout": "لاگ آؤٹ", "deleteAccount": "اکاؤنٹ حذف کریں"
+  },
+  "health": {
+    "diabetes": "ذیابیطس", "hypertension": "ہائی بلڈ پریشر", "hypothyroidism": "ہائپوتھائروڈزم",
+    "pcos": "PCOS", "heartDisease": "دل کی بیماری", "anaemia": "خون کی کمی",
+    "pregnancy": "حمل", "kidneyDisease": "گردے کی بیماری",
+    "healthAdjusted": "صحت کی حالتوں کے مطابق کھانے کا منصوبہ تبدیل کیا",
+    "pcosDisclaimer": "یہ منصوبہ اپنانے سے پہلے ڈاکٹر سے مشورہ کریں",
+    "pregnancyDisclaimer": "یہ منصوبہ اپنانے سے پہلے ڈاکٹر سے مشورہ کریں"
+  },
+  "notifications": {
+    "morningPlan": "آج کا کھانے کا منصوبہ تیار ہے!",
+    "morningReminder": "اپنا کھانے کا منصوبہ دیکھنا نہ بھولیں",
+    "eveningGrocery": "کریانہ فہرست دیکھنے کا وقت",
+    "fridaySabzi": "آپ کی ویک اینڈ سبزی فہرست تیار ہے!",
+    "saturdayMarket": "خوشی سے خریداری کریں! بازار فہرست تیار ہے",
+    "sundaySpecial": "ویک اینڈ سپیشل کھانے کا منصوبہ تیار ہے",
+    "mondayRecipes": "اس ہفتے آزمانے کے لیے 5 نئی ترکیبیں",
+    "festivalEve": "تہوار کا کھانے کا منصوبہ تیار ہے"
+  },
+  "recipe": {
+    "ingredients": "اجزاء", "instructions": "طریقہ کار", "prepTime": "تیاری کا وقت",
+    "cookTime": "پکانے کا وقت", "servings": "کتنے لوگوں کے لیے", "cuisine": "کھانا پکانے کا انداز", "mealType": "کھانے کی قسم",
+    "difficulty": "مشکل", "easy": "آسان", "medium": "درمیانہ", "hard": "مشکل",
+    "costPerServing": "فی سرونگ لاگت", "history": "ترکیب کی تاریخ", "last15Days": "پچھلے 15 دن",
+    "madeOn": "بنایا گیا", "rating": "ریٹنگ", "noHistory": "ابھی تک کوئی ترکیب کی تاریخ نہیں"
+  },
+  "festival": {
+    "title": "تہوار اور روزے", "upcomingFestivals": "آنے والے تہوار",
+    "fastingPlan": "روزہ کا کھانا", "festivalPlan": "تہوار سپیشل منصوبہ",
+    "today": "آج", "tomorrow": "کل"
+  },
+  "leftover": {
+    "title": "بچا ہوا کھانا استعمال کریں", "whatHaveYou": "فریج میں کیا ہے؟",
+    "addIngredient": "جزء شامل کریں", "getSuggestions": "تجاویز حاصل کریں",
+    "suggestions": "ترکیب تجاویز", "loadingSuggestions": "آپ کے اجزاء کے لیے ترکیبیں ڈھونڈ رہے ہیں..."
+  }
+}

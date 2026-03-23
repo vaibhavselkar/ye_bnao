@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "অসি তৌবিয়ু", "loading": "লোড তৌরি...", "error": "অমগা মশক জিল্লে", "retry": "অদুগা ফেজিনবিয়ু",
+    "save": "শেমগৎলগে", "cancel": "ৱাফম হৌবিয়ু", "done": "তৌখ্রে", "next": "মথৌদা", "back": "অমুক্তদা", "share": "শেনবিয়ু",
+    "edit": "হেন্না তৌবিয়ু", "delete": "থাদোকপিয়ু", "add": "চংথোকপিয়ু", "remove": "থাদোকপিয়ু", "search": "থাজিনবিয়ু",
+    "filter": "ফিলটর", "close": "থাংবিয়ু", "ok": "ওকনা", "yes": "হয়", "no": "নত্তে", "submit": "পীবিয়ু",
+    "update": "অপদেত তৌবিয়ু", "refresh": "মপুং ফাবিয়ু", "viewAll": "মপুং উবিয়ু", "seeMore": "অধিক উবিয়ু",
+    "noData": "ডাটা অমত্তা অমুক নত্তে",
+    "priceDisclaimer": "অসিগুম্বা লোকাল বাজারগী অনুমানিত মকী, বদলাবগদবনি",
+    "doctorDisclaimer": "অসি খাদ্য প্লান লৌবগী মতুং ডক্টরগী য়াম্না হায়বিয়ু"
+  },
+  "nav": { "home": "হোম", "sabziGuide": "শাক-সব্জি গাইদ", "grocery": "কিরানা", "trends": "ত্রেন্দ", "profile": "প্রোফাইল" },
+  "language": {
+    "selectLanguage": "নংগী মীৎয়েং চৎলু", "changeLanguage": "মীৎয়েং বদলাবিয়ু",
+    "languageChanged": "মীৎয়েং লায়বা মতুংদা বদলাখ্রে",
+    "rtlRestartNote": "মপুং লেআওৎ লাগৎপদগী ঐপ অমারুম্বদা পুনশিবগদবনি"
+  },
+  "auth": {
+    "login": "লগিন", "logout": "লগ অওৎ", "phoneLogin": "ফোনগী মথক্তা লগিন", "googleLogin": "Google গী মথক্তা লগিন",
+    "enterPhone": "নংগী ফোন নম্বর চিংবিয়ু", "enterOTP": "OTP চিংবিয়ু", "sendOTP": "OTP থাদোকপিয়ু",
+    "verifyOTP": "OTP সত্যাপিৎ তৌবিয়ু", "resendOTP": "OTP অদুগা থাদোকপিয়ু", "otpSent": "নংগী নম্বরদা OTP থাদোকখ্রে",
+    "loginSuccess": "লগিন তৌখ্রে", "loginFailed": "লগিন তৌদে, অদুগা ফেজিনবিয়ু"
+  },
+  "onboarding": {
+    "welcome": "অসি তৌবিয়ুদা য়াম্না চাউখৎলক্লু", "subtitle": "নংগী AI খুরুমজিৎ মরুপ",
+    "step1Title": "নংগী শক্না হোংলিবা মিওয়াংদা পুথোকপিয়ু", "step2Title": "নংগী মফম অমসুং খুরুমজিৎ শৈলী",
+    "yourName": "নংগী মিং", "yourCity": "নংগী শহর", "yourState": "নংগী রাজ্য",
+    "cuisineStyle": "খুরুমজিৎ শৈলী", "addFamilyMember": "শক্নামক চংথোকপিয়ু",
+    "memberName": "মেম্বরগী মিং", "memberAge": "চহী", "dietType": "খাদ্যগী মতম",
+    "vegetarian": "শাক-সব্জি খাবা", "nonVegetarian": "মাছ-মাংস খাবা", "eggetarian": "ঙা খাবা",
+    "spiceTolerance": "মরিখা নুংথিল লৌবগী শক্তি", "mild": "নুংথিল নত্তে", "medium": "থৌওং", "spicy": "মরিখা",
+    "verySpicy": "য়াম্না মরিখা", "extraSpicy": "অতে মরিখা",
+    "healthConditions": "থৌদাং মতম", "noConditions": "মতম অমত্তা অমুক নত্তে",
+    "getStarted": "শুরু তৌবিয়ু", "completeProfile": "প্রোফাইল পুম্বা তৌবিয়ু"
+  },
+  "home": {
+    "goodMorning": "লাইরিক্কী চানুমিৎ", "goodAfternoon": "লাইরিক্কী ঙসিদা", "goodEvening": "লাইরিক্কী ইরাং",
+    "todaysMealPlan": "ঙসিগী খাদ্য প্লান", "breakfast": "ঙারোন খাদ্য", "lunch": "ঙসিদা খাদ্য",
+    "eveningSnack": "ইরাংদা তৌবিয়ু", "dinner": "ইরাংগী খাদ্য", "generatePlan": "খাদ্য প্লান তৌবিয়ু",
+    "regenerate": "অদুগা তৌবিয়ু", "confirmMade": "ঐনা তৌখ্রে", "rateMeal": "খাদ্য রেৎ তৌবিয়ু",
+    "leftovers": "মামাং খাদ্য লৌবিয়ু", "festivalMode": "ফেষ্টিবাল মোদ", "fastingMode": "ঔপাস মোদ",
+    "weekendSpecial": "ৱিকেন্দ স্পেশাল", "tryNewRecipe": "মপুং অমগা ফেজিনবিয়ু",
+    "weekendSabziList": "ৱিকেন্দ সব্জি লিষ্ট", "buyThisWeekend": "অসি ৱিকেন্দদা লৌবিয়ু",
+    "buyBeforeGone": "সিজন থাংদ্রবদগী মতুং লৌবিয়ু", "comingSoon": "মথৌদা লৌরে",
+    "generatingPlan": "খাদ্য প্লান তৌরি...", "planGenerated": "নংগী খাদ্য প্লান হৌখ্রে!",
+    "cookTime": "খুরুমজিৎ মতম", "serves": "কয়া মিওংদা", "costEstimate": "অনুমানিত খরচ",
+    "inSeason": "সিজনদা অমুক্লি", "endingSoon": "সিজন থাংরিবা"
+  },
+  "sabziGuide": {
+    "title": "সব্জি গাইদ", "seasonalVegetables": "মতমগী সব্জি",
+    "inSeason": "সিজনদা", "endingSoon": "মথৌদা থাংবগদবনি", "comingSoon": "মথৌদা লৌরে",
+    "seasonalCalendar": "মতম কেলেন্দার", "pricePerKg": "কিলোদা", "storageTip": "থাবা টিপ",
+    "healthNote": "থৌদাং নোৎ", "dishSuggestions": "খাদ্য সাজেশন", "weeklyTips": "হায়রোক্না মতমগী টিপস",
+    "loadingVegetables": "মতমগী সব্জি লোদ তৌরি...",
+    "jan": "জান", "feb": "ফেব", "mar": "মার্চ", "apr": "এপ্রি", "may": "মে", "jun": "জুন",
+    "jul": "জুল", "aug": "অগ", "sep": "সেপ", "oct": "অক্ট", "nov": "নব", "dec": "দিস"
+  },
+  "grocery": {
+    "title": "কিরানা লিষ্ট", "vegetables": "সব্জি", "dalAndGrains": "দাল অমসুং লৈতং",
+    "spices": "মসলা", "dairy": "হাথৌ মিৎ", "miscellaneous": "মতৌ",
+    "addItem": "মরম চংথোকপিয়ু", "clearAll": "মপুং পুম্বা থাদোকপিয়ু", "shareOnWhatsApp": "WhatsApp-দা শেনবিয়ু",
+    "itemAdded": "মরম চংথোখ্রে", "itemRemoved": "মরম থাদোকখ্রে", "listCleared": "লিষ্ট থাদোকখ্রে",
+    "emptyList": "কিরানা লিষ্ট পুম্বা নত্তে", "generateFromPlan": "খাদ্য প্লানদগী তৌবিয়ু",
+    "whatsappMessage": "অসি হায়রোক্নগী কিরানা লিষ্ট"
+  },
+  "trends": {
+    "title": "খাদ্য ত্রেন্দ", "trendingNow": "ঙসিদা ত্রেন্দিং", "localTrends": "নংগী মফমদা ত্রেন্দিং",
+    "nationalTrends": "জাতীয় ত্রেন্দ", "seasonal": "মতমগী চাউখৎ", "loadingTrends": "ত্রেন্দ লোদ তৌরি..."
+  },
+  "profile": {
+    "title": "প্রোফাইল", "settings": "সেতিং", "familyMembers": "শক্নামক মেম্বর",
+    "editProfile": "প্রোফাইল হেন্না তৌবিয়ু", "notifications": "নোতিফিকেশন", "language": "মীৎয়েং",
+    "subscription": "সোমোসেনায়", "freePlan": "মফ্রে প্লান", "premiumPlan": "প্রিমিয়ম – ₹49/থা",
+    "upgradeToPremium": "প্রিমিয়ম লৌবিয়ু", "recipeHistory": "রেসিপি হিষ্ট্রি",
+    "about": "ঐখোয়গী বারেদা", "helpSupport": "মদদ", "logout": "লগ অওৎ", "deleteAccount": "একাওন্ট থাদোকপিয়ু"
+  },
+  "health": {
+    "diabetes": "মধুমেহ", "hypertension": "হাই ব্লড প্রেশর", "hypothyroidism": "হাইপোথাইরোইদিজম",
+    "pcos": "PCOS", "heartDisease": "থৌদাং নোংথৌ", "anaemia": "রক্ত নুমিৎ",
+    "pregnancy": "চাপা", "kidneyDisease": "কিদনি নোংথৌ",
+    "healthAdjusted": "থৌদাং মতম মতুংদা খাদ্য প্লান বদলাখ্রে",
+    "pcosDisclaimer": "অসি প্লান লৌবগী মতুং ডক্টরগী য়াম্না হায়বিয়ু",
+    "pregnancyDisclaimer": "অসি প্লান লৌবগী মতুং ডক্টরগী য়াম্না হায়বিয়ু"
+  },
+  "notifications": {
+    "morningPlan": "ঙসিগী খাদ্য প্লান হৌখ্রে!",
+    "morningReminder": "নংগী খাদ্য প্লান উবদা থাগৎতবিয়ু",
+    "eveningGrocery": "কিরানা লিষ্ট উবগী মতম",
+    "fridaySabzi": "নংগী ৱিকেন্দ সব্জি লিষ্ট হৌখ্রে!",
+    "saturdayMarket": "চাউখৎ খরিদ! বাজার লিষ্ট হৌখ্রে",
+    "sundaySpecial": "ৱিকেন্দ স্পেশাল খাদ্য প্লান হৌখ্রে",
+    "mondayRecipes": "অসি হায়রোক্নদা ফেজিনবগদবা রেসিপি ৫",
+    "festivalEve": "ফেষ্টিবালগী খাদ্য প্লান হৌখ্রে"
+  },
+  "recipe": {
+    "ingredients": "মরম", "instructions": "তৌবগী মতৌ", "prepTime": "হৌগৎপগী মতম",
+    "cookTime": "খুরুমজিৎ মতম", "servings": "কয়া মিওংদা", "cuisine": "খুরুমজিৎ শৈলী", "mealType": "খাদ্যগী মতম",
+    "difficulty": "চংথোকপদা হাজবা", "easy": "চংথোকপা য়ারবা", "medium": "থৌওং", "hard": "হাজবা",
+    "costPerServing": "অমগী সর্ভিংদা খরচ", "history": "রেসিপি হিষ্ট্রি", "last15Days": "মথৌ ১৫ নুমিৎ",
+    "madeOn": "তৌখিবা", "rating": "রেতিং", "noHistory": "রেসিপি হিষ্ট্রি অমত্তা অমুক নত্তে"
+  },
+  "festival": {
+    "title": "ফেষ্টিবাল অমসুং ঔপাস", "upcomingFestivals": "মথৌদা লৌরিবা ফেষ্টিবাল",
+    "fastingPlan": "ঔপাসগী খাদ্য", "festivalPlan": "ফেষ্টিবাল স্পেশাল প্লান",
+    "today": "ঙসি", "tomorrow": "হয়েং"
+  },
+  "leftover": {
+    "title": "মামাং খাদ্য লৌবিয়ু", "whatHaveYou": "ফ্রিজদা অমগা অমুক্লে?",
+    "addIngredient": "মরম চংথোকপিয়ু", "getSuggestions": "সাজেশন লৌবিয়ু",
+    "suggestions": "রেসিপি সাজেশন", "loadingSuggestions": "নংগী মরমদগী রেসিপি থাজিনরি..."
+  }
+}

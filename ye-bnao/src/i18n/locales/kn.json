@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "ಇದನ್ನು ಮಾಡಿ", "loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...", "error": "ಏನೋ ತಪ್ಪಾಯಿತು", "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+    "save": "ಉಳಿಸಿ", "cancel": "ರದ್ದು ಮಾಡಿ", "done": "ಮಾಡಲಾಗಿದೆ", "next": "ಮುಂದೆ", "back": "ಹಿಂದೆ", "share": "ಹಂಚಿಕೊಳ್ಳಿ",
+    "edit": "ಸಂಪಾದಿಸಿ", "delete": "ಅಳಿಸಿ", "add": "ಸೇರಿಸಿ", "remove": "ತೆಗೆದುಹಾಕಿ", "search": "ಹುಡುಕಿ",
+    "filter": "ಫಿಲ್ಟರ್", "close": "ಮುಚ್ಚಿ", "ok": "ಸರಿ", "yes": "ಹೌದು", "no": "ಇಲ್ಲ", "submit": "ಸಲ್ಲಿಸಿ",
+    "update": "ನವೀಕರಿಸಿ", "refresh": "ರಿಫ್ರೆಶ್", "viewAll": "ಎಲ್ಲ ನೋಡಿ", "seeMore": "ಇನ್ನಷ್ಟು ನೋಡಿ",
+    "noData": "ಯಾವುದೇ ಡೇಟಾ ಇಲ್ಲ",
+    "priceDisclaimer": "ಇವು ಅಂದಾಜು ಸ್ಥಳೀಯ ಮಾರುಕಟ್ಟೆ ಬೆಲೆಗಳು, ಬದಲಾಗಬಹುದು",
+    "doctorDisclaimer": "ಈ ಊಟದ ಯೋಜನೆ ಅನುಸರಿಸುವ ಮೊದಲು ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ"
+  },
+  "nav": { "home": "ಹೋಮ್", "sabziGuide": "ತರಕಾರಿ ಮಾರ್ಗದರ್ಶಿ", "grocery": "ದಿನಸಿ", "trends": "ಟ್ರೆಂಡ್ಸ್", "profile": "ಪ್ರೊಫೈಲ್" },
+  "language": {
+    "selectLanguage": "ನಿಮ್ಮ ಭಾಷೆ ಆಯ್ಕೆ ಮಾಡಿ", "changeLanguage": "ಭಾಷೆ ಬದಲಾಯಿಸಿ",
+    "languageChanged": "ಭಾಷೆ ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಗಿದೆ",
+    "rtlRestartNote": "ಹೊಸ ಲೇಔಟ್ ಅನ್ವಯಿಸಲು ಅಪ್ಲಿಕೇಶನ್ ಒಮ್ಮೆ ಮರುಪ್ರಾರಂಭಗೊಳ್ಳುತ್ತದೆ"
+  },
+  "auth": {
+    "login": "ಲಾಗಿನ್", "logout": "ಲಾಗ್ ಔಟ್", "phoneLogin": "ಫೋನ್‌ನಿಂದ ಲಾಗಿನ್", "googleLogin": "Google ನಿಂದ ಲಾಗಿನ್",
+    "enterPhone": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ", "enterOTP": "OTP ನಮೂದಿಸಿ", "sendOTP": "OTP ಕಳುಹಿಸಿ",
+    "verifyOTP": "OTP ಪರಿಶೀಲಿಸಿ", "resendOTP": "OTP ಮತ್ತೆ ಕಳುಹಿಸಿ", "otpSent": "ನಿಮ್ಮ ಸಂಖ್ಯೆಗೆ OTP ಕಳುಹಿಸಲಾಗಿದೆ",
+    "loginSuccess": "ಲಾಗಿನ್ ಯಶಸ್ವಿ", "loginFailed": "ಲಾಗಿನ್ ವಿಫಲ, ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "onboarding": {
+    "welcome": "ಇದನ್ನು ಮಾಡಿಗೆ ಸ್ವಾಗತ", "subtitle": "ನಿಮ್ಮ AI ಅಡುಗೆ ಸಹಾಯಕ",
+    "step1Title": "ನಿಮ್ಮ ಕುಟುಂಬದ ಬಗ್ಗೆ ಹೇಳಿ", "step2Title": "ನಿಮ್ಮ ಪ್ರದೇಶ ಮತ್ತು ಅಡುಗೆ ಶೈಲಿ",
+    "yourName": "ನಿಮ್ಮ ಹೆಸರು", "yourCity": "ನಿಮ್ಮ ನಗರ", "yourState": "ನಿಮ್ಮ ರಾಜ್ಯ",
+    "cuisineStyle": "ಅಡುಗೆ ಶೈಲಿ", "addFamilyMember": "ಕುಟುಂಬ ಸದಸ್ಯರನ್ನು ಸೇರಿಸಿ",
+    "memberName": "ಸದಸ್ಯರ ಹೆಸರು", "memberAge": "ವಯಸ್ಸು", "dietType": "ಆಹಾರ ವಿಧ",
+    "vegetarian": "ಸಸ್ಯಾಹಾರಿ", "nonVegetarian": "ಮಾಂಸಾಹಾರಿ", "eggetarian": "ಮೊಟ್ಟೆ ತಿನ್ನುವವರು",
+    "spiceTolerance": "ಖಾರ ಸಹ್ಯತೆ", "mild": "ಸೌಮ್ಯ", "medium": "ಮಧ್ಯಮ", "spicy": "ಖಾರ",
+    "verySpicy": "ತುಂಬಾ ಖಾರ", "extraSpicy": "ಅತಿ ಖಾರ",
+    "healthConditions": "ಆರೋಗ್ಯ ಸ್ಥಿತಿಗಳು", "noConditions": "ಯಾವುದೇ ಸ್ಥಿತಿ ಇಲ್ಲ",
+    "getStarted": "ಪ್ರಾರಂಭಿಸಿ", "completeProfile": "ಪ್ರೊಫೈಲ್ ಪೂರ್ಣಗೊಳಿಸಿ"
+  },
+  "home": {
+    "goodMorning": "ಶುಭೋದಯ", "goodAfternoon": "ಶುಭ ಮಧ್ಯಾಹ್ನ", "goodEvening": "ಶುಭ ಸಂಜೆ",
+    "todaysMealPlan": "ಇಂದಿನ ಊಟದ ಯೋಜನೆ", "breakfast": "ಉಪಾಹಾರ", "lunch": "ಮಧ್ಯಾಹ್ನದ ಊಟ",
+    "eveningSnack": "ಸಂಜೆ ತಿಂಡಿ", "dinner": "ರಾತ್ರಿ ಊಟ", "generatePlan": "ಊಟದ ಯೋಜನೆ ರಚಿಸಿ",
+    "regenerate": "ಮತ್ತೆ ರಚಿಸಿ", "confirmMade": "ನಾನು ಮಾಡಿದೆ", "rateMeal": "ಊಟ ರೇಟ್ ಮಾಡಿ",
+    "leftovers": "ಉಳಿದ ಆಹಾರ ಬಳಸಿ", "festivalMode": "ಹಬ್ಬ ಮೋಡ್", "fastingMode": "ಉಪವಾಸ ಮೋಡ್",
+    "weekendSpecial": "ವಾರಾಂತ್ಯ ವಿಶೇಷ", "tryNewRecipe": "ಹೊಸದನ್ನು ಪ್ರಯತ್ನಿಸಿ",
+    "weekendSabziList": "ವಾರಾಂತ್ಯ ತರಕಾರಿ ಪಟ್ಟಿ", "buyThisWeekend": "ಈ ವಾರಾಂತ್ಯ ಖರೀದಿಸಿ",
+    "buyBeforeGone": "ಸೀಸನ್ ಮುಗಿಯುವ ಮೊದಲು ಖರೀದಿಸಿ", "comingSoon": "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ",
+    "generatingPlan": "ಊಟದ ಯೋಜನೆ ರಚಿಸಲಾಗುತ್ತಿದೆ...", "planGenerated": "ನಿಮ್ಮ ಊಟದ ಯೋಜನೆ ಸಿದ್ಧವಾಗಿದೆ!",
+    "cookTime": "ಅಡುಗೆ ಸಮಯ", "serves": "ಎಷ್ಟು ಜನರಿಗೆ", "costEstimate": "ಅಂದಾಜು ವೆಚ್ಚ",
+    "inSeason": "ಸೀಸನ್‌ನಲ್ಲಿ", "endingSoon": "ಸೀಸನ್ ಮುಗಿಯುತ್ತಿದೆ"
+  },
+  "sabziGuide": {
+    "title": "ತರಕಾರಿ ಮಾರ್ಗದರ್ಶಿ", "seasonalVegetables": "ಕಾಲೋಚಿತ ತರಕಾರಿಗಳು",
+    "inSeason": "ಸೀಸನ್‌ನಲ್ಲಿ", "endingSoon": "ಶೀಘ್ರದಲ್ಲೇ ಮುಗಿಯುತ್ತದೆ", "comingSoon": "ಶೀಘ್ರದಲ್ಲೇ ಬರುತ್ತದೆ",
+    "seasonalCalendar": "ಕಾಲೋಚಿತ ಕ್ಯಾಲೆಂಡರ್", "pricePerKg": "ಪ್ರತಿ ಕೆಜಿಗೆ", "storageTip": "ಶೇಖರಣೆ ಸಲಹೆ",
+    "healthNote": "ಆರೋಗ್ಯ ಟಿಪ್ಪಣಿ", "dishSuggestions": "ಅಡುಗೆ ಸಲಹೆಗಳು", "weeklyTips": "ವಾರಾಂತ್ಯ ಕಾಲೋಚಿತ ಸಲಹೆಗಳು",
+    "loadingVegetables": "ಕಾಲೋಚಿತ ತರಕಾರಿಗಳು ಲೋಡ್ ಆಗುತ್ತಿವೆ...",
+    "jan": "ಜನ", "feb": "ಫೆಬ್", "mar": "ಮಾರ್ಚ್", "apr": "ಏಪ್ರಿ", "may": "ಮೇ", "jun": "ಜೂನ್",
+    "jul": "ಜುಲೈ", "aug": "ಆಗ", "sep": "ಸೆಪ್ಟೆ", "oct": "ಅಕ್ಟೋ", "nov": "ನವ", "dec": "ಡಿಸೆ"
+  },
+  "grocery": {
+    "title": "ದಿನಸಿ ಪಟ್ಟಿ", "vegetables": "ತರಕಾರಿಗಳು", "dalAndGrains": "ಬೇಳೆ ಮತ್ತು ಧಾನ್ಯಗಳು",
+    "spices": "ಮಸಾಲೆಗಳು", "dairy": "ಹಾಲಿನ ಉತ್ಪನ್ನಗಳು", "miscellaneous": "ಇತರೆ",
+    "addItem": "ವಸ್ತು ಸೇರಿಸಿ", "clearAll": "ಎಲ್ಲ ತೆರವು ಮಾಡಿ", "shareOnWhatsApp": "WhatsApp ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ",
+    "itemAdded": "ವಸ್ತು ಸೇರಿಸಲಾಗಿದೆ", "itemRemoved": "ವಸ್ತು ತೆಗೆದುಹಾಕಲಾಗಿದೆ", "listCleared": "ಪಟ್ಟಿ ತೆರವು ಮಾಡಲಾಗಿದೆ",
+    "emptyList": "ದಿನಸಿ ಪಟ್ಟಿ ಖಾಲಿ ಇದೆ", "generateFromPlan": "ಊಟದ ಯೋಜನೆಯಿಂದ ರಚಿಸಿ",
+    "whatsappMessage": "ಈ ವಾರದ ದಿನಸಿ ಪಟ್ಟಿ"
+  },
+  "trends": {
+    "title": "ಆಹಾರ ಟ್ರೆಂಡ್ಸ್", "trendingNow": "ಈಗ ಟ್ರೆಂಡಿಂಗ್", "localTrends": "ನಿಮ್ಮ ಪ್ರದೇಶದಲ್ಲಿ ಟ್ರೆಂಡಿಂಗ್",
+    "nationalTrends": "ರಾಷ್ಟ್ರೀಯ ಟ್ರೆಂಡ್", "seasonal": "ಕಾಲೋಚಿತ ಆಯ್ಕೆಗಳು", "loadingTrends": "ಟ್ರೆಂಡ್ಸ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ..."
+  },
+  "profile": {
+    "title": "ಪ್ರೊಫೈಲ್", "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು", "familyMembers": "ಕುಟುಂಬ ಸದಸ್ಯರು",
+    "editProfile": "ಪ್ರೊಫೈಲ್ ಸಂಪಾದಿಸಿ", "notifications": "ಅಧಿಸೂಚನೆಗಳು", "language": "ಭಾಷೆ",
+    "subscription": "ಚಂದಾದಾರಿಕೆ", "freePlan": "ಉಚಿತ ಯೋಜನೆ", "premiumPlan": "ಪ್ರೀಮಿಯಂ – ₹49/ತಿಂಗಳು",
+    "upgradeToPremium": "ಪ್ರೀಮಿಯಂ ತೆಗೆದುಕೊಳ್ಳಿ", "recipeHistory": "ಅಡುಗೆ ಇತಿಹಾಸ",
+    "about": "ನಮ್ಮ ಬಗ್ಗೆ", "helpSupport": "ಸಹಾಯ", "logout": "ಲಾಗ್ ಔಟ್", "deleteAccount": "ಖಾತೆ ಅಳಿಸಿ"
+  },
+  "health": {
+    "diabetes": "ಮಧುಮೇಹ", "hypertension": "ಅಧಿಕ ರಕ್ತದೊತ್ತಡ", "hypothyroidism": "ಹೈಪೋಥೈರಾಯಿಡಿಸಂ",
+    "pcos": "PCOS", "heartDisease": "ಹೃದ್ರೋಗ", "anaemia": "ರಕ್ತಹೀನತೆ",
+    "pregnancy": "ಗರ್ಭಾವಸ್ಥೆ", "kidneyDisease": "ಮೂತ್ರಪಿಂಡ ರೋಗ",
+    "healthAdjusted": "ಆರೋಗ್ಯ ಸ್ಥಿತಿಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ಊಟದ ಯೋಜನೆ ಬದಲಾಯಿಸಲಾಗಿದೆ",
+    "pcosDisclaimer": "ಈ ಯೋಜನೆ ಅನುಸರಿಸುವ ಮೊದಲು ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ",
+    "pregnancyDisclaimer": "ಈ ಯೋಜನೆ ಅನುಸರಿಸುವ ಮೊದಲು ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ"
+  },
+  "notifications": {
+    "morningPlan": "ಇಂದಿನ ಊಟದ ಯೋಜನೆ ಸಿದ್ಧವಾಗಿದೆ!",
+    "morningReminder": "ನಿಮ್ಮ ಊಟದ ಯೋಜನೆ ನೋಡಲು ಮರೆಯಬೇಡಿ",
+    "eveningGrocery": "ದಿನಸಿ ಪಟ್ಟಿ ನೋಡುವ ಸಮಯ",
+    "fridaySabzi": "ನಿಮ್ಮ ವಾರಾಂತ್ಯ ತರಕಾರಿ ಪಟ್ಟಿ ಸಿದ್ಧವಾಗಿದೆ!",
+    "saturdayMarket": "ಶುಭ ಖರೀದಿ! ಮಾರ್ಕೆಟ್ ಪಟ್ಟಿ ಸಿದ್ಧ",
+    "sundaySpecial": "ವಾರಾಂತ್ಯ ವಿಶೇಷ ಊಟದ ಯೋಜನೆ ಸಿದ್ಧ",
+    "mondayRecipes": "ಈ ವಾರ ಪ್ರಯತ್ನಿಸಲು 5 ಹೊಸ ಅಡುಗೆ ವಿಧಾನಗಳು",
+    "festivalEve": "ಹಬ್ಬದ ಊಟದ ಯೋಜನೆ ಸಿದ್ಧ"
+  },
+  "recipe": {
+    "ingredients": "ಪದಾರ್ಥಗಳು", "instructions": "ಅಡುಗೆ ವಿಧಾನ", "prepTime": "ತಯಾರಿ ಸಮಯ",
+    "cookTime": "ಅಡುಗೆ ಸಮಯ", "servings": "ಎಷ್ಟು ಜನರಿಗೆ", "cuisine": "ಅಡುಗೆ ಶೈಲಿ", "mealType": "ಊಟದ ವಿಧ",
+    "difficulty": "ಕಷ್ಟ ಮಟ್ಟ", "easy": "ಸುಲಭ", "medium": "ಮಧ್ಯಮ", "hard": "ಕಷ್ಟ",
+    "costPerServing": "ಪ್ರತಿ ಸೇವೆಗೆ ವೆಚ್ಚ", "history": "ಅಡುಗೆ ಇತಿಹಾಸ", "last15Days": "ಕಳೆದ 15 ದಿನಗಳು",
+    "madeOn": "ಮಾಡಿದ ದಿನ", "rating": "ರೇಟಿಂಗ್", "noHistory": "ಇನ್ನೂ ಅಡುಗೆ ಇತಿಹಾಸ ಇಲ್ಲ"
+  },
+  "festival": {
+    "title": "ಹಬ್ಬಗಳು ಮತ್ತು ಉಪವಾಸ", "upcomingFestivals": "ಮುಂಬರುವ ಹಬ್ಬಗಳು",
+    "fastingPlan": "ಉಪವಾಸ ಊಟ", "festivalPlan": "ಹಬ್ಬ ವಿಶೇಷ ಯೋಜನೆ",
+    "today": "ಇಂದು", "tomorrow": "ನಾಳೆ"
+  },
+  "leftover": {
+    "title": "ಉಳಿದ ಆಹಾರ ಬಳಸಿ", "whatHaveYou": "ಫ್ರಿಡ್ಜ್‌ನಲ್ಲಿ ಏನಿದೆ?",
+    "addIngredient": "ಪದಾರ್ಥ ಸೇರಿಸಿ", "getSuggestions": "ಸಲಹೆ ಪಡೆಯಿರಿ",
+    "suggestions": "ಅಡುಗೆ ಸಲಹೆಗಳು", "loadingSuggestions": "ನಿಮ್ಮ ಪದಾರ್ಥಗಳಿಗೆ ಅಡುಗೆ ಹುಡುಕಲಾಗುತ್ತಿದೆ..."
+  }
+}

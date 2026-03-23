@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "এইটো বনাওক", "loading": "লোড হৈ আছে...", "error": "কিবা এটা ভুল হ'ল", "retry": "পুনৰ চেষ্টা কৰক",
+    "save": "সংৰক্ষণ কৰক", "cancel": "বাতিল কৰক", "done": "সম্পন্ন", "next": "পৰৱৰ্তী", "back": "পিছলৈ", "share": "ভাগ কৰক",
+    "edit": "সম্পাদনা কৰক", "delete": "মচি পেলাওক", "add": "যোগ কৰক", "remove": "আঁতৰাওক", "search": "সন্ধান কৰক",
+    "filter": "ফিল্টাৰ", "close": "বন্ধ কৰক", "ok": "ঠিক আছে", "yes": "হয়", "no": "নহয়", "submit": "দাখিল কৰক",
+    "update": "আপডেট কৰক", "refresh": "সতেজ কৰক", "viewAll": "সকলো চাওক", "seeMore": "অধিক চাওক",
+    "noData": "কোনো তথ্য উপলব্ধ নাই",
+    "priceDisclaimer": "এইবোৰ আনুমানিক স্থানীয় বজাৰ মূল্য, সলনি হ'ব পাৰে",
+    "doctorDisclaimer": "এই খাদ্য পৰিকল্পনা অনুসৰণ কৰাৰ আগতে চিকিৎসকৰ পৰামৰ্শ লওক"
+  },
+  "nav": { "home": "হোম", "sabziGuide": "পাচলি গাইড", "grocery": "মুদিখানা", "trends": "ট্ৰেণ্ড", "profile": "প্ৰ'ফাইল" },
+  "language": {
+    "selectLanguage": "আপোনাৰ ভাষা বাছনি কৰক", "changeLanguage": "ভাষা সলনি কৰক",
+    "languageChanged": "ভাষা সফলতাৰে সলনি হ'ল",
+    "rtlRestartNote": "নতুন লেআউট প্ৰয়োগ কৰিবলৈ এপটো এবাৰ পুনৰাৰম্ভ হ'ব"
+  },
+  "auth": {
+    "login": "লগইন", "logout": "লগআউট", "phoneLogin": "ফোনেৰে লগইন", "googleLogin": "Google-ৰে লগইন",
+    "enterPhone": "আপোনাৰ ফোন নম্বৰ দিয়ক", "enterOTP": "OTP দিয়ক", "sendOTP": "OTP পঠিয়াওক",
+    "verifyOTP": "OTP যাচাই কৰক", "resendOTP": "OTP পুনৰ পঠিয়াওক", "otpSent": "আপোনাৰ নম্বৰলৈ OTP পঠোৱা হ'ল",
+    "loginSuccess": "লগইন সফল", "loginFailed": "লগইন বিফল, পুনৰ চেষ্টা কৰক"
+  },
+  "onboarding": {
+    "welcome": "এইটো বনাওকলৈ স্বাগতম", "subtitle": "আপোনাৰ AI ৰন্ধা-বঢ়া সহায়ক",
+    "step1Title": "আপোনাৰ পৰিয়ালৰ বিষয়ে কওক", "step2Title": "আপোনাৰ অঞ্চল আৰু ৰন্ধা শৈলী",
+    "yourName": "আপোনাৰ নাম", "yourCity": "আপোনাৰ চহৰ", "yourState": "আপোনাৰ ৰাজ্য",
+    "cuisineStyle": "ৰন্ধা শৈলী", "addFamilyMember": "পৰিয়ালৰ সদস্য যোগ কৰক",
+    "memberName": "সদস্যৰ নাম", "memberAge": "বয়স", "dietType": "খাদ্যৰ ধৰণ",
+    "vegetarian": "নিৰামিষাশী", "nonVegetarian": "আমিষাশী", "eggetarian": "কণী খোৱা",
+    "spiceTolerance": "জলকীয়া সহ্য কৰাৰ ক্ষমতা", "mild": "মৃদু", "medium": "মধ্যম", "spicy": "জলকীয়া",
+    "verySpicy": "বহুত জলকীয়া", "extraSpicy": "অতি জলকীয়া",
+    "healthConditions": "স্বাস্থ্যৰ অৱস্থা", "noConditions": "কোনো অৱস্থা নাই",
+    "getStarted": "আৰম্ভ কৰক", "completeProfile": "প্ৰ'ফাইল সম্পূৰ্ণ কৰক"
+  },
+  "home": {
+    "goodMorning": "শুভ পুৱা", "goodAfternoon": "শুভ অপৰাহ্ণ", "goodEvening": "শুভ সন্ধিয়া",
+    "todaysMealPlan": "আজিৰ খাদ্য পৰিকল্পনা", "breakfast": "পুৱাৰ আহাৰ", "lunch": "দুপৰীয়াৰ আহাৰ",
+    "eveningSnack": "সন্ধিয়াৰ জলপান", "dinner": "ৰাতিৰ আহাৰ", "generatePlan": "খাদ্য পৰিকল্পনা বনাওক",
+    "regenerate": "পুনৰ বনাওক", "confirmMade": "মই বনাইছো", "rateMeal": "খাদ্য ৰেট কৰক",
+    "leftovers": "বাকী খাদ্য ব্যৱহাৰ কৰক", "festivalMode": "উৎসৱ মোড", "fastingMode": "উপবাস মোড",
+    "weekendSpecial": "সপ্তাহান্তৰ বিশেষ", "tryNewRecipe": "নতুন কিবা চেষ্টা কৰক",
+    "weekendSabziList": "সপ্তাহান্তৰ পাচলি তালিকা", "buyThisWeekend": "এই সপ্তাহান্তত কিনক",
+    "buyBeforeGone": "ঋতু শেষ হোৱাৰ আগতে কিনক", "comingSoon": "সোনকালে আহিছে",
+    "generatingPlan": "খাদ্য পৰিকল্পনা বনাই আছে...", "planGenerated": "আপোনাৰ খাদ্য পৰিকল্পনা সাজু!",
+    "cookTime": "ৰন্ধা সময়", "serves": "কিমান জনৰ বাবে", "costEstimate": "আনুমানিক খৰচ",
+    "inSeason": "ঋতুত আছে", "endingSoon": "ঋতু শেষ হৈ আছে"
+  },
+  "sabziGuide": {
+    "title": "পাচলি গাইড", "seasonalVegetables": "ঋতুভিত্তিক পাচলি",
+    "inSeason": "ঋতুত", "endingSoon": "সোনকালে শেষ", "comingSoon": "সোনকালে আহিছে",
+    "seasonalCalendar": "ঋতু কেলেণ্ডাৰ", "pricePerKg": "প্ৰতি কিলোত", "storageTip": "সংৰক্ষণ টিপছ",
+    "healthNote": "স্বাস্থ্য টোকা", "dishSuggestions": "খাদ্য পৰামৰ্শ", "weeklyTips": "সাপ্তাহিক ঋতু টিপছ",
+    "loadingVegetables": "ঋতুভিত্তিক পাচলি লোড হৈ আছে...",
+    "jan": "জান", "feb": "ফেব", "mar": "মাৰ্চ", "apr": "এপ্ৰ", "may": "মে", "jun": "জুন",
+    "jul": "জুল", "aug": "আগ", "sep": "ছেপ্ট", "oct": "অক্ট", "nov": "নভ", "dec": "ডিচ"
+  },
+  "grocery": {
+    "title": "মুদিখানা তালিকা", "vegetables": "পাচলি", "dalAndGrains": "দাইল আৰু শস্য",
+    "spices": "মছলা", "dairy": "গাখীৰজাত", "miscellaneous": "অন্যান্য",
+    "addItem": "বস্তু যোগ কৰক", "clearAll": "সকলো চাফা কৰক", "shareOnWhatsApp": "WhatsApp-ত ভাগ কৰক",
+    "itemAdded": "বস্তু যোগ হ'ল", "itemRemoved": "বস্তু আঁতৰোৱা হ'ল", "listCleared": "তালিকা চাফা হ'ল",
+    "emptyList": "মুদিখানা তালিকা খালি", "generateFromPlan": "খাদ্য পৰিকল্পনাৰ পৰা বনাওক",
+    "whatsappMessage": "এই সপ্তাহৰ মুদিখানা তালিকা"
+  },
+  "trends": {
+    "title": "খাদ্য ট্ৰেণ্ড", "trendingNow": "এতিয়া ট্ৰেণ্ডিং", "localTrends": "আপোনাৰ অঞ্চলত ট্ৰেণ্ডিং",
+    "nationalTrends": "ৰাষ্ট্ৰীয় ট্ৰেণ্ড", "seasonal": "ঋতু পছন্দ", "loadingTrends": "ট্ৰেণ্ড লোড হৈ আছে..."
+  },
+  "profile": {
+    "title": "প্ৰ'ফাইল", "settings": "ছেটিং", "familyMembers": "পৰিয়ালৰ সদস্য",
+    "editProfile": "প্ৰ'ফাইল সম্পাদনা কৰক", "notifications": "জাননী", "language": "ভাষা",
+    "subscription": "সদস্যতা", "freePlan": "বিনামূলীয়া পৰিকল্পনা", "premiumPlan": "প্ৰিমিয়াম – ₹49/মাহ",
+    "upgradeToPremium": "প্ৰিমিয়াম লওক", "recipeHistory": "ৰেচিপি ইতিহাস",
+    "about": "আমাৰ বিষয়ে", "helpSupport": "সহায়", "logout": "লগআউট", "deleteAccount": "একাউণ্ট মচক"
+  },
+  "health": {
+    "diabetes": "ডায়েবেটিছ", "hypertension": "উচ্চ ৰক্তচাপ", "hypothyroidism": "হাইপোথাইৰয়ডিজম",
+    "pcos": "PCOS", "heartDisease": "হৃদৰোগ", "anaemia": "ৰক্তহীনতা",
+    "pregnancy": "গৰ্ভাৱস্থা", "kidneyDisease": "বৃক্কৰ ৰোগ",
+    "healthAdjusted": "স্বাস্থ্যৰ অৱস্থা অনুযায়ী খাদ্য পৰিকল্পনা সলনি কৰা হ'ল",
+    "pcosDisclaimer": "এই পৰিকল্পনা অনুসৰণৰ আগতে চিকিৎসকৰ পৰামৰ্শ লওক",
+    "pregnancyDisclaimer": "এই পৰিকল্পনা অনুসৰণৰ আগতে চিকিৎসকৰ পৰামৰ্শ লওক"
+  },
+  "notifications": {
+    "morningPlan": "আজিৰ খাদ্য পৰিকল্পনা সাজু!",
+    "morningReminder": "আপোনাৰ খাদ্য পৰিকল্পনা চাবলৈ নাপাহৰিব",
+    "eveningGrocery": "মুদিখানা তালিকা চোৱাৰ সময়",
+    "fridaySabzi": "আপোনাৰ সপ্তাহান্তৰ পাচলি তালিকা সাজু!",
+    "saturdayMarket": "শুভ কেনাকাটা! বজাৰৰ তালিকা সাজু",
+    "sundaySpecial": "সপ্তাহান্তৰ বিশেষ খাদ্য পৰিকল্পনা সাজু",
+    "mondayRecipes": "এই সপ্তাহত চেষ্টা কৰিবলৈ ৫টা নতুন ৰেচিপি",
+    "festivalEve": "উৎসৱৰ খাদ্য পৰিকল্পনা সাজু"
+  },
+  "recipe": {
+    "ingredients": "সামগ্ৰী", "instructions": "পদ্ধতি", "prepTime": "প্ৰস্তুতিৰ সময়",
+    "cookTime": "ৰন্ধা সময়", "servings": "কিমান জনৰ বাবে", "cuisine": "ৰন্ধা শৈলী", "mealType": "আহাৰৰ ধৰণ",
+    "difficulty": "কঠিনতা", "easy": "সহজ", "medium": "মধ্যম", "hard": "কঠিন",
+    "costPerServing": "প্ৰতি পৰিৱেশনত খৰচ", "history": "ৰেচিপি ইতিহাস", "last15Days": "শেষ ১৫ দিন",
+    "madeOn": "বনোৱা হৈছিল", "rating": "ৰেটিং", "noHistory": "এতিয়াও কোনো ৰেচিপি ইতিহাস নাই"
+  },
+  "festival": {
+    "title": "উৎসৱ আৰু উপবাস", "upcomingFestivals": "আগন্তুক উৎসৱ",
+    "fastingPlan": "উপবাসৰ আহাৰ", "festivalPlan": "উৎসৱ বিশেষ পৰিকল্পনা",
+    "today": "আজি", "tomorrow": "কাইলৈ"
+  },
+  "leftover": {
+    "title": "বাকী খাদ্য ব্যৱহাৰ কৰক", "whatHaveYou": "ফ্ৰিজত কি আছে?",
+    "addIngredient": "সামগ্ৰী যোগ কৰক", "getSuggestions": "পৰামৰ্শ লওক",
+    "suggestions": "ৰেচিপি পৰামৰ্শ", "loadingSuggestions": "আপোনাৰ সামগ্ৰীৰ বাবে ৰেচিপি বিচাৰি আছো..."
+  }
+}

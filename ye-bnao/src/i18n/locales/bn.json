@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "এটা বানাও", "loading": "লোড হচ্ছে...", "error": "কিছু একটা ভুল হয়েছে", "retry": "আবার চেষ্টা করুন",
+    "save": "সেভ করুন", "cancel": "বাতিল", "done": "হয়েছে", "next": "পরবর্তী", "back": "পিছনে", "share": "শেয়ার করুন",
+    "edit": "সম্পাদনা", "delete": "মুছুন", "add": "যোগ করুন", "remove": "সরান", "search": "খুঁজুন",
+    "filter": "ফিল্টার", "close": "বন্ধ করুন", "ok": "ঠিক আছে", "yes": "হ্যাঁ", "no": "না", "submit": "জমা দিন",
+    "update": "আপডেট করুন", "refresh": "রিফ্রেশ করুন", "viewAll": "সব দেখুন", "seeMore": "আরও দেখুন",
+    "noData": "কোনো ডেটা নেই",
+    "priceDisclaimer": "এগুলো আনুমানিক স্থানীয় বাজার মূল্য, পরিবর্তিত হতে পারে",
+    "doctorDisclaimer": "এই খাদ্য পরিকল্পনা অনুসরণ করার আগে ডাক্তারের পরামর্শ নিন"
+  },
+  "nav": { "home": "হোম", "sabziGuide": "সবজি গাইড", "grocery": "বাজার", "trends": "ট্রেন্ডস", "profile": "প্রোফাইল" },
+  "language": {
+    "selectLanguage": "আপনার ভাষা বেছে নিন", "changeLanguage": "ভাষা পরিবর্তন করুন",
+    "languageChanged": "ভাষা সফলভাবে পরিবর্তিত হয়েছে",
+    "rtlRestartNote": "নতুন লেআউট প্রয়োগ করতে অ্যাপ একবার পুনরায় চালু হবে"
+  },
+  "auth": {
+    "login": "লগইন", "logout": "লগআউট", "phoneLogin": "ফোনে লগইন", "googleLogin": "Google দিয়ে লগইন",
+    "enterPhone": "আপনার ফোন নম্বর লিখুন", "enterOTP": "OTP লিখুন", "sendOTP": "OTP পাঠান",
+    "verifyOTP": "OTP যাচাই করুন", "resendOTP": "OTP আবার পাঠান", "otpSent": "আপনার নম্বরে OTP পাঠানো হয়েছে",
+    "loginSuccess": "লগইন সফল", "loginFailed": "লগইন ব্যর্থ, আবার চেষ্টা করুন"
+  },
+  "onboarding": {
+    "welcome": "এটা বানাওতে স্বাগতম", "subtitle": "আপনার AI রান্নার সঙ্গী",
+    "step1Title": "আপনার পরিবার সম্পর্কে বলুন", "step2Title": "আপনার অঞ্চল ও রন্ধনশৈলী",
+    "yourName": "আপনার নাম", "yourCity": "আপনার শহর", "yourState": "আপনার রাজ্য",
+    "cuisineStyle": "রান্নার ধরন", "addFamilyMember": "পরিবারের সদস্য যোগ করুন",
+    "memberName": "সদস্যের নাম", "memberAge": "বয়স", "dietType": "খাদ্যাভ্যাস",
+    "vegetarian": "নিরামিষ", "nonVegetarian": "আমিষ", "eggetarian": "ডিমসহ নিরামিষ",
+    "spiceTolerance": "ঝাল সহ্য ক্ষমতা", "mild": "হালকা", "medium": "মাঝারি", "spicy": "ঝাল",
+    "verySpicy": "অনেক ঝাল", "extraSpicy": "অতিরিক্ত ঝাল",
+    "healthConditions": "স্বাস্থ্য সমস্যা", "noConditions": "কোনো সমস্যা নেই",
+    "getStarted": "শুরু করুন", "completeProfile": "প্রোফাইল সম্পন্ন করুন"
+  },
+  "home": {
+    "goodMorning": "শুভ সকাল", "goodAfternoon": "শুভ দুপুর", "goodEvening": "শুভ সন্ধ্যা",
+    "todaysMealPlan": "আজকের খাবার পরিকল্পনা", "breakfast": "সকালের নাস্তা", "lunch": "দুপুরের খাবার",
+    "eveningSnack": "বিকেলের নাস্তা", "dinner": "রাতের খাবার", "generatePlan": "খাবার পরিকল্পনা তৈরি করুন",
+    "regenerate": "আবার তৈরি করুন", "confirmMade": "আমি রান্না করেছি", "rateMeal": "খাবার রেট করুন",
+    "leftovers": "বাকি খাবার ব্যবহার করুন", "festivalMode": "উৎসব মোড", "fastingMode": "উপবাস মোড",
+    "weekendSpecial": "সপ্তাহান্তের বিশেষ", "tryNewRecipe": "নতুন কিছু চেষ্টা করুন",
+    "weekendSabziList": "সপ্তাহান্তের সবজি তালিকা", "buyThisWeekend": "এই সপ্তাহান্তে কিনুন",
+    "buyBeforeGone": "মৌসুম শেষের আগে কিনুন", "comingSoon": "শীঘ্রই আসছে",
+    "generatingPlan": "খাবার পরিকল্পনা তৈরি হচ্ছে...", "planGenerated": "আপনার খাবার পরিকল্পনা প্রস্তুত!",
+    "cookTime": "রান্নার সময়", "serves": "কতজনের জন্য", "costEstimate": "আনুমানিক খরচ",
+    "inSeason": "মৌসুমে আছে", "endingSoon": "মৌসুম শেষ হচ্ছে"
+  },
+  "sabziGuide": {
+    "title": "সবজি গাইড", "seasonalVegetables": "মৌসুমী সবজি",
+    "inSeason": "মৌসুমে", "endingSoon": "শীঘ্রই শেষ", "comingSoon": "শীঘ্রই আসছে",
+    "seasonalCalendar": "মৌসুমী ক্যালেন্ডার", "pricePerKg": "প্রতি কেজি", "storageTip": "সংরক্ষণ টিপ",
+    "healthNote": "স্বাস্থ্য নোট", "dishSuggestions": "রান্নার পরামর্শ", "weeklyTips": "সাপ্তাহিক মৌসুমী টিপস",
+    "loadingVegetables": "মৌসুমী সবজি লোড হচ্ছে...",
+    "jan": "জানু", "feb": "ফেব্রু", "mar": "মার্চ", "apr": "এপ্রিল", "may": "মে", "jun": "জুন",
+    "jul": "জুলাই", "aug": "আগস্ট", "sep": "সেপ্টে", "oct": "অক্টো", "nov": "নভে", "dec": "ডিসে"
+  },
+  "grocery": {
+    "title": "বাজারের তালিকা", "vegetables": "সবজি", "dalAndGrains": "ডাল ও শস্য",
+    "spices": "মশলা", "dairy": "দুগ্ধজাত", "miscellaneous": "অন্যান্য",
+    "addItem": "আইটেম যোগ করুন", "clearAll": "সব মুছুন", "shareOnWhatsApp": "WhatsApp-এ শেয়ার করুন",
+    "itemAdded": "আইটেম যোগ হয়েছে", "itemRemoved": "আইটেম সরানো হয়েছে", "listCleared": "তালিকা পরিষ্কার",
+    "emptyList": "বাজারের তালিকা খালি", "generateFromPlan": "খাবার পরিকল্পনা থেকে তৈরি করুন",
+    "whatsappMessage": "এই সপ্তাহের বাজারের তালিকা"
+  },
+  "trends": {
+    "title": "খাবারের ট্রেন্ড", "trendingNow": "এখন ট্রেন্ডিং", "localTrends": "আপনার এলাকায় ট্রেন্ডিং",
+    "nationalTrends": "জাতীয় ট্রেন্ড", "seasonal": "মৌসুমী পছন্দ", "loadingTrends": "ট্রেন্ড লোড হচ্ছে..."
+  },
+  "profile": {
+    "title": "প্রোফাইল", "settings": "সেটিংস", "familyMembers": "পরিবারের সদস্য",
+    "editProfile": "প্রোফাইল সম্পাদনা করুন", "notifications": "বিজ্ঞপ্তি", "language": "ভাষা",
+    "subscription": "সদস্যপদ", "freePlan": "বিনামূল্যে পরিকল্পনা", "premiumPlan": "প্রিমিয়াম – ₹49/মাস",
+    "upgradeToPremium": "প্রিমিয়াম নিন", "recipeHistory": "রেসিপি ইতিহাস",
+    "about": "আমাদের সম্পর্কে", "helpSupport": "সাহায্য", "logout": "লগআউট", "deleteAccount": "অ্যাকাউন্ট মুছুন"
+  },
+  "health": {
+    "diabetes": "ডায়াবেটিস", "hypertension": "উচ্চ রক্তচাপ", "hypothyroidism": "হাইপোথাইরয়েডিজম",
+    "pcos": "PCOS", "heartDisease": "হৃদরোগ", "anaemia": "রক্তাল্পতা",
+    "pregnancy": "গর্ভাবস্থা", "kidneyDisease": "কিডনি রোগ",
+    "healthAdjusted": "স্বাস্থ্য অনুযায়ী খাবার পরিকল্পনা পরিবর্তিত",
+    "pcosDisclaimer": "এই পরিকল্পনা অনুসরণের আগে ডাক্তারের পরামর্শ নিন",
+    "pregnancyDisclaimer": "এই পরিকল্পনা অনুসরণের আগে ডাক্তারের পরামর্শ নিন"
+  },
+  "notifications": {
+    "morningPlan": "আজকের খাবার পরিকল্পনা প্রস্তুত!",
+    "morningReminder": "আপনার খাবার পরিকল্পনা দেখতে ভুলবেন না",
+    "eveningGrocery": "বাজারের তালিকা দেখার সময়",
+    "fridaySabzi": "আপনার সপ্তাহান্তের সবজি তালিকা প্রস্তুত!",
+    "saturdayMarket": "শুভ কেনাকাটা! বাজারের তালিকা প্রস্তুত",
+    "sundaySpecial": "সপ্তাহান্তের বিশেষ খাবার পরিকল্পনা প্রস্তুত",
+    "mondayRecipes": "এই সপ্তাহে চেষ্টা করার জন্য ৫টি নতুন রেসিপি",
+    "festivalEve": "উৎসবের খাবার পরিকল্পনা প্রস্তুত"
+  },
+  "recipe": {
+    "ingredients": "উপকরণ", "instructions": "প্রস্তুত প্রণালী", "prepTime": "প্রস্তুতির সময়",
+    "cookTime": "রান্নার সময়", "servings": "কতজনের জন্য", "cuisine": "রন্ধনশৈলী", "mealType": "খাবারের ধরন",
+    "difficulty": "কঠিনতা", "easy": "সহজ", "medium": "মাঝারি", "hard": "কঠিন",
+    "costPerServing": "প্রতি পরিবেশনে খরচ", "history": "রেসিপি ইতিহাস", "last15Days": "শেষ ১৫ দিন",
+    "madeOn": "রান্না করা হয়েছিল", "rating": "রেটিং", "noHistory": "এখনো কোনো রেসিপি ইতিহাস নেই"
+  },
+  "festival": {
+    "title": "উৎসব ও উপবাস", "upcomingFestivals": "আসন্ন উৎসব",
+    "fastingPlan": "উপবাসের খাবার", "festivalPlan": "উৎসব বিশেষ পরিকল্পনা",
+    "today": "আজ", "tomorrow": "আগামীকাল"
+  },
+  "leftover": {
+    "title": "বাকি খাবার ব্যবহার করুন", "whatHaveYou": "ফ্রিজে কী আছে?",
+    "addIngredient": "উপকরণ যোগ করুন", "getSuggestions": "পরামর্শ পান",
+    "suggestions": "রেসিপি পরামর্শ", "loadingSuggestions": "আপনার উপকরণ দিয়ে রেসিপি খোঁজা হচ্ছে..."
+  }
+}

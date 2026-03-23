@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "یہ بناوو", "loading": "لوڈ سیتھ چھُ...", "error": "کانہہ غلطی سیتھ چھُ", "retry": "دوبارہ کوشش کرو",
+    "save": "محفوظ کرو", "cancel": "منسوخ کرو", "done": "تمام", "next": "اگلو", "back": "پتہ", "share": "وانٛگنو",
+    "edit": "بدلاوو", "delete": "حذف کرو", "add": "شامل کرو", "remove": "ہٹاوو", "search": "تلاش کرو",
+    "filter": "فلٹر", "close": "بند کرو", "ok": "ٹھیک چھُ", "yes": "ہاں", "no": "نہ", "submit": "جمع کرو",
+    "update": "اپڈیٹ کرو", "refresh": "تازہ کرو", "viewAll": "سب ہیچھو", "seeMore": "زیادہ ہیچھو",
+    "noData": "کانہہ ڈیٹا دستیاب نیہ",
+    "priceDisclaimer": "یہ مقامی بازارُک تخمینی نرخ چھِ، بدلہ یٔہ سکتہ چھِ",
+    "doctorDisclaimer": "یہ کھانس منصوبہ اپنانے سیتھ پہلہ ڈاکٹرَس مشورہ کرو"
+  },
+  "nav": { "home": "ہوم", "sabziGuide": "سبزی گایڈ", "grocery": "کرانہ", "trends": "ٹرینڈ", "profile": "پروفائل" },
+  "language": {
+    "selectLanguage": "اپنہ زبان ونتھو", "changeLanguage": "زبان بدلاوو",
+    "languageChanged": "زبان کامیابی سیتھ بدلائی",
+    "rtlRestartNote": "نیو لے آوٹ لاگو کرنے خاطرہ ایپ اکھ زاژ دوبارہ شروع سپدِت"
+  },
+  "auth": {
+    "login": "لاگ ان", "logout": "لاگ آوٹ", "phoneLogin": "فونَس لاگ ان", "googleLogin": "Google سیتھ لاگ ان",
+    "enterPhone": "اپنہ فون نمبر داخل کرو", "enterOTP": "OTP داخل کرو", "sendOTP": "OTP پیٹھو",
+    "verifyOTP": "OTP تصدیق کرو", "resendOTP": "OTP دوبارہ پیٹھو", "otpSent": "تہندِ نمبرَس OTP پیٹھو گیو",
+    "loginSuccess": "لاگ ان کامیاب", "loginFailed": "لاگ ان ناکام، دوبارہ کوشش کرو"
+  },
+  "onboarding": {
+    "welcome": "یہ بناووَس خوش آمدید", "subtitle": "تہند AI پاکَنکَس ساتھی",
+    "step1Title": "اپنہ کنبہ بابت دسو", "step2Title": "تہند علاقہ تہٕ پاکَنکس انداز",
+    "yourName": "تہند ناو", "yourCity": "تہند شہر", "yourState": "تہند صوبہ",
+    "cuisineStyle": "پاکَنکس انداز", "addFamilyMember": "کنبس مبر شامل کرو",
+    "memberName": "مبرُک ناو", "memberAge": "عمر", "dietType": "کھانُک قسم",
+    "vegetarian": "شاکاہاری", "nonVegetarian": "گوشت خور", "eggetarian": "انڈہ خور",
+    "spiceTolerance": "مصالحہ برداشت کرنُک طاقت", "mild": "ہلکہ", "medium": "درمیانہ", "spicy": "مصالحہ دار",
+    "verySpicy": "زیادہ مصالحہ دار", "extraSpicy": "انتہائی مصالحہ دار",
+    "healthConditions": "صحتُک حالت", "noConditions": "کانہہ حالت نیہ",
+    "getStarted": "شروع کرو", "completeProfile": "پروفائل مکمل کرو"
+  },
+  "home": {
+    "goodMorning": "صبح بخیر", "goodAfternoon": "دوپہر بخیر", "goodEvening": "شام بخیر",
+    "todaysMealPlan": "اَتھ دیوَہُک کھانس منصوبہ", "breakfast": "صبحُک ناشتہ", "lunch": "دوپہرُک کھانہ",
+    "eveningSnack": "شامُک ناشتہ", "dinner": "رات کھانہ", "generatePlan": "کھانس منصوبہ بناوو",
+    "regenerate": "دوبارہ بناوو", "confirmMade": "میٔ بنایُو", "rateMeal": "کھانہ ریٹ کرو",
+    "leftovers": "بچیو کھانہ وارتو", "festivalMode": "تہوار موڈ", "fastingMode": "روزہ موڈ",
+    "weekendSpecial": "ویک اینڈ سپیشل", "tryNewRecipe": "کانہہ نیو ازمایو",
+    "weekendSabziList": "ویک اینڈ سبزی لسٹ", "buyThisWeekend": "یہ ویک اینڈ خریدو",
+    "buyBeforeGone": "سیزن ختم سپدنے سیتھ پہلہ خریدو", "comingSoon": "جلدی رودِت",
+    "generatingPlan": "کھانس منصوبہ بنتہ چھُ...", "planGenerated": "تہند کھانس منصوبہ تیار چھُ!",
+    "cookTime": "پاکَنکس وقت", "serves": "کتہ جنَہ خاطرہ", "costEstimate": "تخمینی خرچ",
+    "inSeason": "سیزنَس چھُ", "endingSoon": "سیزن ختم سپدان چھُ"
+  },
+  "sabziGuide": {
+    "title": "سبزی گایڈ", "seasonalVegetables": "موسمی سبزیاں",
+    "inSeason": "سیزنَس", "endingSoon": "جلدی ختم", "comingSoon": "جلدی رودِت",
+    "seasonalCalendar": "موسمی کیلنڈر", "pricePerKg": "فی کلو", "storageTip": "رکھنُک ٹِپ",
+    "healthNote": "صحت نوٹ", "dishSuggestions": "کھانُک مشورہ", "weeklyTips": "ہفتہ وار موسمی ٹِپس",
+    "loadingVegetables": "موسمی سبزیاں لوڈ سیتھ چھِ...",
+    "jan": "جن", "feb": "فر", "mar": "مارچ", "apr": "اپر", "may": "مئی", "jun": "جون",
+    "jul": "جول", "aug": "اگ", "sep": "ستم", "oct": "اکت", "nov": "نو", "dec": "دسم"
+  },
+  "grocery": {
+    "title": "کرانہ لسٹ", "vegetables": "سبزیاں", "dalAndGrains": "دال تہٕ اناج",
+    "spices": "مصالحہ", "dairy": "دودھُک مصنوعات", "miscellaneous": "بیاکھ",
+    "addItem": "شے شامل کرو", "clearAll": "سب صاف کرو", "shareOnWhatsApp": "WhatsApp پیٹھ وانٛگو",
+    "itemAdded": "شے شامل سوو", "itemRemoved": "شے ہٹائی گیٖو", "listCleared": "لسٹ صاف سوو",
+    "emptyList": "کرانہ لسٹ خالی چھُ", "generateFromPlan": "کھانس منصوبہ ہنز بناوو",
+    "whatsappMessage": "یہ ہفتس کرانہ لسٹ"
+  },
+  "trends": {
+    "title": "کھانُک ٹرینڈ", "trendingNow": "اَبہ ٹرینڈنگ", "localTrends": "تہند علاقس ٹرینڈنگ",
+    "nationalTrends": "قومی ٹرینڈ", "seasonal": "موسمی پسند", "loadingTrends": "ٹرینڈ لوڈ سیتھ چھِ..."
+  },
+  "profile": {
+    "title": "پروفائل", "settings": "سیٹنگ", "familyMembers": "کنبس مبر",
+    "editProfile": "پروفائل بدلاوو", "notifications": "اطلاع", "language": "زبان",
+    "subscription": "رکنیت", "freePlan": "مفت منصوبہ", "premiumPlan": "پریمیم – ₹49/مہینہ",
+    "upgradeToPremium": "پریمیم لوو", "recipeHistory": "ریسپی تاریخ",
+    "about": "اسہ بابت", "helpSupport": "مدد", "logout": "لاگ آوٹ", "deleteAccount": "اکاونٹ حذف کرو"
+  },
+  "health": {
+    "diabetes": "ذیابیطس", "hypertension": "ہائی بلڈ پریشر", "hypothyroidism": "ہائپوتھائروڈزم",
+    "pcos": "PCOS", "heartDisease": "دلُک بیماری", "anaemia": "خونُک کمی",
+    "pregnancy": "حمل", "kidneyDisease": "گُردس بیماری",
+    "healthAdjusted": "صحتُک حالت مطابق کھانس منصوبہ بدلائی گیو",
+    "pcosDisclaimer": "یہ منصوبہ اپنانے سیتھ پہلہ ڈاکٹرَس مشورہ کرو",
+    "pregnancyDisclaimer": "یہ منصوبہ اپنانے سیتھ پہلہ ڈاکٹرَس مشورہ کرو"
+  },
+  "notifications": {
+    "morningPlan": "اَتھ دیوَہُک کھانس منصوبہ تیار چھُ!",
+    "morningReminder": "تہند کھانس منصوبہ ہیچھنے نہ وساریو",
+    "eveningGrocery": "کرانہ لسٹ ہیچھنُک وقت",
+    "fridaySabzi": "تہند ویک اینڈ سبزی لسٹ تیار چھُ!",
+    "saturdayMarket": "خوش خریداری! بازار لسٹ تیار چھُ",
+    "sundaySpecial": "ویک اینڈ سپیشل کھانس منصوبہ تیار چھُ",
+    "mondayRecipes": "یہ ہفتس ازمایہ خاطرہ ۵ نیو ریسپیاں",
+    "festivalEve": "تہوارُک کھانس منصوبہ تیار چھُ"
+  },
+  "recipe": {
+    "ingredients": "سامان", "instructions": "بنانُک طریقہ", "prepTime": "تیاریُک وقت",
+    "cookTime": "پاکَنکس وقت", "servings": "کتہ جنہ خاطرہ", "cuisine": "پاکَنکس انداز", "mealType": "کھانُک قسم",
+    "difficulty": "مشکل", "easy": "آسان", "medium": "درمیانہ", "hard": "مشکل",
+    "costPerServing": "فی سرونگ خرچ", "history": "ریسپی تاریخ", "last15Days": "آخری ۱۵ دن",
+    "madeOn": "بنایُو گیو", "rating": "ریٹنگ", "noHistory": "ابتان کانہہ ریسپی تاریخ نیہ"
+  },
+  "festival": {
+    "title": "تہوار تہٕ روزہ", "upcomingFestivals": "آونہ والس تہوار",
+    "fastingPlan": "روزس کھانہ", "festivalPlan": "تہوار سپیشل منصوبہ",
+    "today": "اَتھ دیوہ", "tomorrow": "پگاہ"
+  },
+  "leftover": {
+    "title": "بچیو کھانہ وارتو", "whatHaveYou": "فریجَس کیا چھُ؟",
+    "addIngredient": "سامان شامل کرو", "getSuggestions": "مشورہ حاصل کرو",
+    "suggestions": "ریسپی مشورہ", "loadingSuggestions": "تہند سامان خاطرہ ریسپیاں لبتھ چھِ..."
+  }
+}

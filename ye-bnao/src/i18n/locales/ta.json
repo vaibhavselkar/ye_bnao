@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "இதை செய்", "loading": "ஏற்றுகிறது...", "error": "ஏதோ தவறு நடந்தது", "retry": "மீண்டும் முயற்சிக்கவும்",
+    "save": "சேமிக்கவும்", "cancel": "ரத்து செய்", "done": "முடிந்தது", "next": "அடுத்து", "back": "பின்னால்", "share": "பகிர்",
+    "edit": "திருத்து", "delete": "நீக்கு", "add": "சேர்க்கவும்", "remove": "அகற்று", "search": "தேடு",
+    "filter": "வடிகட்டு", "close": "மூடு", "ok": "சரி", "yes": "ஆம்", "no": "இல்லை", "submit": "சமர்ப்பிக்கவும்",
+    "update": "புதுப்பிக்கவும்", "refresh": "புதுப்பி", "viewAll": "அனைத்தும் பார்", "seeMore": "மேலும் பார்",
+    "noData": "தரவு எதுவும் இல்லை",
+    "priceDisclaimer": "இவை தோராயமான உள்ளூர் சந்தை விலைகள், மாறலாம்",
+    "doctorDisclaimer": "இந்த உணவுத் திட்டத்தை பின்பற்றுவதற்கு முன் மருத்துவரை அணுகவும்"
+  },
+  "nav": { "home": "முகப்பு", "sabziGuide": "காய்கறி வழிகாட்டி", "grocery": "மளிகை", "trends": "போக்குகள்", "profile": "சுயவிவரம்" },
+  "language": {
+    "selectLanguage": "உங்கள் மொழியை தேர்ந்தெடுக்கவும்", "changeLanguage": "மொழியை மாற்று",
+    "languageChanged": "மொழி வெற்றிகரமாக மாற்றப்பட்டது",
+    "rtlRestartNote": "புதிய தளவமைப்பை பயன்படுத்த பயன்பாடு ஒருமுறை மறுதொடக்கம் செய்யும்"
+  },
+  "auth": {
+    "login": "உள்நுழை", "logout": "வெளியேறு", "phoneLogin": "தொலைபேசியில் உள்நுழை", "googleLogin": "Google மூலம் உள்நுழை",
+    "enterPhone": "உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்", "enterOTP": "OTP உள்ளிடவும்", "sendOTP": "OTP அனுப்பு",
+    "verifyOTP": "OTP சரிபார்க்கவும்", "resendOTP": "OTP மீண்டும் அனுப்பு", "otpSent": "உங்கள் எண்ணுக்கு OTP அனுப்பப்பட்டது",
+    "loginSuccess": "உள்நுழைவு வெற்றிகரமானது", "loginFailed": "உள்நுழைவு தோல்வியடைந்தது, மீண்டும் முயற்சிக்கவும்"
+  },
+  "onboarding": {
+    "welcome": "இதை செய்-க்கு வரவேற்கிறோம்", "subtitle": "உங்கள் AI சமையல் துணை",
+    "step1Title": "உங்கள் குடும்பத்தைப் பற்றி சொல்லுங்கள்", "step2Title": "உங்கள் பகுதி மற்றும் சமையல் பாணி",
+    "yourName": "உங்கள் பெயர்", "yourCity": "உங்கள் நகரம்", "yourState": "உங்கள் மாநிலம்",
+    "cuisineStyle": "சமையல் பாணி", "addFamilyMember": "குடும்ப உறுப்பினரை சேர்க்கவும்",
+    "memberName": "உறுப்பினர் பெயர்", "memberAge": "வயது", "dietType": "உணவு வகை",
+    "vegetarian": "சைவம்", "nonVegetarian": "அசைவம்", "eggetarian": "முட்டை உணவு",
+    "spiceTolerance": "காரம் தாங்கும் திறன்", "mild": "மிதமான", "medium": "நடுத்தரம்", "spicy": "காரமான",
+    "verySpicy": "மிகவும் காரமான", "extraSpicy": "மிக அதிக காரம்",
+    "healthConditions": "உடல்நல நிலைமைகள்", "noConditions": "நிலைமைகள் இல்லை",
+    "getStarted": "தொடங்கவும்", "completeProfile": "சுயவிவரத்தை நிறைவு செய்யவும்"
+  },
+  "home": {
+    "goodMorning": "காலை வணக்கம்", "goodAfternoon": "மதிய வணக்கம்", "goodEvening": "மாலை வணக்கம்",
+    "todaysMealPlan": "இன்றைய உணவு திட்டம்", "breakfast": "காலை உணவு", "lunch": "மதிய உணவு",
+    "eveningSnack": "மாலை தின்பண்டம்", "dinner": "இரவு உணவு", "generatePlan": "உணவு திட்டம் உருவாக்கு",
+    "regenerate": "மீண்டும் உருவாக்கு", "confirmMade": "நான் சமைத்தேன்", "rateMeal": "உணவை மதிப்பிடு",
+    "leftovers": "மிச்சம் பயன்படுத்தவும்", "festivalMode": "பண்டிகை பயன்முறை", "fastingMode": "விரத பயன்முறை",
+    "weekendSpecial": "வார இறுதி சிறப்பு", "tryNewRecipe": "புதியதை முயற்சிக்கவும்",
+    "weekendSabziList": "வார இறுதி காய்கறி பட்டியல்", "buyThisWeekend": "இந்த வார இறுதியில் வாங்கவும்",
+    "buyBeforeGone": "சீசன் முடிவதற்கு முன் வாங்கவும்", "comingSoon": "விரைவில் வரும்",
+    "generatingPlan": "உணவு திட்டம் உருவாகிறது...", "planGenerated": "உங்கள் உணவு திட்டம் தயாராகி விட்டது!",
+    "cookTime": "சமையல் நேரம்", "serves": "எத்தனை பேருக்கு", "costEstimate": "தோராய செலவு",
+    "inSeason": "சீசனில் உள்ளது", "endingSoon": "சீசன் முடிகிறது"
+  },
+  "sabziGuide": {
+    "title": "காய்கறி வழிகாட்டி", "seasonalVegetables": "பருவகால காய்கறிகள்",
+    "inSeason": "சீசனில்", "endingSoon": "விரைவில் முடியும்", "comingSoon": "விரைவில் வரும்",
+    "seasonalCalendar": "பருவகால நாட்காட்டி", "pricePerKg": "கிலோவுக்கு", "storageTip": "சேமிப்பு குறிப்பு",
+    "healthNote": "உடல்நல குறிப்பு", "dishSuggestions": "உணவு பரிந்துரைகள்", "weeklyTips": "வாராந்திர பருவகால குறிப்புகள்",
+    "loadingVegetables": "பருவகால காய்கறிகள் ஏற்றுகிறது...",
+    "jan": "ஜன", "feb": "பிப்", "mar": "மார்", "apr": "ஏப்", "may": "மே", "jun": "ஜூன்",
+    "jul": "ஜூலை", "aug": "ஆக", "sep": "செப்", "oct": "அக்", "nov": "நவ", "dec": "டிச"
+  },
+  "grocery": {
+    "title": "மளிகை பட்டியல்", "vegetables": "காய்கறிகள்", "dalAndGrains": "பயறு மற்றும் தானியங்கள்",
+    "spices": "மசாலாக்கள்", "dairy": "பால் பொருட்கள்", "miscellaneous": "இதர",
+    "addItem": "பொருள் சேர்க்கவும்", "clearAll": "அனைத்தும் அழிக்கவும்", "shareOnWhatsApp": "WhatsApp-ல் பகிரவும்",
+    "itemAdded": "பொருள் சேர்க்கப்பட்டது", "itemRemoved": "பொருள் அகற்றப்பட்டது", "listCleared": "பட்டியல் அழிக்கப்பட்டது",
+    "emptyList": "மளிகை பட்டியல் காலியாக உள்ளது", "generateFromPlan": "உணவு திட்டத்திலிருந்து உருவாக்கு",
+    "whatsappMessage": "இந்த வாரம் வாங்க வேண்டிய காய்கறிகள்"
+  },
+  "trends": {
+    "title": "உணவு போக்குகள்", "trendingNow": "இப்போது ட்ரெண்டிங்", "localTrends": "உங்கள் பகுதியில் ட்ரெண்டிங்",
+    "nationalTrends": "தேசிய போக்கு", "seasonal": "பருவகால தேர்வுகள்", "loadingTrends": "போக்குகள் ஏற்றுகிறது..."
+  },
+  "profile": {
+    "title": "சுயவிவரம்", "settings": "அமைப்புகள்", "familyMembers": "குடும்ப உறுப்பினர்கள்",
+    "editProfile": "சுயவிவரத்தை திருத்து", "notifications": "அறிவிப்புகள்", "language": "மொழி",
+    "subscription": "சந்தா", "freePlan": "இலவச திட்டம்", "premiumPlan": "பிரீமியம் – ₹49/மாதம்",
+    "upgradeToPremium": "பிரீமியம் எடுக்கவும்", "recipeHistory": "செய்முறை வரலாறு",
+    "about": "எங்களைப் பற்றி", "helpSupport": "உதவி", "logout": "வெளியேறு", "deleteAccount": "கணக்கை நீக்கு"
+  },
+  "health": {
+    "diabetes": "நீரிழிவு நோய்", "hypertension": "உயர் இரத்த அழுத்தம்", "hypothyroidism": "ஹைப்போதைராய்டிசம்",
+    "pcos": "PCOS", "heartDisease": "இதய நோய்", "anaemia": "இரத்த சோகை",
+    "pregnancy": "கர்ப்பம்", "kidneyDisease": "சிறுநீரக நோய்",
+    "healthAdjusted": "உடல்நல நிலைமைகளுக்கு ஏற்ப உணவு திட்டம் மாற்றப்பட்டது",
+    "pcosDisclaimer": "இந்த திட்டத்தை பின்பற்றுவதற்கு முன் மருத்துவரை அணுகவும்",
+    "pregnancyDisclaimer": "இந்த திட்டத்தை பின்பற்றுவதற்கு முன் மருத்துவரை அணுகவும்"
+  },
+  "notifications": {
+    "morningPlan": "இன்றைய உணவு திட்டம் தயாராகி விட்டது!",
+    "morningReminder": "உங்கள் உணவு திட்டத்தை பார்க்க மறக்காதீர்கள்",
+    "eveningGrocery": "மளிகை பட்டியலை பார்க்க நேரம் ஆயிற்று",
+    "fridaySabzi": "உங்கள் வார இறுதி காய்கறி பட்டியல் தயாராகி விட்டது!",
+    "saturdayMarket": "மகிழ்ச்சியான கடை! சந்தை பட்டியல் தயாராகி விட்டது",
+    "sundaySpecial": "வார இறுதி சிறப்பு உணவு திட்டம் தயாராகி விட்டது",
+    "mondayRecipes": "இந்த வாரம் முயற்சிக்க 5 புதிய செய்முறைகள்",
+    "festivalEve": "பண்டிகை உணவு திட்டம் தயாராகி விட்டது"
+  },
+  "recipe": {
+    "ingredients": "பொருட்கள்", "instructions": "செய்முறை", "prepTime": "தயாரிப்பு நேரம்",
+    "cookTime": "சமையல் நேரம்", "servings": "எத்தனை பேருக்கு", "cuisine": "சமையல் பாணி", "mealType": "உணவு வகை",
+    "difficulty": "சிரமம்", "easy": "எளிது", "medium": "நடுத்தரம்", "hard": "கடினம்",
+    "costPerServing": "ஒரு பரிமாறுக்கு செலவு", "history": "செய்முறை வரலாறு", "last15Days": "கடந்த 15 நாட்கள்",
+    "madeOn": "சமைக்கப்பட்டது", "rating": "மதிப்பீடு", "noHistory": "இன்னும் செய்முறை வரலாறு இல்லை"
+  },
+  "festival": {
+    "title": "பண்டிகைகள் மற்றும் விரதம்", "upcomingFestivals": "வரவிருக்கும் பண்டிகைகள்",
+    "fastingPlan": "விரத உணவு திட்டம்", "festivalPlan": "பண்டிகை சிறப்பு திட்டம்",
+    "today": "இன்று", "tomorrow": "நாளை"
+  },
+  "leftover": {
+    "title": "மிச்சத்தை பயன்படுத்தவும்", "whatHaveYou": "ஃப்ரிட்ஜில் என்ன இருக்கிறது?",
+    "addIngredient": "பொருள் சேர்க்கவும்", "getSuggestions": "பரிந்துரைகள் பெறவும்",
+    "suggestions": "செய்முறை பரிந்துரைகள்", "loadingSuggestions": "உங்கள் பொருட்களுக்கான செய்முறைகள் தேடுகிறோம்..."
+  }
+}

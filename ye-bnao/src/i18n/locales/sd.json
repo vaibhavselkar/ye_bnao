@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "هي ٺاهيو", "loading": "لوڊ ٿي رهيو آهي...", "error": "ڪجهه غلط ٿيو", "retry": "ٻيهر ڪوشش ڪريو",
+    "save": "محفوظ ڪريو", "cancel": "رد ڪريو", "done": "مڪمل", "next": "اڳيون", "back": "پوئتي", "share": "شيئر ڪريو",
+    "edit": "تبديل ڪريو", "delete": "حذف ڪريو", "add": "شامل ڪريو", "remove": "هٽايو", "search": "ڳوليو",
+    "filter": "فلٽر", "close": "بند ڪريو", "ok": "ٺيڪ آهي", "yes": "هائو", "no": "نه", "submit": "جمع ڪريو",
+    "update": "اپڊيٽ ڪريو", "refresh": "تازو ڪريو", "viewAll": "سڀ ڏسو", "seeMore": "وڌيڪ ڏسو",
+    "noData": "ڪو ڊيٽا موجود ناهي",
+    "priceDisclaimer": "هي مقامي بازار جا تخميني اگهه آهن، بدلجي سگهن ٿا",
+    "doctorDisclaimer": "هي کاڌي جو منصوبو اپنائڻ کان پهريون ڊاڪٽر سان صلاح ڪريو"
+  },
+  "nav": { "home": "هوم", "sabziGuide": "ساڳ گائيڊ", "grocery": "ڪراڻو", "trends": "ٽرينڊ", "profile": "پروفائل" },
+  "language": {
+    "selectLanguage": "پنهنجي ٻولي چونڊيو", "changeLanguage": "ٻولي بدليو",
+    "languageChanged": "ٻولي ڪاميابيءَ سان بدلي وئي",
+    "rtlRestartNote": "نئون لي آئوٽ لاڳو ڪرڻ لاءِ ائپ هڪ دفعو ٻيهر شروع ٿيندو"
+  },
+  "auth": {
+    "login": "لاگ ان", "logout": "لاگ آئوٽ", "phoneLogin": "فون سان لاگ ان", "googleLogin": "Google سان لاگ ان",
+    "enterPhone": "پنهنجو فون نمبر داخل ڪريو", "enterOTP": "OTP داخل ڪريو", "sendOTP": "OTP موڪليو",
+    "verifyOTP": "OTP تصديق ڪريو", "resendOTP": "OTP ٻيهر موڪليو", "otpSent": "توهان جي نمبر تي OTP موڪليو ويو",
+    "loginSuccess": "لاگ ان ڪامياب", "loginFailed": "لاگ ان ناڪام، ٻيهر ڪوشش ڪريو"
+  },
+  "onboarding": {
+    "welcome": "هي ٺاهيو ۾ ڀليڪار", "subtitle": "توهان جو AI رڌڻ وارو ساٿي",
+    "step1Title": "پنهنجي ڪٽنب بابت ٻڌايو", "step2Title": "توهان جو علائقو ۽ رڌڻ جو انداز",
+    "yourName": "توهان جو نالو", "yourCity": "توهان جو شهر", "yourState": "توهان جو صوبو",
+    "cuisineStyle": "رڌڻ جو انداز", "addFamilyMember": "ڪٽنب جو ميمبر شامل ڪريو",
+    "memberName": "ميمبر جو نالو", "memberAge": "عمر", "dietType": "کاڌي جو قسم",
+    "vegetarian": "ساڳاهاري", "nonVegetarian": "گوشت خور", "eggetarian": "آنڊو خور",
+    "spiceTolerance": "مصالحو برداشت ڪرڻ جي صلاحيت", "mild": "هلڪو", "medium": "وچولو", "spicy": "مصالحيدار",
+    "verySpicy": "تمام مصالحيدار", "extraSpicy": "انتهائي مصالحيدار",
+    "healthConditions": "صحت جي حالتون", "noConditions": "ڪا حالت ناهي",
+    "getStarted": "شروع ڪريو", "completeProfile": "پروفائل مڪمل ڪريو"
+  },
+  "home": {
+    "goodMorning": "صبح جو ڀلي ڪار", "goodAfternoon": "منجهند جو ڀلي ڪار", "goodEvening": "شام جو ڀلي ڪار",
+    "todaysMealPlan": "اڄ جو کاڌي جو منصوبو", "breakfast": "ناشتو", "lunch": "منجهند جو کاڌو",
+    "eveningSnack": "شام جو ناشتو", "dinner": "رات جو کاڌو", "generatePlan": "کاڌي جو منصوبو ٺاهيو",
+    "regenerate": "ٻيهر ٺاهيو", "confirmMade": "مون ٺاهيو", "rateMeal": "کاڌي کي ريٽ ڪريو",
+    "leftovers": "بچيل کاڌو استعمال ڪريو", "festivalMode": "تهوار موڊ", "fastingMode": "روزو موڊ",
+    "weekendSpecial": "ويڪ اينڊ اسپيشل", "tryNewRecipe": "ڪجهه نئون آزمايو",
+    "weekendSabziList": "ويڪ اينڊ ساڳ لسٽ", "buyThisWeekend": "هن ويڪ اينڊ خريد ڪريو",
+    "buyBeforeGone": "سيزن ختم ٿيڻ کان پهريون خريد ڪريو", "comingSoon": "جلد ايندو",
+    "generatingPlan": "کاڌي جو منصوبو ٺهي رهيو آهي...", "planGenerated": "توهان جو کاڌي جو منصوبو تيار آهي!",
+    "cookTime": "رڌڻ جو وقت", "serves": "ڪيترن ماڻهن لاءِ", "costEstimate": "تخميني خرچ",
+    "inSeason": "سيزن ۾ آهي", "endingSoon": "سيزن ختم ٿي رهيو آهي"
+  },
+  "sabziGuide": {
+    "title": "ساڳ گائيڊ", "seasonalVegetables": "موسمي ساڳ",
+    "inSeason": "سيزن ۾", "endingSoon": "جلد ختم", "comingSoon": "جلد ايندو",
+    "seasonalCalendar": "موسمي ڪئلينڊر", "pricePerKg": "في ڪلو", "storageTip": "رکڻ جي صلاح",
+    "healthNote": "صحت نوٽ", "dishSuggestions": "کاڌي جون صلاحون", "weeklyTips": "هفتيوار موسمي صلاحون",
+    "loadingVegetables": "موسمي ساڳ لوڊ ٿي رهيو آهي...",
+    "jan": "جن", "feb": "فر", "mar": "مارچ", "apr": "اپر", "may": "مئي", "jun": "جون",
+    "jul": "جول", "aug": "اگ", "sep": "ستم", "oct": "اڪت", "nov": "نو", "dec": "ڊسم"
+  },
+  "grocery": {
+    "title": "ڪراڻي جي لسٽ", "vegetables": "ساڳ", "dalAndGrains": "دال ۽ اناج",
+    "spices": "مصالحا", "dairy": "ڏڌ جون شيون", "miscellaneous": "ٻيو",
+    "addItem": "شيءِ شامل ڪريو", "clearAll": "سڀ صاف ڪريو", "shareOnWhatsApp": "WhatsApp تي شيئر ڪريو",
+    "itemAdded": "شيءِ شامل ٿي", "itemRemoved": "شيءِ هٽائي وئي", "listCleared": "لسٽ صاف ٿي",
+    "emptyList": "ڪراڻي جي لسٽ خالي آهي", "generateFromPlan": "کاڌي جي منصوبي مان ٺاهيو",
+    "whatsappMessage": "هن هفتي جي ڪراڻي جي لسٽ"
+  },
+  "trends": {
+    "title": "کاڌي جا ٽرينڊ", "trendingNow": "هاڻي ٽرينڊنگ", "localTrends": "توهان جي علائقي ۾ ٽرينڊنگ",
+    "nationalTrends": "قومي ٽرينڊ", "seasonal": "موسمي پسند", "loadingTrends": "ٽرينڊ لوڊ ٿي رهيا آهن..."
+  },
+  "profile": {
+    "title": "پروفائل", "settings": "سيٽنگ", "familyMembers": "ڪٽنب جا ميمبر",
+    "editProfile": "پروفائل تبديل ڪريو", "notifications": "اطلاع", "language": "ٻولي",
+    "subscription": "رڪنيت", "freePlan": "مفت منصوبو", "premiumPlan": "پريميم – ₹49/مهينو",
+    "upgradeToPremium": "پريميم وٺو", "recipeHistory": "ريسپي تاريخ",
+    "about": "اسان بابت", "helpSupport": "مدد", "logout": "لاگ آئوٽ", "deleteAccount": "اڪائونٽ حذف ڪريو"
+  },
+  "health": {
+    "diabetes": "ذيابيطس", "hypertension": "هاءِ بلڊ پريشر", "hypothyroidism": "هائپوٿائروڊزم",
+    "pcos": "PCOS", "heartDisease": "دل جي بيماري", "anaemia": "خون جي گهٽتائي",
+    "pregnancy": "حمل", "kidneyDisease": "گردي جي بيماري",
+    "healthAdjusted": "صحت جي حالت مطابق کاڌي جو منصوبو بدليو ويو",
+    "pcosDisclaimer": "هي منصوبو اپنائڻ کان پهريون ڊاڪٽر سان صلاح ڪريو",
+    "pregnancyDisclaimer": "هي منصوبو اپنائڻ کان پهريون ڊاڪٽر سان صلاح ڪريو"
+  },
+  "notifications": {
+    "morningPlan": "اڄ جو کاڌي جو منصوبو تيار آهي!",
+    "morningReminder": "پنهنجو کاڌي جو منصوبو ڏسڻ نه وساريو",
+    "eveningGrocery": "ڪراڻي جي لسٽ ڏسڻ جو وقت",
+    "fridaySabzi": "توهان جي ويڪ اينڊ ساڳ لسٽ تيار آهي!",
+    "saturdayMarket": "خوش خريداري! بازار جي لسٽ تيار آهي",
+    "sundaySpecial": "ويڪ اينڊ اسپيشل کاڌي جو منصوبو تيار آهي",
+    "mondayRecipes": "هن هفتي آزمائڻ لاءِ ۵ نئون ريسپيون",
+    "festivalEve": "تهوار جو کاڌي جو منصوبو تيار آهي"
+  },
+  "recipe": {
+    "ingredients": "سامان", "instructions": "ٺاهڻ جو طريقو", "prepTime": "تياري جو وقت",
+    "cookTime": "رڌڻ جو وقت", "servings": "ڪيترن ماڻهن لاءِ", "cuisine": "رڌڻ جو انداز", "mealType": "کاڌي جو قسم",
+    "difficulty": "مشڪل", "easy": "آسان", "medium": "وچولو", "hard": "مشڪل",
+    "costPerServing": "في سرونگ خرچ", "history": "ريسپي تاريخ", "last15Days": "آخري ۱۵ ڏينهن",
+    "madeOn": "ٺاهيو ويو", "rating": "ريٽنگ", "noHistory": "اڃا تائين ڪا ريسپي تاريخ ناهي"
+  },
+  "festival": {
+    "title": "تهوار ۽ روزا", "upcomingFestivals": "ايندڙ تهوار",
+    "fastingPlan": "روزي جو کاڌو", "festivalPlan": "تهوار اسپيشل منصوبو",
+    "today": "اڄ", "tomorrow": "سڀاڻي"
+  },
+  "leftover": {
+    "title": "بچيل کاڌو استعمال ڪريو", "whatHaveYou": "فريج ۾ ڇا آهي؟",
+    "addIngredient": "سامان شامل ڪريو", "getSuggestions": "صلاحون وٺو",
+    "suggestions": "ريسپي صلاحون", "loadingSuggestions": "توهان جي سامان لاءِ ريسپيون ڳولي رهيا آهيون..."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "एह बणाओ", "loading": "लोड होई राए...", "error": "कुछ गलत होई गेआ", "retry": "फिर कोशश करो",
+    "save": "सुरक्षत करो", "cancel": "रद्द करो", "done": "होई गेआ", "next": "अगला", "back": "पिच्छें", "share": "सांझा करो",
+    "edit": "बदलो", "delete": "हटाओ", "add": "जोड़ो", "remove": "हटाओ", "search": "लब्भो",
+    "filter": "फिल्टर", "close": "बंद करो", "ok": "ठीक ऐ", "yes": "हाँ", "no": "नेईं", "submit": "जमा करो",
+    "update": "अपडेट करो", "refresh": "ताज़ा करो", "viewAll": "सारा दिखो", "seeMore": "होर दिखो",
+    "noData": "कोई डेटा उपलब्ध नेईं",
+    "priceDisclaimer": "एह स्थानीय बज़ार दे अनुमानी भाव न, बदली सकदे न",
+    "doctorDisclaimer": "एह खाने दी योजना अपनाने थमां पैह्लें डाक्टर दी सलाह लओ"
+  },
+  "nav": { "home": "होम", "sabziGuide": "सब्ज़ी गाइड", "grocery": "किराना", "trends": "ट्रेंड", "profile": "प्रोफाइल" },
+  "language": {
+    "selectLanguage": "आपनी भाशा चुनो", "changeLanguage": "भाशा बदलो",
+    "languageChanged": "भाशा कामयाबी कन्नै बदली गेई",
+    "rtlRestartNote": "नवां लेआउट लागू करने आस्तें ऐप इक बार फिर शुरू होग"
+  },
+  "auth": {
+    "login": "लॉगिन", "logout": "लॉगआउट", "phoneLogin": "फोन कन्नै लॉगिन", "googleLogin": "Google कन्नै लॉगिन",
+    "enterPhone": "आपना फोन नंबर दाखल करो", "enterOTP": "OTP दाखल करो", "sendOTP": "OTP भेजो",
+    "verifyOTP": "OTP सत्यापत करो", "resendOTP": "OTP फिर भेजो", "otpSent": "तुआडे नंबर पर OTP भेजेआ",
+    "loginSuccess": "लॉगिन कामयाब", "loginFailed": "लॉगिन असफल, फिर कोशश करो"
+  },
+  "onboarding": {
+    "welcome": "एह बणाओ च आपदा स्वागत ऐ", "subtitle": "तुआडा AI रसोई सहाइक",
+    "step1Title": "आपने परिवार बारे दस्सो", "step2Title": "तुआडा इलाका ते पकाने दी शैली",
+    "yourName": "तुआडा नाँ", "yourCity": "तुआडा शह्र", "yourState": "तुआडा राज्य",
+    "cuisineStyle": "पकाने दी शैली", "addFamilyMember": "परिवार दा मेंबर जोड़ो",
+    "memberName": "मेंबर दा नाँ", "memberAge": "उम्र", "dietType": "खाने दी किस्म",
+    "vegetarian": "शाकाहारी", "nonVegetarian": "मांसाहारी", "eggetarian": "अंडाहारी",
+    "spiceTolerance": "तिक्खा सह्न करने दी शक्त", "mild": "हल्का", "medium": "मध्यम", "spicy": "तिक्खा",
+    "verySpicy": "बड्डा तिक्खा", "extraSpicy": "अत्यंत तिक्खा",
+    "healthConditions": "सेह्त दी हालत", "noConditions": "कोई हालत नेईं",
+    "getStarted": "शुरू करो", "completeProfile": "प्रोफाइल पूरा करो"
+  },
+  "home": {
+    "goodMorning": "सुप्रभात", "goodAfternoon": "नमस्कार", "goodEvening": "शुभ शाम",
+    "todaysMealPlan": "अज्ज दी खाने दी योजना", "breakfast": "नाश्ता", "lunch": "दुपैहर दा खाना",
+    "eveningSnack": "शाम दा नाश्ता", "dinner": "रात दा खाना", "generatePlan": "खाने दी योजना बणाओ",
+    "regenerate": "फिर बणाओ", "confirmMade": "मैं बणाया", "rateMeal": "खाना रेट करो",
+    "leftovers": "बचेआ खाना वरतो", "festivalMode": "त्यौहार मोड", "fastingMode": "व्रत मोड",
+    "weekendSpecial": "वीकएंड स्पेशल", "tryNewRecipe": "कुछ नवां आज़माओ",
+    "weekendSabziList": "वीकएंड सब्ज़ी लिस्ट", "buyThisWeekend": "एस वीकएंड खरीदो",
+    "buyBeforeGone": "सीज़न खतम होने थमां पैह्लें खरीदो", "comingSoon": "जल्द आई राए",
+    "generatingPlan": "खाने दी योजना बणी राई ऐ...", "planGenerated": "तुआडी खाने दी योजना तैयार ऐ!",
+    "cookTime": "पकाने दा वक्त", "serves": "कनें लोकें आस्तें", "costEstimate": "अनुमानी खर्च",
+    "inSeason": "सीज़न च ऐ", "endingSoon": "सीज़न खतम होई राए"
+  },
+  "sabziGuide": {
+    "title": "सब्ज़ी गाइड", "seasonalVegetables": "मौसमी सब्ज़ियाँ",
+    "inSeason": "सीज़न च", "endingSoon": "जल्द खतम", "comingSoon": "जल्द आई राए",
+    "seasonalCalendar": "मौसमी कैलेंडर", "pricePerKg": "प्रति किलो", "storageTip": "रखने दी सलाह",
+    "healthNote": "सेह्त नोट", "dishSuggestions": "खाने दे सुझाव", "weeklyTips": "हफ्तावारी मौसमी सुझाव",
+    "loadingVegetables": "मौसमी सब्ज़ियाँ लोड होई राईयाँ...",
+    "jan": "जन", "feb": "फर", "mar": "मार्च", "apr": "अप्रि", "may": "मई", "jun": "जून",
+    "jul": "जुल", "aug": "अग", "sep": "सित", "oct": "अक्ट", "nov": "नव", "dec": "दिस"
+  },
+  "grocery": {
+    "title": "किराना लिस्ट", "vegetables": "सब्ज़ियाँ", "dalAndGrains": "दाल ते अनाज",
+    "spices": "मसाले", "dairy": "दूध दे उत्पाद", "miscellaneous": "होर",
+    "addItem": "चीज़ जोड़ो", "clearAll": "सारा साफ करो", "shareOnWhatsApp": "WhatsApp ते सांझा करो",
+    "itemAdded": "चीज़ जोड़ी गेई", "itemRemoved": "चीज़ हटाई गेई", "listCleared": "लिस्ट साफ होई",
+    "emptyList": "किराना लिस्ट खाली ऐ", "generateFromPlan": "खाने दी योजना थमां बणाओ",
+    "whatsappMessage": "एस हफ्ते दी किराना लिस्ट"
+  },
+  "trends": {
+    "title": "खाने दे ट्रेंड", "trendingNow": "हुण ट्रेंडिंग", "localTrends": "तुआडे इलाके च ट्रेंडिंग",
+    "nationalTrends": "राष्ट्रीय ट्रेंड", "seasonal": "मौसमी पसंद", "loadingTrends": "ट्रेंड लोड होई राए..."
+  },
+  "profile": {
+    "title": "प्रोफाइल", "settings": "सेटिंग", "familyMembers": "परिवार दे मेंबर",
+    "editProfile": "प्रोफाइल बदलो", "notifications": "सूचना", "language": "भाशा",
+    "subscription": "सदस्यता", "freePlan": "मुफ्त योजना", "premiumPlan": "प्रीमियम – ₹49/म्हीना",
+    "upgradeToPremium": "प्रीमियम लओ", "recipeHistory": "रेसिपी इतिहास",
+    "about": "साडे बारे", "helpSupport": "मदद", "logout": "लॉगआउट", "deleteAccount": "खाता हटाओ"
+  },
+  "health": {
+    "diabetes": "मधुमेह", "hypertension": "उच्च रक्तचाप", "hypothyroidism": "हाइपोथाइरॉइडिज़्म",
+    "pcos": "PCOS", "heartDisease": "दिल दी बमारी", "anaemia": "खून दी कमी",
+    "pregnancy": "गर्भावस्था", "kidneyDisease": "गुर्दे दी बमारी",
+    "healthAdjusted": "सेह्त दी हालत मताबक खाने दी योजना बदली गेई",
+    "pcosDisclaimer": "एह योजना अपनाने थमां पैह्लें डाक्टर दी सलाह लओ",
+    "pregnancyDisclaimer": "एह योजना अपनाने थमां पैह्लें डाक्टर दी सलाह लओ"
+  },
+  "notifications": {
+    "morningPlan": "अज्ज दी खाने दी योजना तैयार ऐ!",
+    "morningReminder": "आपनी खाने दी योजना देखना नेईं भुल्लो",
+    "eveningGrocery": "किराना लिस्ट देखने दा वक्त",
+    "fridaySabzi": "तुआडी वीकएंड सब्ज़ी लिस्ट तैयार ऐ!",
+    "saturdayMarket": "शुभ खरीदारी! बाज़ार लिस्ट तैयार ऐ",
+    "sundaySpecial": "वीकएंड स्पेशल खाने दी योजना तैयार ऐ",
+    "mondayRecipes": "एस हफ्ते आज़माने आस्तें ५ नवीयाँ रेसिपियाँ",
+    "festivalEve": "त्यौहार दी खाने दी योजना तैयार ऐ"
+  },
+  "recipe": {
+    "ingredients": "सामग्री", "instructions": "बणाने दा तरीका", "prepTime": "तैयारी दा वक्त",
+    "cookTime": "पकाने दा वक्त", "servings": "कनें लोकें आस्तें", "cuisine": "पकाने दी शैली", "mealType": "खाने दी किस्म",
+    "difficulty": "मुश्कल", "easy": "सौखा", "medium": "मध्यम", "hard": "मुश्कल",
+    "costPerServing": "प्रति सर्विंग खर्च", "history": "रेसिपी इतिहास", "last15Days": "पिछले १५ दिन",
+    "madeOn": "बणाया गेआ", "rating": "रेटिंग", "noHistory": "अज्ज तगर कोई रेसिपी इतिहास नेईं"
+  },
+  "festival": {
+    "title": "त्यौहार ते व्रत", "upcomingFestivals": "आने आले त्यौहार",
+    "fastingPlan": "व्रत दा खाना", "festivalPlan": "त्यौहार स्पेशल योजना",
+    "today": "अज्ज", "tomorrow": "कल"
+  },
+  "leftover": {
+    "title": "बचेआ खाना वरतो", "whatHaveYou": "फ्रिज च की ऐ?",
+    "addIngredient": "सामग्री जोड़ो", "getSuggestions": "सुझाव लओ",
+    "suggestions": "रेसिपी सुझाव", "loadingSuggestions": "तुआडी सामग्री आस्तें रेसिपी लब्भ राए आँ..."
+  }
+}

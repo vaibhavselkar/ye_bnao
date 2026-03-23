@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "આ બનાવો", "loading": "લોડ થઈ રહ્યું છે...", "error": "કંઈક ખોટું થયું", "retry": "ફરી પ્રયાસ કરો",
+    "save": "સાચવો", "cancel": "રદ કરો", "done": "થઈ ગયું", "next": "આગળ", "back": "પાછળ", "share": "શેર કરો",
+    "edit": "ફેરફાર કરો", "delete": "કાઢો", "add": "ઉમેરો", "remove": "દૂર કરો", "search": "શોધો",
+    "filter": "ફિલ્ટર", "close": "બંધ કરો", "ok": "ઠીક છે", "yes": "હા", "no": "ના", "submit": "સબમિટ કરો",
+    "update": "અપડેટ કરો", "refresh": "તાજું કરો", "viewAll": "બધું જુઓ", "seeMore": "વધુ જુઓ",
+    "noData": "કોઈ ડેટા ઉપલબ્ધ નથી",
+    "priceDisclaimer": "આ અંદાજિત સ્થાનિક બજાર ભાવ છે, બદલાઈ શકે છે",
+    "doctorDisclaimer": "આ આહાર યોજના અનુસરતા પહેલા ડૉક્ટરની સલાહ લો"
+  },
+  "nav": { "home": "હોમ", "sabziGuide": "શાક માર્ગદર્શક", "grocery": "કરિયાણું", "trends": "ટ્રેન્ડ્સ", "profile": "પ્રોફાઇલ" },
+  "language": {
+    "selectLanguage": "તમારી ભાષા પસંદ કરો", "changeLanguage": "ભાષા બદલો",
+    "languageChanged": "ભાષા સફળતાપૂર્વક બદલાઈ",
+    "rtlRestartNote": "નવું લેઆઉટ લાગુ કરવા માટે એપ એક વખત ફરી શરૂ થશે"
+  },
+  "auth": {
+    "login": "લૉગઇન", "logout": "લૉગઆઉટ", "phoneLogin": "ફોનથી લૉગઇન", "googleLogin": "Google થી લૉગઇન",
+    "enterPhone": "તમારો ફોન નંબર દાખલ કરો", "enterOTP": "OTP દાખલ કરો", "sendOTP": "OTP મોકલો",
+    "verifyOTP": "OTP ચકાસો", "resendOTP": "OTP ફરી મોકલો", "otpSent": "તમારા નંબર પર OTP મોકલ્યો",
+    "loginSuccess": "લૉગઇન સફળ", "loginFailed": "લૉગઇન નિષ્ફળ, ફરી પ્રયાસ કરો"
+  },
+  "onboarding": {
+    "welcome": "આ બનાવોમાં આપનું સ્વાગત છે", "subtitle": "તમારો AI રસોઈ સહાયક",
+    "step1Title": "તમારા પરિવાર વિશે જણાવો", "step2Title": "તમારો પ્રદેશ અને રસોઈ શૈલી",
+    "yourName": "તમારું નામ", "yourCity": "તમારું શહેર", "yourState": "તમારું રાજ્ય",
+    "cuisineStyle": "રસોઈ શૈલી", "addFamilyMember": "પરિવારના સભ્ય ઉમેરો",
+    "memberName": "સભ્યનું નામ", "memberAge": "ઉંમર", "dietType": "આહારનો પ્રકાર",
+    "vegetarian": "શાકાહારી", "nonVegetarian": "માંસાહારી", "eggetarian": "ઈંડાહારી",
+    "spiceTolerance": "તીખું સહન કરવાની ક્ષમતા", "mild": "હળવું", "medium": "મધ્યમ", "spicy": "તીખું",
+    "verySpicy": "ઘણું તીખું", "extraSpicy": "અત્યંત તીખું",
+    "healthConditions": "સ્વાસ્થ્ય સ્થિતિઓ", "noConditions": "કોઈ સ્થિતિ નથી",
+    "getStarted": "શરૂ કરો", "completeProfile": "પ્રોફાઇલ પૂર્ણ કરો"
+  },
+  "home": {
+    "goodMorning": "સુપ્રભાત", "goodAfternoon": "નમસ્કાર", "goodEvening": "શુભ સાંજ",
+    "todaysMealPlan": "આજનો ભોજન આયોજન", "breakfast": "નાસ્તો", "lunch": "બપોરનું જમવાનું",
+    "eveningSnack": "સાંજનો નાસ્તો", "dinner": "રાતનું જમવાનું", "generatePlan": "ભોજન આયોજન બનાવો",
+    "regenerate": "ફરી બનાવો", "confirmMade": "મેં બનાવ્યું", "rateMeal": "ભોજનને રેટ કરો",
+    "leftovers": "બચેલું ખાવાનું વાપરો", "festivalMode": "તહેવાર મોડ", "fastingMode": "ઉપવાસ મોડ",
+    "weekendSpecial": "વીકએન્ડ સ્પેશ્યલ", "tryNewRecipe": "નવું અજમાવો",
+    "weekendSabziList": "વીકએન્ડ શાક યાદી", "buyThisWeekend": "આ વીકએન્ડ ખરીદો",
+    "buyBeforeGone": "સીઝન પૂરી થાય તે પહેલા ખરીદો", "comingSoon": "ટૂંક સમયમાં આવે છે",
+    "generatingPlan": "ભોજન આયોજન બની રહ્યું છે...", "planGenerated": "તમારો ભોજન આયોજન તૈયાર છે!",
+    "cookTime": "રસોઈ સમય", "serves": "કેટલા લોકો માટે", "costEstimate": "અંદાજિત ખર્ચ",
+    "inSeason": "સીઝનમાં છે", "endingSoon": "સીઝન પૂરી થઈ રહી છે"
+  },
+  "sabziGuide": {
+    "title": "શાક માર્ગદર્શક", "seasonalVegetables": "સૌ\u200cર્તુ શાકભાજી",
+    "inSeason": "સીઝનમાં", "endingSoon": "ટૂંક સમયમાં પૂરું", "comingSoon": "ટૂંક સમયમાં આવે છે",
+    "seasonalCalendar": "ઋતુ કૅલેન્ડર", "pricePerKg": "પ્રતિ કિલો", "storageTip": "સંગ્રહ ટિપ",
+    "healthNote": "આરોગ્ય નોંધ", "dishSuggestions": "વ્યંજન સૂચનો", "weeklyTips": "સાપ્તાહિક ઋતુ ટિપ્સ",
+    "loadingVegetables": "ઋતુ શાકભાજી લોડ થઈ રહ્યાં છે...",
+    "jan": "જાન", "feb": "ફેબ", "mar": "માર્ચ", "apr": "એપ્રિ", "may": "મે", "jun": "જૂન",
+    "jul": "જુલ", "aug": "ઑગ", "sep": "સપ્ટ", "oct": "ઑક્ટ", "nov": "નવ", "dec": "ડિસ"
+  },
+  "grocery": {
+    "title": "કરિયાણા યાદી", "vegetables": "શાકભાજી", "dalAndGrains": "દાળ અને અનાજ",
+    "spices": "મસાલા", "dairy": "ડેરી ઉત્પાદનો", "miscellaneous": "અન્ય",
+    "addItem": "વસ્તુ ઉમેરો", "clearAll": "બધું સાફ કરો", "shareOnWhatsApp": "WhatsApp પર શેર કરો",
+    "itemAdded": "વસ્તુ ઉમેરાઈ", "itemRemoved": "વસ્તુ દૂર થઈ", "listCleared": "યાદી સાફ થઈ",
+    "emptyList": "કરિયાણા યાદી ખાલી છે", "generateFromPlan": "ભોજન આયોજનથી બનાવો",
+    "whatsappMessage": "આ અઠવાડિયાની કરિયાણા યાદી"
+  },
+  "trends": {
+    "title": "ખાણી-પીણીના ટ્રેન્ડ્સ", "trendingNow": "હાલ ટ્રેન્ડ ચાલી રહ્યો છે", "localTrends": "તમારા વિસ્તારમાં ટ્રેન્ડ",
+    "nationalTrends": "રાષ્ટ્રીય ટ્રેન્ડ", "seasonal": "ઋતુ પ્રમાણેની પસંદ", "loadingTrends": "ટ્રેન્ડ્સ લોડ થઈ રહ્યા છે..."
+  },
+  "profile": {
+    "title": "પ્રોફાઇલ", "settings": "સેટિંગ્સ", "familyMembers": "પરિવારના સભ્યો",
+    "editProfile": "પ્રોફાઇલ ફેરફાર કરો", "notifications": "સૂચનાઓ", "language": "ભાષા",
+    "subscription": "સભ્યપદ", "freePlan": "મફત યોજના", "premiumPlan": "પ્રીમિયમ – ₹49/મહિનો",
+    "upgradeToPremium": "પ્રીમિયમ લો", "recipeHistory": "રેસિપી ઇતિહાસ",
+    "about": "અમારા વિશે", "helpSupport": "મદદ", "logout": "લૉગઆઉટ", "deleteAccount": "એકાઉન્ટ કાઢો"
+  },
+  "health": {
+    "diabetes": "ડાયાબિટીસ", "hypertension": "હાઈ બ્લડ પ્રેશર", "hypothyroidism": "હાઇપોથાઇરોઇડિઝમ",
+    "pcos": "PCOS", "heartDisease": "હૃદય રોગ", "anaemia": "એનિમિયા",
+    "pregnancy": "ગર્ભાવસ્થા", "kidneyDisease": "કિડની રોગ",
+    "healthAdjusted": "સ્વાસ્થ્ય સ્થિતિ અનુસાર ભોજન આયોજન બદલ્યો",
+    "pcosDisclaimer": "આ યોજના અનુસરતા પહેલા ડૉક્ટરની સલાહ લો",
+    "pregnancyDisclaimer": "આ યોજના અનુસરતા પહેલા ડૉક્ટરની સલાહ લો"
+  },
+  "notifications": {
+    "morningPlan": "આજનો ભોજન આયોજન તૈયાર છે!",
+    "morningReminder": "તમારો ભોજન આયોજન જોવાનું ભૂલશો નહીં",
+    "eveningGrocery": "કરિયાણા યાદી જોવાનો સમય",
+    "fridaySabzi": "તમારી વીકએન્ડ શાક યાદી તૈયાર છે!",
+    "saturdayMarket": "ખુશ ખરીદારી! બજાર યાદી તૈયાર છે",
+    "sundaySpecial": "વીકએન્ડ સ્પેશ્યલ ભોજન આયોજન તૈયાર છે",
+    "mondayRecipes": "આ અઠવાડિયે અજમાવવા 5 નવી રેસિપી",
+    "festivalEve": "તહેવારનો ભોજન આયોજન તૈયાર છે"
+  },
+  "recipe": {
+    "ingredients": "સામગ્રી", "instructions": "બનાવવાની રીત", "prepTime": "તૈયારીનો સમય",
+    "cookTime": "રસોઈ સમય", "servings": "કેટલા લોકો માટે", "cuisine": "રસોઈ શૈલી", "mealType": "ભોજનનો પ્રકાર",
+    "difficulty": "મુશ્કેલી", "easy": "સહેલું", "medium": "મધ્યમ", "hard": "કઠિન",
+    "costPerServing": "પ્રતિ સર્વિંગ ખર્ચ", "history": "રેસિપી ઇતિહાસ", "last15Days": "છેલ્લા 15 દિવસ",
+    "madeOn": "બનાવ્યું", "rating": "રેટિંગ", "noHistory": "હજુ કોઈ રેસિપી ઇતિહાસ નથી"
+  },
+  "festival": {
+    "title": "તહેવારો અને ઉપવાસ", "upcomingFestivals": "આગામી તહેવારો",
+    "fastingPlan": "ઉપવાસ ભોજન", "festivalPlan": "તહેવાર સ્પેશ્યલ આયોજન",
+    "today": "આજ", "tomorrow": "કાલ"
+  },
+  "leftover": {
+    "title": "બચેલું ખાવાનું વાપરો", "whatHaveYou": "ફ્રિજમાં શું છે?",
+    "addIngredient": "સામગ્રી ઉમેરો", "getSuggestions": "સૂચનો મેળવો",
+    "suggestions": "રેસિપી સૂચનો", "loadingSuggestions": "તમારી સામગ્રી માટે રેસિપી શોધી રહ્યા છે..."
+  }
+}

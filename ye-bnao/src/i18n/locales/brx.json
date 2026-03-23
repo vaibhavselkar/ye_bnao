@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "नि बाना", "loading": "लद होनाय...", "error": "बिसोर जादों", "retry": "दोन्देनि थांखि होयो",
+    "save": "सुरक्सा होयो", "cancel": "रद्द होयो", "done": "जादों", "next": "बियो", "back": "उनाव", "share": "बांसिन होयो",
+    "edit": "सोलाय होयो", "delete": "नायजेन होयो", "add": "राजिखांहो", "remove": "नायजेन होयो", "search": "बुथुर होयो",
+    "filter": "फिल्टर", "close": "फुंनाय होयो", "ok": "ठिक", "yes": "आं", "no": "नङा", "submit": "पाहो होयो",
+    "update": "अपडेट होयो", "refresh": "नोसोर होयो", "viewAll": "सोबथाव गोनां", "seeMore": "बांसिन गोनां",
+    "noData": "बेसेन डेटा थांनाय नङा",
+    "priceDisclaimer": "बे नाजर स्थानीय बाजारनि बेसेन गोनांथि बाहागो, बाहागो जायो",
+    "doctorDisclaimer": "बे गोबां लानाय सोदोबनि उनाव दोसोर खायियो"
+  },
+  "nav": { "home": "हों", "sabziGuide": "सब्जी गाइड", "grocery": "बाजार", "trends": "ट्रेंड", "profile": "प्रोफाइल" },
+  "language": {
+    "selectLanguage": "निजोर बिथांगिरि रायज्लायो", "changeLanguage": "बिथांगिरि बोखार होयो",
+    "languageChanged": "बिथांगिरि लायलांगोन बोखार जादों",
+    "rtlRestartNote": "नोसोर लेआउट लाना होनायनि थांखि ऐप मोनसे दोन्देनि सुरु जायो"
+  },
+  "auth": {
+    "login": "लगिन", "logout": "लग आउट", "phoneLogin": "फोनजों लगिन", "googleLogin": "Google जों लगिन",
+    "enterPhone": "निजोर फोन नंबर दिखो", "enterOTP": "OTP दिखो", "sendOTP": "OTP पाहो होयो",
+    "verifyOTP": "OTP सत्यापित होयो", "resendOTP": "OTP दोन्देनि पाहो होयो", "otpSent": "निजोर नंबरजों OTP पाहो जादों",
+    "loginSuccess": "लगिन लायलांगोन जादों", "loginFailed": "लगिन बिफल जादों, दोन्देनि थांखि होयो"
+  },
+  "onboarding": {
+    "welcome": "नि बानायाव सुरखि आगोनो", "subtitle": "निजोर AI बाथ्राजों गोसोदों",
+    "step1Title": "निजोर गोजौ सोमोन्दो सोमोसेनाय", "step2Title": "निजोर खोन्दोगिरि आरो बाथ्रा हाबा शैली",
+    "yourName": "निजोर मुं", "yourCity": "निजोर सहर", "yourState": "निजोर राज्य",
+    "cuisineStyle": "बाथ्रा हाबा शैली", "addFamilyMember": "गोजौ सोमोन्दो राजिखांहो",
+    "memberName": "सोमोन्दोनि मुं", "memberAge": "उमर", "dietType": "गोबां लानायनि गोरोबथि",
+    "vegetarian": "सबजी गोबां लायग्रा", "nonVegetarian": "मांस गोबां लायग्रा", "eggetarian": "हिंगु गोबां लायग्रा",
+    "spiceTolerance": "झाज ज'नाय सक्ति", "mild": "रिंगाय", "medium": "मोनसेबो", "spicy": "झाज",
+    "verySpicy": "बांसिन झाज", "extraSpicy": "गोबां झाज",
+    "healthConditions": "दाव हारिमु", "noConditions": "बेसेन हारिमु थांनाय नङा",
+    "getStarted": "सुरु होयो", "completeProfile": "प्रोफाइल सोम्पोनाय होयो"
+  },
+  "home": {
+    "goodMorning": "गुदि सान्जा", "goodAfternoon": "गुदि हायग्रा", "goodEvening": "गुदि निसि",
+    "todaysMealPlan": "आजिनि गोबां लानाय सोदोब", "breakfast": "हिन्जाव गोबां लानाय", "lunch": "मैलाबनि गोबां",
+    "eveningSnack": "निसिनि हिन्जाव गोबां", "dinner": "रातिनि गोबां", "generatePlan": "गोबां लानाय सोदोब बानाय होयो",
+    "regenerate": "दोन्देनि बानाय होयो", "confirmMade": "मोन बानायबावदों", "rateMeal": "गोबां रेट होयो",
+    "leftovers": "नायजेनाय गोबां बिनियोग होयो", "festivalMode": "पार्बनि मोड", "fastingMode": "उपास मोड",
+    "weekendSpecial": "वीकएंड स्पेशल", "tryNewRecipe": "नोसोर बेसेन थांखि होयो",
+    "weekendSabziList": "वीकएंड सब्जी लिस्ट", "buyThisWeekend": "बे वीकएंड होनो होयो",
+    "buyBeforeGone": "सीजन जानाय उनाव होनो होयो", "comingSoon": "बांसिन लाखि राहासिन",
+    "generatingPlan": "गोबां लानाय सोदोब बानाय होनाय...", "planGenerated": "निजोर गोबां लानाय सोदोब गुदि आसिल!",
+    "cookTime": "बाथ्रा हाबायनि हाव", "serves": "माब जनानि थांखि", "costEstimate": "नाजर खरस",
+    "inSeason": "सीजनाव आसिल", "endingSoon": "सीजन जायो"
+  },
+  "sabziGuide": {
+    "title": "सब्जी गाइड", "seasonalVegetables": "सानजा सब्जी",
+    "inSeason": "सीजनाव", "endingSoon": "बांसिन जायो", "comingSoon": "बांसिन लाखि राहासिन",
+    "seasonalCalendar": "सानजा कैलेंडर", "pricePerKg": "किलो", "storageTip": "थाखो नानाय टिप",
+    "healthNote": "दाव हारिमु टिप", "dishSuggestions": "गोबां सोलाय", "weeklyTips": "हाव्जोबनि सानजा टिपस",
+    "loadingVegetables": "सानजा सब्जी लद होनाय...",
+    "jan": "जान", "feb": "फेब", "mar": "मार्च", "apr": "अप्रि", "may": "मे", "jun": "जून",
+    "jul": "जुल", "aug": "अग", "sep": "सेप", "oct": "अक्ट", "nov": "नब", "dec": "डिस"
+  },
+  "grocery": {
+    "title": "बाजार लिस्ट", "vegetables": "सब्जी", "dalAndGrains": "डाल आरो अनाज",
+    "spices": "मसला", "dairy": "गुखम थि गोनां", "miscellaneous": "बियो",
+    "addItem": "बेसेन राजिखांहो", "clearAll": "सोबथाव साफ होयो", "shareOnWhatsApp": "WhatsApp जों बांसिन होयो",
+    "itemAdded": "बेसेन राजिखांनाय जादों", "itemRemoved": "बेसेन नायजेनाय जादों", "listCleared": "लिस्ट साफ जादों",
+    "emptyList": "बाजार लिस्ट रिक्त आसिल", "generateFromPlan": "गोबां लानाय सोदोब जों बानाय होयो",
+    "whatsappMessage": "बे हाव्जोबनि बाजार लिस्ट"
+  },
+  "trends": {
+    "title": "गोबां ट्रेंड", "trendingNow": "आबां ट्रेंडिंग", "localTrends": "निजोर खोन्दोगिराव ट्रेंडिंग",
+    "nationalTrends": "जातीय ट्रेंड", "seasonal": "सानजा बायजो", "loadingTrends": "ट्रेंड लद होनाय..."
+  },
+  "profile": {
+    "title": "प्रोफाइल", "settings": "सेटिंग", "familyMembers": "गोजौ सोमोन्दो",
+    "editProfile": "प्रोफाइल सोलाय होयो", "notifications": "सुचना", "language": "बिथांगिरि",
+    "subscription": "सोमोसेनाय", "freePlan": "मुफ्त सोदोब", "premiumPlan": "प्रीमियम – ₹49/थि",
+    "upgradeToPremium": "प्रीमियम लानो", "recipeHistory": "रेसिपी इतिहास",
+    "about": "नायाव गोनां", "helpSupport": "मदद", "logout": "लग आउट", "deleteAccount": "खाता नायजेन होयो"
+  },
+  "health": {
+    "diabetes": "मधुमेह", "hypertension": "बांसिन रगत खनाय", "hypothyroidism": "हाइपोथाइरोइडिज्म",
+    "pcos": "PCOS", "heartDisease": "दिल हारिमु", "anaemia": "रगत गोरोबा",
+    "pregnancy": "मां जायो", "kidneyDisease": "किडनी हारिमु",
+    "healthAdjusted": "दाव हारिमुनि उनाव गोबां लानाय सोदोब बोखार जादों",
+    "pcosDisclaimer": "बे सोदोब लानाय उनाव दोसोर खायियो",
+    "pregnancyDisclaimer": "बे सोदोब लानाय उनाव दोसोर खायियो"
+  },
+  "notifications": {
+    "morningPlan": "आजिनि गोबां लानाय सोदोब गुदि आसिल!",
+    "morningReminder": "निजोर गोबां लानाय सोदोब गोनांनाय हाबों नङा",
+    "eveningGrocery": "बाजार लिस्ट गोनांनाय हाव",
+    "fridaySabzi": "निजोर वीकएंड सब्जी लिस्ट गुदि आसिल!",
+    "saturdayMarket": "गुदि होनो! बाजार लिस्ट गुदि आसिल",
+    "sundaySpecial": "वीकएंड स्पेशल गोबां लानाय सोदोब गुदि आसिल",
+    "mondayRecipes": "बे हाव्जोबनि थांखि जानाय ५ नोसोर रेसिपी",
+    "festivalEve": "पार्बनि गोबां लानाय सोदोब गुदि आसिल"
+  },
+  "recipe": {
+    "ingredients": "बेसेन थानगिरि", "instructions": "बानायनि गोरोबथि", "prepTime": "गुदि होनायनि हाव",
+    "cookTime": "बाथ्रा हाबायनि हाव", "servings": "माब जनानि थांखि", "cuisine": "बाथ्रा हाबा शैली", "mealType": "गोबां लानायनि गोरोबथि",
+    "difficulty": "हाजोबनाय", "easy": "रिंगाय", "medium": "मोनसेबो", "hard": "हाजोबनाय",
+    "costPerServing": "सोमोसेनि खरस", "history": "रेसिपी इतिहास", "last15Days": "उखुमनि १५ सान",
+    "madeOn": "बानाय जादों", "rating": "रेटिंग", "noHistory": "जोबनाय रेसिपी इतिहास थांनाय नङा"
+  },
+  "festival": {
+    "title": "पार्ब आरो उपास", "upcomingFestivals": "बांसिन लाखि राहासिन पार्ब",
+    "fastingPlan": "उपासनि गोबां", "festivalPlan": "पार्ब स्पेशल सोदोब",
+    "today": "आजि", "tomorrow": "जोबनि"
+  },
+  "leftover": {
+    "title": "नायजेनाय गोबां बिनियोग होयो", "whatHaveYou": "फ्रिजाव माबसे आसिल?",
+    "addIngredient": "बेसेन थानगिरि राजिखांहो", "getSuggestions": "सोलाय लानो",
+    "suggestions": "रेसिपी सोलाय", "loadingSuggestions": "निजोर बेसेन थानगिरिनि थांखि रेसिपी बुथुर होनाय..."
+  }
+}

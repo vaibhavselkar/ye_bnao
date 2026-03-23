@@ -1,0 +1,117 @@
+{
+  "common": {
+    "appName": "Ye Bnao", "loading": "Loading...", "error": "Something went wrong", "retry": "Try Again",
+    "save": "Save", "cancel": "Cancel", "done": "Done", "next": "Next", "back": "Back", "share": "Share",
+    "edit": "Edit", "delete": "Delete", "add": "Add", "remove": "Remove", "search": "Search",
+    "filter": "Filter", "close": "Close", "ok": "OK", "yes": "Yes", "no": "No", "submit": "Submit",
+    "update": "Update", "refresh": "Refresh", "viewAll": "View All", "seeMore": "See More",
+    "noData": "No data available",
+    "priceDisclaimer": "Approximate local market prices, may vary",
+    "doctorDisclaimer": "Please consult your doctor before following this meal plan"
+  },
+  "nav": { "home": "Home", "sabziGuide": "Sabzi Guide", "grocery": "Grocery", "trends": "Trends", "profile": "Profile" },
+  "language": {
+    "selectLanguage": "Select Your Language", "changeLanguage": "Change Language",
+    "languageChanged": "Language updated successfully",
+    "rtlRestartNote": "The app will restart once to apply the new layout"
+  },
+  "auth": {
+    "login": "Login", "logout": "Logout", "phoneLogin": "Login with Phone", "googleLogin": "Login with Google",
+    "enterPhone": "Enter your phone number", "enterOTP": "Enter OTP", "sendOTP": "Send OTP",
+    "verifyOTP": "Verify OTP", "resendOTP": "Resend OTP", "otpSent": "OTP sent to your number",
+    "loginSuccess": "Login successful", "loginFailed": "Login failed. Please try again",
+    "invalidPhone": "Please enter a valid 10-digit number",
+    "invalidOTP": "Please enter the 6-digit OTP",
+    "wrongOTP": "Invalid OTP. Please try again.",
+    "changeNumber": "Change Number",
+    "skip": "Skip for now →"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Ye Bnao", "subtitle": "Your AI cooking companion",
+    "step1Title": "Tell us about your family", "step2Title": "Your region & cuisine",
+    "yourName": "Your Name", "yourCity": "Your City", "yourState": "Your State",
+    "cuisineStyle": "Cuisine Style", "addFamilyMember": "Add Family Member",
+    "memberName": "Member Name", "memberAge": "Age", "dietType": "Diet Type",
+    "vegetarian": "Vegetarian", "nonVegetarian": "Non-Vegetarian", "eggetarian": "Eggetarian",
+    "spiceTolerance": "Spice Tolerance", "mild": "Mild", "medium": "Medium", "spicy": "Spicy",
+    "verySpicy": "Very Spicy", "extraSpicy": "Extra Spicy",
+    "healthConditions": "Health Conditions", "noConditions": "No conditions",
+    "getStarted": "Get Started", "completeProfile": "Complete Profile"
+  },
+  "home": {
+    "goodMorning": "Good Morning", "goodAfternoon": "Good Afternoon", "goodEvening": "Good Evening",
+    "todaysMealPlan": "Today's Meal Plan", "breakfast": "Breakfast", "lunch": "Lunch",
+    "eveningSnack": "Evening Snack", "dinner": "Dinner", "generatePlan": "Generate Meal Plan",
+    "regenerate": "Regenerate", "confirmMade": "I made this", "rateMeal": "Rate this meal",
+    "leftovers": "Use Leftovers", "festivalMode": "Festival Mode", "fastingMode": "Fasting Mode",
+    "weekendSpecial": "Weekend Special", "tryNewRecipe": "Try Something New",
+    "weekendSabziList": "Weekend Sabzi List", "buyThisWeekend": "Buy This Weekend",
+    "buyBeforeGone": "Buy Before It's Gone", "comingSoon": "Coming Soon",
+    "generatingPlan": "Generating your meal plan...", "planGenerated": "Your meal plan is ready!",
+    "cookTime": "Cook Time", "serves": "Serves", "costEstimate": "Est. Cost",
+    "inSeason": "In Season", "endingSoon": "Ending Soon"
+  },
+  "sabziGuide": {
+    "title": "Sabzi Guide", "seasonalVegetables": "Seasonal Vegetables",
+    "inSeason": "In Season", "endingSoon": "Ending Soon", "comingSoon": "Coming Soon",
+    "seasonalCalendar": "Seasonal Calendar", "pricePerKg": "per kg", "storageTip": "Storage Tip",
+    "healthNote": "Health Note", "dishSuggestions": "Dish Suggestions", "weeklyTips": "Weekly Seasonal Tips",
+    "loadingVegetables": "Loading seasonal vegetables...",
+    "jan": "Jan", "feb": "Feb", "mar": "Mar", "apr": "Apr", "may": "May", "jun": "Jun",
+    "jul": "Jul", "aug": "Aug", "sep": "Sep", "oct": "Oct", "nov": "Nov", "dec": "Dec"
+  },
+  "grocery": {
+    "title": "Grocery List", "vegetables": "Vegetables", "dalAndGrains": "Dal & Grains",
+    "spices": "Spices", "dairy": "Dairy", "miscellaneous": "Miscellaneous",
+    "addItem": "Add Item", "clearAll": "Clear All", "shareOnWhatsApp": "Share on WhatsApp",
+    "itemAdded": "Item added", "itemRemoved": "Item removed", "listCleared": "List cleared",
+    "emptyList": "Your grocery list is empty", "generateFromPlan": "Generate from Meal Plan",
+    "whatsappMessage": "This week's grocery list"
+  },
+  "trends": {
+    "title": "Food Trends", "trendingNow": "Trending Now", "localTrends": "Trending in Your Area",
+    "nationalTrends": "Trending Nationally", "seasonal": "Seasonal Picks", "loadingTrends": "Loading trends..."
+  },
+  "profile": {
+    "title": "Profile", "settings": "Settings", "familyMembers": "Family Members",
+    "editProfile": "Edit Profile", "notifications": "Notifications", "language": "Language",
+    "subscription": "Subscription", "freePlan": "Free Plan", "premiumPlan": "Premium – ₹49/month",
+    "upgradeToPremium": "Upgrade to Premium", "recipeHistory": "Recipe History",
+    "about": "About", "helpSupport": "Help & Support", "logout": "Logout", "deleteAccount": "Delete Account"
+  },
+  "health": {
+    "diabetes": "Diabetes", "hypertension": "Hypertension", "hypothyroidism": "Hypothyroidism",
+    "pcos": "PCOS", "heartDisease": "Heart Disease", "anaemia": "Anaemia",
+    "pregnancy": "Pregnancy", "kidneyDisease": "Kidney Disease",
+    "healthAdjusted": "Meal plan adjusted for health conditions",
+    "pcosDisclaimer": "Consult your doctor before following this plan",
+    "pregnancyDisclaimer": "Consult your doctor before following this plan"
+  },
+  "notifications": {
+    "morningPlan": "Your meal plan for today is ready!",
+    "morningReminder": "Don't forget to check your meal plan",
+    "eveningGrocery": "Time to check your grocery list",
+    "fridaySabzi": "Your Weekend Sabzi List is ready!",
+    "saturdayMarket": "Happy shopping! Your market list is ready",
+    "sundaySpecial": "Special weekend meal plan is ready",
+    "mondayRecipes": "5 new recipes to try this week",
+    "festivalEve": "Festival meal plan is ready"
+  },
+  "recipe": {
+    "ingredients": "Ingredients", "instructions": "Steps", "prepTime": "Prep Time",
+    "cookTime": "Cook Time", "servings": "Servings", "cuisine": "Cuisine", "mealType": "Meal Type",
+    "difficulty": "Difficulty", "easy": "Easy", "medium": "Medium", "hard": "Hard",
+    "costPerServing": "Cost per serving", "history": "Recipe History", "last15Days": "Last 15 Days",
+    "madeOn": "Made on", "rating": "Rating", "noHistory": "No recipe history yet"
+  },
+  "festival": {
+    "title": "Festivals & Fasting", "upcomingFestivals": "Upcoming Festivals",
+    "fastingPlan": "Fasting Meal Plan", "festivalPlan": "Festival Special Plan",
+    "today": "Today", "tomorrow": "Tomorrow"
+  },
+  "leftover": {
+    "title": "Use Leftovers", "whatHaveYou": "What do you have in the fridge?",
+    "addIngredient": "Add ingredient", "getSuggestions": "Get Suggestions",
+    "suggestions": "Recipe Suggestions", "loadingSuggestions": "Finding recipes for your ingredients..."
+  }
+}

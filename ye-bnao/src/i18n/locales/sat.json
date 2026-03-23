@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "ᱱᱚᱶᱟ ᱢᱮᱱᱟᱜ", "loading": "ᱞᱳᱰ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ...", "error": "ᱢᱤᱫ ᱜᱷᱚᱞᱚᱛᱤ ᱦᱩᱭᱮᱱᱟ", "retry": "ᱫᱚᱦᱲᱟᱭ ᱡᱚᱛᱚᱱ ᱢᱮ",
+    "save": "ᱥᱟᱧᱪᱩᱣ ᱢᱮ", "cancel": "ᱨᱚᱫ ᱢᱮ", "done": "ᱦᱩᱭᱮᱱᱟ", "next": "ᱵᱮᱸᱜᱮ", "back": "ᱤᱧᱟ", "share": "ᱵᱟᱸᱫᱷᱮᱭ ᱢᱮ",
+    "edit": "ᱵᱚᱫᱚᱞ ᱢᱮ", "delete": "ᱦᱟᱴᱟᱣ ᱢᱮ", "add": "ᱡᱳᱰᱚ ᱢᱮ", "remove": "ᱦᱟᱴᱟᱣ ᱢᱮ", "search": "ᱧᱟᱢ ᱢᱮ",
+    "filter": "ᱯᱷᱤᱞᱴᱚᱨ", "close": "ᱵᱚᱸᱫ ᱢᱮ", "ok": "ᱟᱪᱷᱮᱫ", "yes": "ᱦᱟᱹ", "no": "ᱟᱹᱭᱮ", "submit": "ᱫᱮᱭᱟᱭ ᱢᱮ",
+    "update": "ᱟᱯᱰᱮᱴ ᱢᱮ", "refresh": "ᱱᱟᱶᱟ ᱢᱮ", "viewAll": "ᱢᱤᱫᱴᱟᱝ ᱧᱟᱢ ᱢᱮ", "seeMore": "ᱟᱹᱯᱟᱹᱞ ᱧᱟᱢ ᱢᱮ",
+    "noData": "ᱠᱷᱚᱱ ᱰᱮᱴᱟ ᱵᱮᱞᱚ ᱟᱠᱟᱱᱟ",
+    "priceDisclaimer": "ᱱᱤᱭᱟ ᱟᱱᱩᱢᱟᱱᱤᱛ ᱥᱛᱷᱟᱱᱤᱭ ᱵᱟᱡᱟᱨ ᱫᱚᱨ, ᱵᱚᱫᱚᱞ ᱦᱩᱭᱩᱜ ᱥᱟᱫᱟᱭ",
+    "doctorDisclaimer": "ᱱᱤᱭᱟ ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱢᱟᱱᱟᱣ ᱟᱠᱟᱸ ᱰᱟᱠᱛᱚᱨ ᱥᱮ ᱮᱱᱮᱢ ᱞᱮᱠᱟᱱ ᱦᱟᱹᱴᱤᱧ ᱢᱮ"
+  },
+  "nav": { "home": "ᱜᱷᱚᱨ", "sabziGuide": "ᱥᱟᱜ ᱜᱟᱭᱰ", "grocery": "ᱵᱟᱡᱟᱨ", "trends": "ᱴᱨᱮᱸᱰ", "profile": "ᱯᱨᱳᱯᱷᱟᱭᱞ" },
+  "language": {
+    "selectLanguage": "ᱟᱢ ᱨᱳᱲ ᱪᱷᱟᱸᱭ ᱢᱮ", "changeLanguage": "ᱨᱳᱲ ᱵᱚᱫᱚᱞ ᱢᱮ",
+    "languageChanged": "ᱨᱳᱲ ᱥᱟᱯᱷᱞᱤᱫᱟ ᱵᱚᱫᱚᱞ ᱦᱩᱭᱮᱱᱟ",
+    "rtlRestartNote": "ᱱᱟᱶᱟ ᱞᱮᱟᱣᱚᱴ ᱞᱟᱠᱟᱣ ᱠᱚᱨᱮᱸ ᱟᱯ ᱢᱤᱫ ᱵᱮᱨᱠᱟ ᱡᱷᱤᱱᱤᱡ ᱥᱩᱨᱩ ᱦᱩᱭᱩᱜ"
+  },
+  "auth": {
+    "login": "ᱞᱳᱜᱤᱱ", "logout": "ᱞᱳᱜ ᱟᱣᱴ", "phoneLogin": "ᱯᱷᱳᱱ ᱥᱮ ᱞᱳᱜᱤᱱ", "googleLogin": "Google ᱥᱮ ᱞᱳᱜᱤᱱ",
+    "enterPhone": "ᱟᱢ ᱯᱷᱳᱱ ᱱᱚᱢᱵᱚᱨ ᱫᱮᱭᱟᱭ ᱢᱮ", "enterOTP": "OTP ᱫᱮᱭᱟᱭ ᱢᱮ", "sendOTP": "OTP ᱯᱟᱛᱷᱟᱣ ᱢᱮ",
+    "verifyOTP": "OTP ᱡᱟᱸᱪ ᱢᱮ", "resendOTP": "OTP ᱫᱚᱦᱲᱟᱭ ᱯᱟᱛᱷᱟᱣ ᱢᱮ", "otpSent": "ᱟᱢ ᱱᱚᱢᱵᱚᱨ ᱡᱚᱜ OTP ᱯᱟᱛᱷᱟᱣ ᱦᱩᱭᱮᱱᱟ",
+    "loginSuccess": "ᱞᱳᱜᱤᱱ ᱥᱟᱯᱷᱞᱤᱫᱟ ᱦᱩᱭᱮᱱᱟ", "loginFailed": "ᱞᱳᱜᱤᱱ ᱱᱟᱢᱟᱠᱟᱢ ᱦᱩᱭᱮᱱᱟ, ᱫᱚᱦᱲᱟᱭ ᱡᱚᱛᱚᱱ ᱢᱮ"
+  },
+  "onboarding": {
+    "welcome": "ᱱᱚᱶᱟ ᱢᱮᱱᱟᱜᱥ ᱥᱮᱱᱟᱜ", "subtitle": "ᱟᱢᱟᱜ AI ᱨᱟᱸᱫᱷᱩ ᱥᱟᱛᱷᱤ",
+    "step1Title": "ᱟᱢᱟᱜ ᱯᱤᱨᱤ ᱜᱚᱴᱟ ᱥᱟᱦᱟᱲᱟ ᱢᱮ", "step2Title": "ᱟᱢᱟᱜ ᱡᱟᱭᱜᱟ ᱟᱨ ᱵᱟᱱᱟᱣ ᱥᱟᱦᱟᱲ",
+    "yourName": "ᱟᱢᱟᱜ ᱥᱮᱸᱫᱽᱨᱟ", "yourCity": "ᱟᱢᱟᱜ ᱥᱷᱚᱦᱚᱨ", "yourState": "ᱟᱢᱟᱜ ᱨᱟᱡᱽᱭᱚ",
+    "cuisineStyle": "ᱵᱟᱱᱟᱣ ᱥᱟᱦᱟᱲ", "addFamilyMember": "ᱯᱤᱨᱤ ᱜᱚᱴᱟ ᱱᱩᱦᱩᱨ ᱡᱳᱰᱚ ᱢᱮ",
+    "memberName": "ᱱᱩᱦᱩᱨᱟᱜ ᱥᱮᱸᱫᱽᱨᱟ", "memberAge": "ᱩᱥᱩ", "dietType": "ᱠᱷᱟᱱᱟ ᱜᱚᱴᱟ",
+    "vegetarian": "ᱥᱟᱜ ᱠᱷᱟᱭᱟ", "nonVegetarian": "ᱢᱟᱸᱥ ᱠᱷᱟᱭᱟ", "eggetarian": "ᱰᱤᱢ ᱠᱷᱟᱭᱟ",
+    "spiceTolerance": "ᱡᱷᱟᱞ ᱮᱱᱮᱢ ᱢᱮᱱᱟᱜ ᱥᱚᱠᱛᱤ", "mild": "ᱠᱚᱱᱪᱷᱟ", "medium": "ᱢᱟᱡᱷᱢᱟᱱ", "spicy": "ᱡᱷᱟᱞ",
+    "verySpicy": "ᱦᱚᱲᱦᱩᱡ ᱡᱷᱟᱞ", "extraSpicy": "ᱵᱮᱥᱤᱠᱷᱟᱱ ᱡᱷᱟᱞ",
+    "healthConditions": "ᱥᱟᱦᱮᱫ ᱦᱟᱸᱥᱤ", "noConditions": "ᱠᱷᱚᱱ ᱦᱟᱸᱥᱤ ᱵᱮᱞᱚ ᱟᱠᱟᱱᱟ",
+    "getStarted": "ᱥᱩᱨᱩ ᱢᱮ", "completeProfile": "ᱯᱨᱳᱯᱷᱟᱭᱞ ᱯᱩᱨᱟ ᱢᱮ"
+  },
+  "home": {
+    "goodMorning": "ᱥᱩᱵᱷ ᱵᱤᱦᱟᱱ", "goodAfternoon": "ᱥᱩᱵᱷ ᱵᱟᱰᱟᱭ", "goodEvening": "ᱥᱩᱵᱷ ᱥᱟᱸᱡᱤ",
+    "todaysMealPlan": "ᱟᱡᱤᱜ ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ", "breakfast": "ᱵᱤᱦᱟᱱ ᱠᱷᱟᱱᱟ", "lunch": "ᱵᱟᱰᱟᱭ ᱠᱷᱟᱱᱟ",
+    "eveningSnack": "ᱥᱟᱸᱡᱤ ᱠᱷᱟᱱᱟ", "dinner": "ᱨᱟᱛᱤ ᱠᱷᱟᱱᱟ", "generatePlan": "ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱵᱟᱱᱟᱣ ᱢᱮ",
+    "regenerate": "ᱫᱚᱦᱲᱟᱭ ᱵᱟᱱᱟᱣ ᱢᱮ", "confirmMade": "ᱤᱧ ᱵᱟᱱᱟᱣᱠᱮᱫᱟ", "rateMeal": "ᱠᱷᱟᱱᱟ ᱨᱮᱴ ᱢᱮ",
+    "leftovers": "ᱵᱚᱰ ᱠᱷᱟᱱᱟ ᱵᱮᱵᱷᱟᱨ ᱢᱮ", "festivalMode": "ᱯᱚᱵᱽ ᱢᱳᱰ", "fastingMode": "ᱩᱯᱩᱣᱟᱥ ᱢᱳᱰ",
+    "weekendSpecial": "ᱥᱟᱯᱛᱟᱦᱟᱸᱛ ᱥᱯᱮᱥᱷᱟᱞ", "tryNewRecipe": "ᱱᱟᱶᱟ ᱢᱤᱫ ᱪᱮᱥᱴᱟ ᱢᱮ",
+    "weekendSabziList": "ᱥᱟᱯᱛᱟᱦᱟᱸᱛ ᱥᱟᱜ ᱥᱩᱪᱤ", "buyThisWeekend": "ᱱᱤᱭᱟ ᱥᱟᱯᱛᱟᱦᱟᱸᱛ ᱠᱤᱱᱟ ᱢᱮ",
+    "buyBeforeGone": "ᱥᱤᱡᱚᱱ ᱥᱮᱥ ᱦᱩᱭᱟᱠᱟᱸ ᱠᱤᱱᱟ ᱢᱮ", "comingSoon": "ᱡᱚᱞᱫᱤ ᱟᱬᱩᱜ",
+    "generatingPlan": "ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱵᱟᱱᱟᱣᱩᱜ ᱠᱟᱱᱟ...", "planGenerated": "ᱟᱢᱟᱜ ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱛᱮᱭᱟᱨ!",
+    "cookTime": "ᱵᱟᱱᱟᱣ ᱥᱚᱢᱭ", "serves": "ᱠᱷᱚᱱ ᱢᱤᱛᱟᱱ ᱡᱟᱹᱱᱠᱩ ᱞᱟᱹᱜᱤᱫ", "costEstimate": "ᱟᱱᱩᱢᱟᱱᱤᱛ ᱵᱮᱵᱷᱟᱨ",
+    "inSeason": "ᱥᱤᱡᱚᱱᱥ ᱟᱠᱟᱱᱟ", "endingSoon": "ᱥᱤᱡᱚᱱ ᱥᱮᱥ ᱦᱩᱭᱩᱜ"
+  },
+  "sabziGuide": {
+    "title": "ᱥᱟᱜ ᱜᱟᱭᱰ", "seasonalVegetables": "ᱪᱟᱸᱫᱚ ᱥᱟᱜ",
+    "inSeason": "ᱥᱤᱡᱚᱱᱥ", "endingSoon": "ᱡᱚᱞᱫᱤ ᱥᱮᱥ", "comingSoon": "ᱡᱚᱞᱫᱤ ᱟᱬᱩᱜ",
+    "seasonalCalendar": "ᱪᱟᱸᱫᱚ ᱠᱮᱞᱮᱸᱰᱟᱨ", "pricePerKg": "ᱠᱤᱞᱳ ᱯᱤᱪᱷᱮ", "storageTip": "ᱨᱮᱠᱷᱟ ᱴᱤᱯ",
+    "healthNote": "ᱥᱟᱦᱮᱫ ᱴᱤᱯ", "dishSuggestions": "ᱠᱷᱟᱱᱟ ᱥᱩᱡᱷᱟᱹᱣ", "weeklyTips": "ᱦᱚᱯᱚᱱ ᱪᱟᱸᱫᱚ ᱴᱤᱯᱥ",
+    "loadingVegetables": "ᱪᱟᱸᱫᱚ ᱥᱟᱜ ᱞᱳᱰ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ...",
+    "jan": "ᱡᱟᱱ", "feb": "ᱯᱷᱮᱵ", "mar": "ᱢᱟᱨᱪ", "apr": "ᱮᱯᱨᱤ", "may": "ᱢᱮ", "jun": "ᱡᱩᱱ",
+    "jul": "ᱡᱩᱞ", "aug": "ᱟᱜ", "sep": "ᱥᱮᱯ", "oct": "ᱟᱠᱴ", "nov": "ᱱᱚᱵ", "dec": "ᱰᱤᱥ"
+  },
+  "grocery": {
+    "title": "ᱵᱟᱡᱟᱨ ᱥᱩᱪᱤ", "vegetables": "ᱥᱟᱜ", "dalAndGrains": "ᱫᱟᱞ ᱟᱨ ᱟᱱᱟᱡ",
+    "spices": "ᱢᱚᱥᱟᱞᱟ", "dairy": "ᱫᱩᱫᱷ ᱜᱚᱴᱟ", "miscellaneous": "ᱮᱢᱟᱱ",
+    "addItem": "ᱪᱤᱡ ᱡᱳᱰᱚ ᱢᱮ", "clearAll": "ᱢᱤᱫᱴᱟᱝ ᱥᱟᱯᱷ ᱢᱮ", "shareOnWhatsApp": "WhatsApp ᱡᱚᱜ ᱵᱟᱸᱫᱷᱮᱭ ᱢᱮ",
+    "itemAdded": "ᱪᱤᱡ ᱡᱳᱰᱚ ᱦᱩᱭᱮᱱᱟ", "itemRemoved": "ᱪᱤᱡ ᱦᱟᱴᱟᱣ ᱦᱩᱭᱮᱱᱟ", "listCleared": "ᱥᱩᱪᱤ ᱥᱟᱯᱷ ᱦᱩᱭᱮᱱᱟ",
+    "emptyList": "ᱵᱟᱡᱟᱨ ᱥᱩᱪᱤ ᱡᱷᱚᱞ ᱟᱠᱟᱱᱟ", "generateFromPlan": "ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱛᱷᱟᱱ ᱵᱟᱱᱟᱣ ᱢᱮ",
+    "whatsappMessage": "ᱱᱤᱭᱟ ᱦᱚᱯᱚᱱᱟᱜ ᱵᱟᱡᱟᱨ ᱥᱩᱪᱤ"
+  },
+  "trends": {
+    "title": "ᱠᱷᱟᱱᱟ ᱴᱨᱮᱸᱰ", "trendingNow": "ᱱᱟᱶᱟ ᱴᱨᱮᱸᱰᱤᱝ", "localTrends": "ᱟᱢᱟᱜ ᱡᱟᱭᱜᱟᱭ ᱴᱨᱮᱸᱰᱤᱝ",
+    "nationalTrends": "ᱨᱟᱥᱴᱽᱨᱤᱭ ᱴᱨᱮᱸᱰ", "seasonal": "ᱪᱟᱸᱫᱚ ᱯᱚᱥᱚᱸᱫ", "loadingTrends": "ᱴᱨᱮᱸᱰ ᱞᱳᱰ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ..."
+  },
+  "profile": {
+    "title": "ᱯᱨᱳᱯᱷᱟᱭᱞ", "settings": "ᱥᱮᱴᱤᱝ", "familyMembers": "ᱯᱤᱨᱤ ᱜᱚᱴᱟ ᱱᱩᱦᱩᱨ",
+    "editProfile": "ᱯᱨᱳᱯᱷᱟᱭᱞ ᱵᱚᱫᱚᱞ ᱢᱮ", "notifications": "ᱥᱩᱪᱱᱟ", "language": "ᱨᱳᱲ",
+    "subscription": "ᱥᱟᱫᱥᱭᱚᱛᱟ", "freePlan": "ᱢᱩᱯᱷᱛ ᱭᱚᱡᱚᱱᱟ", "premiumPlan": "ᱯᱨᱤᱢᱤᱭᱚᱢ – ₹49/ᱪᱟᱸᱫᱚ",
+    "upgradeToPremium": "ᱯᱨᱤᱢᱤᱭᱚᱢ ᱞᱮᱭᱟ ᱢᱮ", "recipeHistory": "ᱨᱮᱥᱤᱯᱤ ᱤᱛᱤᱦᱟᱹᱥ",
+    "about": "ᱟᱢᱟᱜ ᱥᱟᱦᱟᱲᱟ", "helpSupport": "ᱢᱚᱫᱚᱫ", "logout": "ᱞᱳᱜ ᱟᱣᱴ", "deleteAccount": "ᱠᱷᱟᱛᱟ ᱢᱮᱴ ᱢᱮ"
+  },
+  "health": {
+    "diabetes": "ᱢᱟᱫᱷᱩᱢᱮᱦ", "hypertension": "ᱤᱠᱟᱹ ᱨᱚᱠᱛᱚ ᱪᱟᱯ", "hypothyroidism": "ᱦᱟᱭᱯᱳᱛᱷᱟᱭᱨᱳᱭᱰᱤᱡᱚᱢ",
+    "pcos": "PCOS", "heartDisease": "ᱥᱤᱸᱜᱤ ᱰᱩᱵ", "anaemia": "ᱨᱚᱠᱛᱚ ᱠᱚᱢᱛᱤ",
+    "pregnancy": "ᱜᱟᱵᱷᱟᱹ", "kidneyDisease": "ᱜᱩᱨᱫᱟᱹ ᱰᱩᱵ",
+    "healthAdjusted": "ᱥᱟᱦᱮᱫ ᱦᱟᱸᱥᱤ ᱢᱩᱛᱟᱵᱤᱠ ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱵᱚᱫᱚᱞ ᱦᱩᱭᱮᱱᱟ",
+    "pcosDisclaimer": "ᱱᱤᱭᱟ ᱭᱚᱡᱚᱱᱟ ᱢᱟᱱᱟᱣ ᱟᱠᱟᱸ ᱰᱟᱠᱛᱚᱨ ᱥᱮ ᱮᱱᱮᱢ ᱢᱮ",
+    "pregnancyDisclaimer": "ᱱᱤᱭᱟ ᱭᱚᱡᱚᱱᱟ ᱢᱟᱱᱟᱣ ᱟᱠᱟᱸ ᱰᱟᱠᱛᱚᱨ ᱥᱮ ᱮᱱᱮᱢ ᱢᱮ"
+  },
+  "notifications": {
+    "morningPlan": "ᱟᱡᱤᱜ ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱛᱮᱭᱟᱨ!",
+    "morningReminder": "ᱟᱢᱟᱜ ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱧᱮᱞ ᱢᱮᱱ ᱦᱟᱸ ᱵᱤᱥᱨᱟᱭ ᱢᱮ",
+    "eveningGrocery": "ᱵᱟᱡᱟᱨ ᱥᱩᱪᱤ ᱧᱮᱞ ᱢᱮᱱ ᱥᱚᱢᱭ",
+    "fridaySabzi": "ᱟᱢᱟᱜ ᱥᱟᱯᱛᱟᱦᱟᱸᱛ ᱥᱟᱜ ᱥᱩᱪᱤ ᱛᱮᱭᱟᱨ!",
+    "saturdayMarket": "ᱥᱩᱵᱷ ᱠᱤᱱᱟᱵᱮᱪᱟ! ᱵᱟᱡᱟᱨ ᱥᱩᱪᱤ ᱛᱮᱭᱟᱨ",
+    "sundaySpecial": "ᱥᱟᱯᱛᱟᱦᱟᱸᱛ ᱥᱯᱮᱥᱷᱟᱞ ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱛᱮᱭᱟᱨ",
+    "mondayRecipes": "ᱱᱤᱭᱟ ᱦᱚᱯᱚᱱ ᱪᱮᱥᱴᱟ ᱞᱟᱹᱜᱤᱫ ᱵ ᱱᱟᱶᱟ ᱨᱮᱥᱤᱯᱤ",
+    "festivalEve": "ᱯᱚᱵᱽ ᱠᱷᱟᱱᱟ ᱭᱚᱡᱚᱱᱟ ᱛᱮᱭᱟᱨ"
+  },
+  "recipe": {
+    "ingredients": "ᱥᱟᱢᱟᱱ", "instructions": "ᱵᱟᱱᱟᱣ ᱜᱚᱛᱚ", "prepTime": "ᱛᱮᱭᱟᱨ ᱥᱚᱢᱭ",
+    "cookTime": "ᱵᱟᱱᱟᱣ ᱥᱚᱢᱭ", "servings": "ᱠᱷᱚᱱ ᱢᱤᱛᱟᱱ ᱡᱟᱹᱱᱠᱩ ᱞᱟᱹᱜᱤᱫ", "cuisine": "ᱵᱟᱱᱟᱣ ᱜᱚᱛᱚ", "mealType": "ᱠᱷᱟᱱᱟ ᱜᱚᱴᱟ",
+    "difficulty": "ᱠᱚᱴᱷᱤᱱ", "easy": "ᱮᱛᱟᱜ", "medium": "ᱢᱟᱡᱷᱢᱟᱱ", "hard": "ᱠᱚᱴᱷᱤᱱ",
+    "costPerServing": "ᱮᱠ ᱥᱚᱨᱵᱤᱝ ᱵᱮᱵᱷᱟᱨ", "history": "ᱨᱮᱥᱤᱯᱤ ᱤᱛᱤᱦᱟᱹᱥ", "last15Days": "ᱟᱹᱠᱤᱨ ᱑᱕ ᱫᱤᱱ",
+    "madeOn": "ᱵᱟᱱᱟᱣᱟᱠᱟᱱᱟ", "rating": "ᱨᱮᱴᱤᱝ", "noHistory": "ᱟᱜ ᱨᱮᱥᱤᱯᱤ ᱤᱛᱤᱦᱟᱹᱥ ᱵᱮᱞᱚ ᱟᱠᱟᱱᱟ"
+  },
+  "festival": {
+    "title": "ᱯᱚᱵᱽ ᱟᱨ ᱩᱯᱩᱣᱟᱥ", "upcomingFestivals": "ᱟᱬᱩᱜ ᱯᱚᱵᱽ",
+    "fastingPlan": "ᱩᱯᱩᱣᱟᱥ ᱠᱷᱟᱱᱟ", "festivalPlan": "ᱯᱚᱵᱽ ᱥᱯᱮᱥᱷᱟᱞ ᱭᱚᱡᱚᱱᱟ",
+    "today": "ᱟᱡᱤ", "tomorrow": "ᱡᱚᱵᱮᱫ"
+  },
+  "leftover": {
+    "title": "ᱵᱚᱰ ᱠᱷᱟᱱᱟ ᱵᱮᱵᱷᱟᱨ ᱢᱮ", "whatHaveYou": "ᱯᱷᱨᱤᱡᱥ ᱠᱷᱚᱱ ᱟᱠᱟᱱᱟ?",
+    "addIngredient": "ᱥᱟᱢᱟᱱ ᱡᱳᱰᱚ ᱢᱮ", "getSuggestions": "ᱥᱩᱡᱷᱟᱹᱣ ᱞᱮᱭᱟ ᱢᱮ",
+    "suggestions": "ᱨᱮᱥᱤᱯᱤ ᱥᱩᱡᱷᱟᱹᱣ", "loadingSuggestions": "ᱟᱢᱟᱜ ᱥᱟᱢᱟᱱ ᱞᱟᱹᱜᱤᱫ ᱨᱮᱥᱤᱯᱤ ᱧᱟᱢ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ..."
+  }
+}

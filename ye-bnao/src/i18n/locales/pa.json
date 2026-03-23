@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "ਇਹ ਬਣਾਓ", "loading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...", "error": "ਕੁਝ ਗਲਤ ਹੋਇਆ", "retry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "save": "ਸੰਭਾਲੋ", "cancel": "ਰੱਦ ਕਰੋ", "done": "ਹੋ ਗਿਆ", "next": "ਅਗਲਾ", "back": "ਪਿੱਛੇ", "share": "ਸ਼ੇਅਰ ਕਰੋ",
+    "edit": "ਸੰਪਾਦਿਤ ਕਰੋ", "delete": "ਮਿਟਾਓ", "add": "ਜੋੜੋ", "remove": "ਹਟਾਓ", "search": "ਖੋਜੋ",
+    "filter": "ਫਿਲਟਰ", "close": "ਬੰਦ ਕਰੋ", "ok": "ਠੀਕ ਹੈ", "yes": "ਹਾਂ", "no": "ਨਹੀਂ", "submit": "ਜਮ੍ਹਾਂ ਕਰੋ",
+    "update": "ਅੱਪਡੇਟ ਕਰੋ", "refresh": "ਤਾਜ਼ਾ ਕਰੋ", "viewAll": "ਸਭ ਦੇਖੋ", "seeMore": "ਹੋਰ ਦੇਖੋ",
+    "noData": "ਕੋਈ ਡੇਟਾ ਉਪਲਬਧ ਨਹੀਂ",
+    "priceDisclaimer": "ਇਹ ਅੰਦਾਜ਼ੇ ਵਾਲੇ ਸਥਾਨਕ ਬਾਜ਼ਾਰ ਭਾਅ ਹਨ, ਬਦਲ ਸਕਦੇ ਹਨ",
+    "doctorDisclaimer": "ਇਸ ਖੁਰਾਕ ਯੋਜਨਾ ਨੂੰ ਅਪਣਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਡਾਕਟਰ ਦੀ ਸਲਾਹ ਲਓ"
+  },
+  "nav": { "home": "ਹੋਮ", "sabziGuide": "ਸਬਜ਼ੀ ਗਾਈਡ", "grocery": "ਕਿਰਾਨਾ", "trends": "ਟਰੈਂਡਜ਼", "profile": "ਪ੍ਰੋਫਾਈਲ" },
+  "language": {
+    "selectLanguage": "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ", "changeLanguage": "ਭਾਸ਼ਾ ਬਦਲੋ",
+    "languageChanged": "ਭਾਸ਼ਾ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲੀ ਗਈ",
+    "rtlRestartNote": "ਨਵਾਂ ਲੇਆਉਟ ਲਾਗੂ ਕਰਨ ਲਈ ਐਪ ਇੱਕ ਵਾਰ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਹੋਵੇਗੀ"
+  },
+  "auth": {
+    "login": "ਲੌਗਇਨ", "logout": "ਲੌਗਆਉਟ", "phoneLogin": "ਫ਼ੋਨ ਨਾਲ ਲੌਗਇਨ", "googleLogin": "Google ਨਾਲ ਲੌਗਇਨ",
+    "enterPhone": "ਆਪਣਾ ਫ਼ੋਨ ਨੰਬਰ ਦਰਜ ਕਰੋ", "enterOTP": "OTP ਦਰਜ ਕਰੋ", "sendOTP": "OTP ਭੇਜੋ",
+    "verifyOTP": "OTP ਤਸਦੀਕ ਕਰੋ", "resendOTP": "OTP ਦੁਬਾਰਾ ਭੇਜੋ", "otpSent": "ਤੁਹਾਡੇ ਨੰਬਰ ਤੇ OTP ਭੇਜਿਆ ਗਿਆ",
+    "loginSuccess": "ਲੌਗਇਨ ਸਫਲ", "loginFailed": "ਲੌਗਇਨ ਅਸਫਲ, ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+  },
+  "onboarding": {
+    "welcome": "ਇਹ ਬਣਾਓ ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ", "subtitle": "ਤੁਹਾਡਾ AI ਰਸੋਈ ਸਹਾਇਕ",
+    "step1Title": "ਆਪਣੇ ਪਰਿਵਾਰ ਬਾਰੇ ਦੱਸੋ", "step2Title": "ਤੁਹਾਡਾ ਖੇਤਰ ਅਤੇ ਖਾਣ-ਪਕਾਉਣ ਦੀ ਸ਼ੈਲੀ",
+    "yourName": "ਤੁਹਾਡਾ ਨਾਮ", "yourCity": "ਤੁਹਾਡਾ ਸ਼ਹਿਰ", "yourState": "ਤੁਹਾਡਾ ਰਾਜ",
+    "cuisineStyle": "ਖਾਣ-ਪਕਾਉਣ ਦੀ ਸ਼ੈਲੀ", "addFamilyMember": "ਪਰਿਵਾਰ ਦਾ ਮੈਂਬਰ ਜੋੜੋ",
+    "memberName": "ਮੈਂਬਰ ਦਾ ਨਾਮ", "memberAge": "ਉਮਰ", "dietType": "ਖੁਰਾਕ ਦੀ ਕਿਸਮ",
+    "vegetarian": "ਸ਼ਾਕਾਹਾਰੀ", "nonVegetarian": "ਮਾਸਾਹਾਰੀ", "eggetarian": "ਅੰਡਾਹਾਰੀ",
+    "spiceTolerance": "ਮਸਾਲੇ ਸਹਿਣ ਕਰਨ ਦੀ ਸਮਰੱਥਾ", "mild": "ਹਲਕਾ", "medium": "ਮੱਧਮ", "spicy": "ਮਸਾਲੇਦਾਰ",
+    "verySpicy": "ਬਹੁਤ ਮਸਾਲੇਦਾਰ", "extraSpicy": "ਬਹੁਤ ਜ਼ਿਆਦਾ ਮਸਾਲੇਦਾਰ",
+    "healthConditions": "ਸਿਹਤ ਸਥਿਤੀਆਂ", "noConditions": "ਕੋਈ ਸਥਿਤੀ ਨਹੀਂ",
+    "getStarted": "ਸ਼ੁਰੂ ਕਰੋ", "completeProfile": "ਪ੍ਰੋਫਾਈਲ ਪੂਰਾ ਕਰੋ"
+  },
+  "home": {
+    "goodMorning": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ", "goodAfternoon": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ", "goodEvening": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
+    "todaysMealPlan": "ਅੱਜ ਦੀ ਖੁਰਾਕ ਯੋਜਨਾ", "breakfast": "ਨਾਸ਼ਤਾ", "lunch": "ਦੁਪਹਿਰ ਦਾ ਖਾਣਾ",
+    "eveningSnack": "ਸ਼ਾਮ ਦਾ ਨਾਸ਼ਤਾ", "dinner": "ਰਾਤ ਦਾ ਖਾਣਾ", "generatePlan": "ਖੁਰਾਕ ਯੋਜਨਾ ਬਣਾਓ",
+    "regenerate": "ਦੁਬਾਰਾ ਬਣਾਓ", "confirmMade": "ਮੈਂ ਬਣਾਇਆ", "rateMeal": "ਖਾਣੇ ਨੂੰ ਰੇਟ ਕਰੋ",
+    "leftovers": "ਬਚਿਆ ਖਾਣਾ ਵਰਤੋ", "festivalMode": "ਤਿਉਹਾਰ ਮੋਡ", "fastingMode": "ਵਰਤ ਮੋਡ",
+    "weekendSpecial": "ਵੀਕਐਂਡ ਸਪੈਸ਼ਲ", "tryNewRecipe": "ਕੁਝ ਨਵਾਂ ਅਜ਼ਮਾਓ",
+    "weekendSabziList": "ਵੀਕਐਂਡ ਸਬਜ਼ੀ ਸੂਚੀ", "buyThisWeekend": "ਇਸ ਵੀਕਐਂਡ ਖਰੀਦੋ",
+    "buyBeforeGone": "ਸੀਜ਼ਨ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਖਰੀਦੋ", "comingSoon": "ਜਲਦ ਆ ਰਿਹਾ ਹੈ",
+    "generatingPlan": "ਖੁਰਾਕ ਯੋਜਨਾ ਬਣ ਰਹੀ ਹੈ...", "planGenerated": "ਤੁਹਾਡੀ ਖੁਰਾਕ ਯੋਜਨਾ ਤਿਆਰ ਹੈ!",
+    "cookTime": "ਖਾਣਾ ਪਕਾਉਣ ਦਾ ਸਮਾਂ", "serves": "ਕਿੰਨੇ ਲੋਕਾਂ ਲਈ", "costEstimate": "ਅੰਦਾਜ਼ੇ ਵਾਲੀ ਲਾਗਤ",
+    "inSeason": "ਸੀਜ਼ਨ ਵਿੱਚ ਹੈ", "endingSoon": "ਸੀਜ਼ਨ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ"
+  },
+  "sabziGuide": {
+    "title": "ਸਬਜ਼ੀ ਗਾਈਡ", "seasonalVegetables": "ਮੌਸਮੀ ਸਬਜ਼ੀਆਂ",
+    "inSeason": "ਸੀਜ਼ਨ ਵਿੱਚ", "endingSoon": "ਜਲਦ ਖਤਮ", "comingSoon": "ਜਲਦ ਆ ਰਿਹਾ ਹੈ",
+    "seasonalCalendar": "ਮੌਸਮੀ ਕੈਲੰਡਰ", "pricePerKg": "ਪ੍ਰਤੀ ਕਿਲੋ", "storageTip": "ਸੰਭਾਲਣ ਦਾ ਤਰੀਕਾ",
+    "healthNote": "ਸਿਹਤ ਨੋਟ", "dishSuggestions": "ਪਕਵਾਨ ਸੁਝਾਅ", "weeklyTips": "ਹਫ਼ਤਾਵਾਰ ਮੌਸਮੀ ਟਿਪਸ",
+    "loadingVegetables": "ਮੌਸਮੀ ਸਬਜ਼ੀਆਂ ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ...",
+    "jan": "ਜਨ", "feb": "ਫਰ", "mar": "ਮਾਰਚ", "apr": "ਅਪ੍ਰੈ", "may": "ਮਈ", "jun": "ਜੂਨ",
+    "jul": "ਜੁਲ", "aug": "ਅਗ", "sep": "ਸਤੰ", "oct": "ਅਕਤੂ", "nov": "ਨਵ", "dec": "ਦਸ"
+  },
+  "grocery": {
+    "title": "ਕਿਰਾਨਾ ਸੂਚੀ", "vegetables": "ਸਬਜ਼ੀਆਂ", "dalAndGrains": "ਦਾਲ ਅਤੇ ਅਨਾਜ",
+    "spices": "ਮਸਾਲੇ", "dairy": "ਡੇਅਰੀ ਉਤਪਾਦ", "miscellaneous": "ਹੋਰ",
+    "addItem": "ਚੀਜ਼ ਜੋੜੋ", "clearAll": "ਸਭ ਸਾਫ਼ ਕਰੋ", "shareOnWhatsApp": "WhatsApp ਤੇ ਸ਼ੇਅਰ ਕਰੋ",
+    "itemAdded": "ਚੀਜ਼ ਜੋੜੀ ਗਈ", "itemRemoved": "ਚੀਜ਼ ਹਟਾਈ ਗਈ", "listCleared": "ਸੂਚੀ ਸਾਫ਼ ਕੀਤੀ",
+    "emptyList": "ਕਿਰਾਨਾ ਸੂਚੀ ਖਾਲੀ ਹੈ", "generateFromPlan": "ਖੁਰਾਕ ਯੋਜਨਾ ਤੋਂ ਬਣਾਓ",
+    "whatsappMessage": "ਇਸ ਹਫ਼ਤੇ ਦੀ ਕਿਰਾਨਾ ਸੂਚੀ"
+  },
+  "trends": {
+    "title": "ਭੋਜਨ ਟਰੈਂਡਜ਼", "trendingNow": "ਹੁਣ ਟਰੈਂਡਿੰਗ", "localTrends": "ਤੁਹਾਡੇ ਖੇਤਰ ਵਿੱਚ ਟਰੈਂਡਿੰਗ",
+    "nationalTrends": "ਰਾਸ਼ਟਰੀ ਟਰੈਂਡ", "seasonal": "ਮੌਸਮੀ ਪਸੰਦ", "loadingTrends": "ਟਰੈਂਡਜ਼ ਲੋਡ ਹੋ ਰਹੇ ਹਨ..."
+  },
+  "profile": {
+    "title": "ਪ੍ਰੋਫਾਈਲ", "settings": "ਸੈਟਿੰਗਜ਼", "familyMembers": "ਪਰਿਵਾਰ ਦੇ ਮੈਂਬਰ",
+    "editProfile": "ਪ੍ਰੋਫਾਈਲ ਸੰਪਾਦਿਤ ਕਰੋ", "notifications": "ਸੂਚਨਾਵਾਂ", "language": "ਭਾਸ਼ਾ",
+    "subscription": "ਮੈਂਬਰਸ਼ਿਪ", "freePlan": "ਮੁਫ਼ਤ ਯੋਜਨਾ", "premiumPlan": "ਪ੍ਰੀਮੀਅਮ – ₹49/ਮਹੀਨਾ",
+    "upgradeToPremium": "ਪ੍ਰੀਮੀਅਮ ਲਓ", "recipeHistory": "ਰੈਸਿਪੀ ਇਤਿਹਾਸ",
+    "about": "ਸਾਡੇ ਬਾਰੇ", "helpSupport": "ਮਦਦ", "logout": "ਲੌਗਆਉਟ", "deleteAccount": "ਖਾਤਾ ਮਿਟਾਓ"
+  },
+  "health": {
+    "diabetes": "ਸ਼ੂਗਰ", "hypertension": "ਹਾਈ ਬਲੱਡ ਪ੍ਰੈਸ਼ਰ", "hypothyroidism": "ਹਾਈਪੋਥਾਈਰੋਡਿਜ਼ਮ",
+    "pcos": "PCOS", "heartDisease": "ਦਿਲ ਦੀ ਬਿਮਾਰੀ", "anaemia": "ਅਨੀਮੀਆ",
+    "pregnancy": "ਗਰਭਵਸਥਾ", "kidneyDisease": "ਗੁਰਦੇ ਦੀ ਬਿਮਾਰੀ",
+    "healthAdjusted": "ਸਿਹਤ ਸਥਿਤੀਆਂ ਅਨੁਸਾਰ ਖੁਰਾਕ ਯੋਜਨਾ ਬਦਲੀ ਗਈ",
+    "pcosDisclaimer": "ਇਸ ਯੋਜਨਾ ਨੂੰ ਅਪਣਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਡਾਕਟਰ ਦੀ ਸਲਾਹ ਲਓ",
+    "pregnancyDisclaimer": "ਇਸ ਯੋਜਨਾ ਨੂੰ ਅਪਣਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਡਾਕਟਰ ਦੀ ਸਲਾਹ ਲਓ"
+  },
+  "notifications": {
+    "morningPlan": "ਅੱਜ ਦੀ ਖੁਰਾਕ ਯੋਜਨਾ ਤਿਆਰ ਹੈ!",
+    "morningReminder": "ਆਪਣੀ ਖੁਰਾਕ ਯੋਜਨਾ ਦੇਖਣਾ ਨਾ ਭੁੱਲੋ",
+    "eveningGrocery": "ਕਿਰਾਨਾ ਸੂਚੀ ਦੇਖਣ ਦਾ ਸਮਾਂ",
+    "fridaySabzi": "ਤੁਹਾਡੀ ਵੀਕਐਂਡ ਸਬਜ਼ੀ ਸੂਚੀ ਤਿਆਰ ਹੈ!",
+    "saturdayMarket": "ਖੁਸ਼ ਖਰੀਦਦਾਰੀ! ਬਾਜ਼ਾਰ ਸੂਚੀ ਤਿਆਰ ਹੈ",
+    "sundaySpecial": "ਵੀਕਐਂਡ ਸਪੈਸ਼ਲ ਖੁਰਾਕ ਯੋਜਨਾ ਤਿਆਰ ਹੈ",
+    "mondayRecipes": "ਇਸ ਹਫ਼ਤੇ ਅਜ਼ਮਾਉਣ ਲਈ 5 ਨਵੀਆਂ ਰੈਸਿਪੀਆਂ",
+    "festivalEve": "ਤਿਉਹਾਰ ਦੀ ਖੁਰਾਕ ਯੋਜਨਾ ਤਿਆਰ ਹੈ"
+  },
+  "recipe": {
+    "ingredients": "ਸਮੱਗਰੀ", "instructions": "ਬਣਾਉਣ ਦਾ ਤਰੀਕਾ", "prepTime": "ਤਿਆਰੀ ਦਾ ਸਮਾਂ",
+    "cookTime": "ਖਾਣਾ ਪਕਾਉਣ ਦਾ ਸਮਾਂ", "servings": "ਕਿੰਨੇ ਲੋਕਾਂ ਲਈ", "cuisine": "ਰਸੋਈ ਸ਼ੈਲੀ", "mealType": "ਖਾਣੇ ਦੀ ਕਿਸਮ",
+    "difficulty": "ਮੁਸ਼ਕਲ", "easy": "ਆਸਾਨ", "medium": "ਮੱਧਮ", "hard": "ਔਖਾ",
+    "costPerServing": "ਪ੍ਰਤੀ ਸਰਵਿੰਗ ਲਾਗਤ", "history": "ਰੈਸਿਪੀ ਇਤਿਹਾਸ", "last15Days": "ਪਿਛਲੇ 15 ਦਿਨ",
+    "madeOn": "ਬਣਾਇਆ", "rating": "ਰੇਟਿੰਗ", "noHistory": "ਅਜੇ ਕੋਈ ਰੈਸਿਪੀ ਇਤਿਹਾਸ ਨਹੀਂ"
+  },
+  "festival": {
+    "title": "ਤਿਉਹਾਰ ਅਤੇ ਵਰਤ", "upcomingFestivals": "ਆਉਣ ਵਾਲੇ ਤਿਉਹਾਰ",
+    "fastingPlan": "ਵਰਤ ਦਾ ਖਾਣਾ", "festivalPlan": "ਤਿਉਹਾਰ ਸਪੈਸ਼ਲ ਯੋਜਨਾ",
+    "today": "ਅੱਜ", "tomorrow": "ਕੱਲ੍ਹ"
+  },
+  "leftover": {
+    "title": "ਬਚਿਆ ਖਾਣਾ ਵਰਤੋ", "whatHaveYou": "ਫ੍ਰਿੱਜ ਵਿੱਚ ਕੀ ਹੈ?",
+    "addIngredient": "ਸਮੱਗਰੀ ਜੋੜੋ", "getSuggestions": "ਸੁਝਾਅ ਲਓ",
+    "suggestions": "ਰੈਸਿਪੀ ਸੁਝਾਅ", "loadingSuggestions": "ਤੁਹਾਡੀ ਸਮੱਗਰੀ ਲਈ ਰੈਸਿਪੀਆਂ ਲੱਭ ਰਹੇ ਹਾਂ..."
+  }
+}

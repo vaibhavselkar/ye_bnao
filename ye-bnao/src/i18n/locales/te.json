@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "ఇది చేయి", "loading": "లోడ్ అవుతోంది...", "error": "ఏదో తప్పు జరిగింది", "retry": "మళ్ళీ ప్రయత్నించండి",
+    "save": "సేవ్ చేయి", "cancel": "రద్దు చేయి", "done": "పూర్తయింది", "next": "తదుపరి", "back": "వెనక్కి", "share": "షేర్ చేయి",
+    "edit": "సవరించు", "delete": "తొలగించు", "add": "జోడించు", "remove": "తీసివేయి", "search": "వెతుకు",
+    "filter": "ఫిల్టర్", "close": "మూసివేయి", "ok": "సరే", "yes": "అవును", "no": "కాదు", "submit": "సమర్పించు",
+    "update": "నవీకరించు", "refresh": "రిఫ్రెష్", "viewAll": "అన్నీ చూడు", "seeMore": "మరింత చూడు",
+    "noData": "డేటా అందుబాటులో లేదు",
+    "priceDisclaimer": "ఇవి సుమారు స్థానిక మార్కెట్ ధరలు, మారవచ్చు",
+    "doctorDisclaimer": "ఈ భోజన పథకాన్ని పాటించే ముందు వైద్యుడిని సంప్రదించండి"
+  },
+  "nav": { "home": "హోమ్", "sabziGuide": "కూరగాయల గైడ్", "grocery": "కిరాణా", "trends": "ట్రెండ్స్", "profile": "ప్రొఫైల్" },
+  "language": {
+    "selectLanguage": "మీ భాషను ఎంచుకోండి", "changeLanguage": "భాష మార్చు",
+    "languageChanged": "భాష విజయవంతంగా మార్చబడింది",
+    "rtlRestartNote": "కొత్త లేఅవుట్ వర్తింపజేయడానికి యాప్ ఒకసారి పునఃప్రారంభమవుతుంది"
+  },
+  "auth": {
+    "login": "లాగిన్", "logout": "లాగ్ అవుట్", "phoneLogin": "ఫోన్తో లాగిన్", "googleLogin": "Google తో లాగిన్",
+    "enterPhone": "మీ ఫోన్ నంబర్ నమోదు చేయండి", "enterOTP": "OTP నమోదు చేయండి", "sendOTP": "OTP పంపు",
+    "verifyOTP": "OTP ధృవీకరించు", "resendOTP": "OTP మళ్ళీ పంపు", "otpSent": "మీ నంబర్‌కు OTP పంపబడింది",
+    "loginSuccess": "లాగిన్ విజయవంతమైంది", "loginFailed": "లాగిన్ విఫలమైంది, మళ్ళీ ప్రయత్నించండి"
+  },
+  "onboarding": {
+    "welcome": "ఇది చేయికి స్వాగతం", "subtitle": "మీ AI వంట సహాయకుడు",
+    "step1Title": "మీ కుటుంబం గురించి చెప్పండి", "step2Title": "మీ ప్రాంతం మరియు వంట శైలి",
+    "yourName": "మీ పేరు", "yourCity": "మీ నగరం", "yourState": "మీ రాష్ట్రం",
+    "cuisineStyle": "వంట శైలి", "addFamilyMember": "కుటుంబ సభ్యుడిని జోడించు",
+    "memberName": "సభ్యుని పేరు", "memberAge": "వయస్సు", "dietType": "ఆహార రకం",
+    "vegetarian": "శాకాహారి", "nonVegetarian": "మాంసాహారి", "eggetarian": "గుడ్డు తినేవారు",
+    "spiceTolerance": "కారం తట్టుకునే శక్తి", "mild": "తక్కువ కారం", "medium": "మధ్యస్థ", "spicy": "కారంగా",
+    "verySpicy": "చాలా కారంగా", "extraSpicy": "అత్యంత కారంగా",
+    "healthConditions": "ఆరోగ్య పరిస్థితులు", "noConditions": "పరిస్థితులు లేవు",
+    "getStarted": "ప్రారంభించు", "completeProfile": "ప్రొఫైల్ పూర్తి చేయి"
+  },
+  "home": {
+    "goodMorning": "శుభోదయం", "goodAfternoon": "శుభ మధ్యాహ్నం", "goodEvening": "శుభ సాయంత్రం",
+    "todaysMealPlan": "నేటి భోజన పథకం", "breakfast": "అల్పాహారం", "lunch": "మధ్యాహ్న భోజనం",
+    "eveningSnack": "సాయంత్రం అల్పాహారం", "dinner": "రాత్రి భోజనం", "generatePlan": "భోజన పథకం రూపొందించు",
+    "regenerate": "మళ్ళీ రూపొందించు", "confirmMade": "నేను వంట చేశాను", "rateMeal": "భోజనాన్ని రేట్ చేయి",
+    "leftovers": "మిగిలిన ఆహారాన్ని వాడండి", "festivalMode": "పండుగ మోడ్", "fastingMode": "ఉపవాస మోడ్",
+    "weekendSpecial": "వీకెండ్ స్పెషల్", "tryNewRecipe": "కొత్తది ప్రయత్నించండి",
+    "weekendSabziList": "వీకెండ్ కూరగాయల జాబితా", "buyThisWeekend": "ఈ వీకెండ్ కొనండి",
+    "buyBeforeGone": "సీజన్ ముగిసే ముందు కొనండి", "comingSoon": "త్వరలో వస్తోంది",
+    "generatingPlan": "భోజన పథకం రూపొందుతోంది...", "planGenerated": "మీ భోజన పథకం సిద్ధమైంది!",
+    "cookTime": "వంట సమయం", "serves": "ఎంత మందికి", "costEstimate": "అంచనా ఖర్చు",
+    "inSeason": "సీజన్‌లో ఉంది", "endingSoon": "సీజన్ ముగుస్తోంది"
+  },
+  "sabziGuide": {
+    "title": "కూరగాయల గైడ్", "seasonalVegetables": "కాలానుగుణ కూరగాయలు",
+    "inSeason": "సీజన్‌లో", "endingSoon": "త్వరలో ముగుస్తుంది", "comingSoon": "త్వరలో వస్తుంది",
+    "seasonalCalendar": "కాలానుగుణ క్యాలెండర్", "pricePerKg": "కిలోకు", "storageTip": "నిల్వ చేయు చిట్కా",
+    "healthNote": "ఆరోగ్య గమనిక", "dishSuggestions": "వంట సూచనలు", "weeklyTips": "వారాంత కాలానుగుణ చిట్కాలు",
+    "loadingVegetables": "కాలానుగుణ కూరగాయలు లోడ్ అవుతున్నాయి...",
+    "jan": "జన", "feb": "ఫిబ్ర", "mar": "మార్చి", "apr": "ఏప్రి", "may": "మే", "jun": "జూన్",
+    "jul": "జులై", "aug": "ఆగ", "sep": "సెప్టె", "oct": "అక్టో", "nov": "నవ", "dec": "డిసె"
+  },
+  "grocery": {
+    "title": "కిరాణా జాబితా", "vegetables": "కూరగాయలు", "dalAndGrains": "పప్పు మరియు ధాన్యాలు",
+    "spices": "మసాలాలు", "dairy": "పాల పదార్థాలు", "miscellaneous": "ఇతర",
+    "addItem": "వస్తువు జోడించు", "clearAll": "అన్నీ తీసివేయి", "shareOnWhatsApp": "WhatsApp లో షేర్ చేయి",
+    "itemAdded": "వస్తువు జోడించబడింది", "itemRemoved": "వస్తువు తీసివేయబడింది", "listCleared": "జాబితా క్లియర్ చేయబడింది",
+    "emptyList": "కిరాణా జాబితా ఖాళీగా ఉంది", "generateFromPlan": "భోజన పథకం నుండి రూపొందించు",
+    "whatsappMessage": "ఈ వారం కిరాణా జాబితా"
+  },
+  "trends": {
+    "title": "ఆహార ట్రెండ్స్", "trendingNow": "ఇప్పుడు ట్రెండింగ్", "localTrends": "మీ ప్రాంతంలో ట్రెండింగ్",
+    "nationalTrends": "జాతీయ ట్రెండ్", "seasonal": "కాలానుగుణ ఎంపికలు", "loadingTrends": "ట్రెండ్స్ లోడ్ అవుతున్నాయి..."
+  },
+  "profile": {
+    "title": "ప్రొఫైల్", "settings": "సెట్టింగ్‌లు", "familyMembers": "కుటుంబ సభ్యులు",
+    "editProfile": "ప్రొఫైల్ సవరించు", "notifications": "నోటిఫికేషన్లు", "language": "భాష",
+    "subscription": "చందా", "freePlan": "ఉచిత ప్లాన్", "premiumPlan": "ప్రీమియం – ₹49/నెల",
+    "upgradeToPremium": "ప్రీమియం తీసుకోండి", "recipeHistory": "వంట చరిత్ర",
+    "about": "మా గురించి", "helpSupport": "సహాయం", "logout": "లాగ్ అవుట్", "deleteAccount": "ఖాతా తొలగించు"
+  },
+  "health": {
+    "diabetes": "మధుమేహం", "hypertension": "అధిక రక్తపోటు", "hypothyroidism": "హైపోథైరాయిడిజం",
+    "pcos": "PCOS", "heartDisease": "గుండె జబ్బు", "anaemia": "రక్తహీనత",
+    "pregnancy": "గర్భం", "kidneyDisease": "మూత్రపిండాల జబ్బు",
+    "healthAdjusted": "ఆరోగ్య పరిస్థితులకు అనుగుణంగా భోజన పథకం మార్చబడింది",
+    "pcosDisclaimer": "ఈ పథకాన్ని పాటించే ముందు వైద్యుడిని సంప్రదించండి",
+    "pregnancyDisclaimer": "ఈ పథకాన్ని పాటించే ముందు వైద్యుడిని సంప్రదించండి"
+  },
+  "notifications": {
+    "morningPlan": "నేటి భోజన పథకం సిద్ధమైంది!",
+    "morningReminder": "మీ భోజన పథకాన్ని చూడడం మర్చిపోకండి",
+    "eveningGrocery": "కిరాణా జాబితా చూసే సమయం",
+    "fridaySabzi": "మీ వీకెండ్ కూరగాయల జాబితా సిద్ధమైంది!",
+    "saturdayMarket": "శుభ షాపింగ్! మార్కెట్ జాబితా సిద్ధమైంది",
+    "sundaySpecial": "వీకెండ్ స్పెషల్ భోజన పథకం సిద్ధమైంది",
+    "mondayRecipes": "ఈ వారం ప్రయత్నించడానికి 5 కొత్త వంటకాలు",
+    "festivalEve": "పండుగ భోజన పథకం సిద్ధమైంది"
+  },
+  "recipe": {
+    "ingredients": "పదార్థాలు", "instructions": "వంట విధానం", "prepTime": "తయారీ సమయం",
+    "cookTime": "వంట సమయం", "servings": "ఎంత మందికి", "cuisine": "వంట శైలి", "mealType": "భోజన రకం",
+    "difficulty": "కష్టతరం", "easy": "సులభం", "medium": "మధ్యస్థం", "hard": "కష్టం",
+    "costPerServing": "ఒక్కో సేవకు ఖర్చు", "history": "వంట చరిత్ర", "last15Days": "గత 15 రోజులు",
+    "madeOn": "వంట చేయబడింది", "rating": "రేటింగ్", "noHistory": "ఇంకా వంట చరిత్ర లేదు"
+  },
+  "festival": {
+    "title": "పండుగలు మరియు ఉపవాసాలు", "upcomingFestivals": "రాబోయే పండుగలు",
+    "fastingPlan": "ఉపవాస భోజన పథకం", "festivalPlan": "పండుగ స్పెషల్ పథకం",
+    "today": "నేడు", "tomorrow": "రేపు"
+  },
+  "leftover": {
+    "title": "మిగిలిన ఆహారాన్ని వాడండి", "whatHaveYou": "ఫ్రిడ్జ్‌లో ఏముంది?",
+    "addIngredient": "పదార్థం జోడించు", "getSuggestions": "సూచనలు పొందు",
+    "suggestions": "వంట సూచనలు", "loadingSuggestions": "మీ పదార్థాలకు వంటకాలు వెతుకుతున్నాం..."
+  }
+}

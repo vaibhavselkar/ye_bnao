@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "797291891266",
+    "project_id": "ye-bnao",
+    "storage_bucket": "ye-bnao.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797291891266:android:bf2aaa832060c75b65bbdb",
+        "android_client_info": {
+          "package_name": "com.yebnao.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgR92bNdeDbdczs-QCu-RxlpCn3V5qpfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

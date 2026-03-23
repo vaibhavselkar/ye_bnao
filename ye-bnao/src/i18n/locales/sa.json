@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "इदं निर्मातु", "loading": "लोड भवति...", "error": "किमपि दोषः जातः", "retry": "पुनः प्रयत्नतु",
+    "save": "रक्षतु", "cancel": "निरस्तु", "done": "सम्पन्नम्", "next": "अग्रिमम्", "back": "पश्चात्", "share": "विभजतु",
+    "edit": "सम्पादयतु", "delete": "अपाकरोतु", "add": "योजयतु", "remove": "दूरीकरोतु", "search": "अन्वेषतु",
+    "filter": "फिल्टर", "close": "पिधानं करोतु", "ok": "शोभनम्", "yes": "आम्", "no": "न", "submit": "प्रस्तुतं करोतु",
+    "update": "नवीकरोतु", "refresh": "ताजं करोतु", "viewAll": "सर्वं पश्यतु", "seeMore": "अधिकं पश्यतु",
+    "noData": "कोपि डेटा नास्ति",
+    "priceDisclaimer": "एते स्थानीय बाजारस्य अनुमानित मूल्यानि सन्ति, परिवर्तनीयानि",
+    "doctorDisclaimer": "एतां भोजन योजनां अनुसरणात् पूर्वं चिकित्सकस्य परामर्शं गृह्णातु"
+  },
+  "nav": { "home": "गृहम्", "sabziGuide": "शाकमार्गदर्शिका", "grocery": "क्रयसूची", "trends": "ट्रेंड", "profile": "प्रोफाइल" },
+  "language": {
+    "selectLanguage": "स्वस्य भाषां चिनोतु", "changeLanguage": "भाषां परिवर्तयतु",
+    "languageChanged": "भाषा सफलतया परिवर्तिता",
+    "rtlRestartNote": "नूतनं लेआउट लागयितुं ऐप एकवारं पुनः आरभतु"
+  },
+  "auth": {
+    "login": "लॉगिन", "logout": "लॉगआउट", "phoneLogin": "दूरवाण्या लॉगिन", "googleLogin": "Google कृत्वा लॉगिन",
+    "enterPhone": "स्वस्य दूरवाणी संख्यां ददातु", "enterOTP": "OTP ददातु", "sendOTP": "OTP प्रेषयतु",
+    "verifyOTP": "OTP प्रमाणयतु", "resendOTP": "OTP पुनः प्रेषयतु", "otpSent": "भवतः संख्यायाः OTP प्रेषितम्",
+    "loginSuccess": "लॉगिन सफलम्", "loginFailed": "लॉगिन विफलम्, पुनः प्रयत्नतु"
+  },
+  "onboarding": {
+    "welcome": "इदं निर्मातु स्वागतम्", "subtitle": "भवतः AI पाकसहायकः",
+    "step1Title": "स्वकुटुम्बस्य विषये कथयतु", "step2Title": "भवतः प्रदेशः पाकशैली च",
+    "yourName": "भवतः नाम", "yourCity": "भवतः नगरम्", "yourState": "भवतः राज्यम्",
+    "cuisineStyle": "पाकशैली", "addFamilyMember": "कुटुम्बसदस्यं योजयतु",
+    "memberName": "सदस्यस्य नाम", "memberAge": "वयः", "dietType": "आहारप्रकारः",
+    "vegetarian": "शाकाहारी", "nonVegetarian": "मांसाहारी", "eggetarian": "अण्डाहारी",
+    "spiceTolerance": "कटुत्वसहनशक्तिः", "mild": "मृदु", "medium": "मध्यम", "spicy": "कटु",
+    "verySpicy": "अतिकटु", "extraSpicy": "अत्यतिकटु",
+    "healthConditions": "स्वास्थ्यावस्थाः", "noConditions": "कापि अवस्था नास्ति",
+    "getStarted": "आरभतु", "completeProfile": "प्रोफाइलं पूरयतु"
+  },
+  "home": {
+    "goodMorning": "सुप्रभातम्", "goodAfternoon": "शुभमध्याह्नम्", "goodEvening": "शुभसायाह्नम्",
+    "todaysMealPlan": "अद्यतनी भोजनयोजना", "breakfast": "प्रातराशः", "lunch": "मध्याह्नभोजनम्",
+    "eveningSnack": "सायंकालीन लघ्वाहारः", "dinner": "रात्रिभोजनम्", "generatePlan": "भोजनयोजना निर्मातु",
+    "regenerate": "पुनः निर्मातु", "confirmMade": "अहं निरमितवान्", "rateMeal": "भोजनं रेट् करोतु",
+    "leftovers": "अवशिष्टमन्नं वापरतु", "festivalMode": "उत्सवमोडः", "fastingMode": "उपवासमोडः",
+    "weekendSpecial": "सप्ताहान्त विशेषम्", "tryNewRecipe": "नूतनं किमपि प्रयत्नतु",
+    "weekendSabziList": "सप्ताहान्त शाकसूची", "buyThisWeekend": "अस्मिन् सप्ताहान्ते क्रीणातु",
+    "buyBeforeGone": "ऋतुः समाप्तेः पूर्वं क्रीणातु", "comingSoon": "शीघ्रमेव आगच्छति",
+    "generatingPlan": "भोजनयोजना निर्मीयते...", "planGenerated": "भवतः भोजनयोजना सिद्धा!",
+    "cookTime": "पाकसमयः", "serves": "कतिभ्यः जनेभ्यः", "costEstimate": "अनुमानितव्ययः",
+    "inSeason": "ऋतौ अस्ति", "endingSoon": "ऋतुः समाप्यते"
+  },
+  "sabziGuide": {
+    "title": "शाकमार्गदर्शिका", "seasonalVegetables": "ऋतुशाकाः",
+    "inSeason": "ऋतौ", "endingSoon": "शीघ्रं समाप्यते", "comingSoon": "शीघ्रमेव आगच्छति",
+    "seasonalCalendar": "ऋतुकैलेंडर", "pricePerKg": "प्रति किलो", "storageTip": "संरक्षणसुझावः",
+    "healthNote": "स्वास्थ्यटिप्पणी", "dishSuggestions": "व्यञ्जनसुझावाः", "weeklyTips": "साप्ताहिक ऋतुसुझावाः",
+    "loadingVegetables": "ऋतुशाकाः लोड भवन्ति...",
+    "jan": "जन", "feb": "फेब", "mar": "मार्च", "apr": "अप्रि", "may": "मई", "jun": "जून",
+    "jul": "जुल", "aug": "अग", "sep": "सित", "oct": "अक्ट", "nov": "नव", "dec": "दिस"
+  },
+  "grocery": {
+    "title": "क्रयसूची", "vegetables": "शाकाः", "dalAndGrains": "दालः धान्यं च",
+    "spices": "मसालाः", "dairy": "दुग्धोत्पादाः", "miscellaneous": "अन्यत्",
+    "addItem": "वस्तु योजयतु", "clearAll": "सर्वं मार्जयतु", "shareOnWhatsApp": "WhatsApp उपरि विभजतु",
+    "itemAdded": "वस्तु योजितम्", "itemRemoved": "वस्तु दूरीकृतम्", "listCleared": "सूची मार्जिता",
+    "emptyList": "क्रयसूची शून्या अस्ति", "generateFromPlan": "भोजनयोजनातः निर्मातु",
+    "whatsappMessage": "अस्य सप्ताहस्य क्रयसूची"
+  },
+  "trends": {
+    "title": "भोजनट्रेंड", "trendingNow": "अधुना ट्रेंडिंग", "localTrends": "भवतः क्षेत्रे ट्रेंडिंग",
+    "nationalTrends": "राष्ट्रीयट्रेंड", "seasonal": "ऋतुपसन्दाः", "loadingTrends": "ट्रेंड लोड भवति..."
+  },
+  "profile": {
+    "title": "प्रोफाइल", "settings": "सेटिंग", "familyMembers": "कुटुम्बसदस्याः",
+    "editProfile": "प्रोफाइलं सम्पादयतु", "notifications": "सूचनाः", "language": "भाषा",
+    "subscription": "सदस्यत्वम्", "freePlan": "निःशुल्कयोजना", "premiumPlan": "प्रीमियम – ₹49/मास",
+    "upgradeToPremium": "प्रीमियमं गृह्णातु", "recipeHistory": "व्यञ्जनेतिहासः",
+    "about": "अस्माकं विषये", "helpSupport": "सहायता", "logout": "लॉगआउट", "deleteAccount": "खातं विनाशयतु"
+  },
+  "health": {
+    "diabetes": "मधुमेहः", "hypertension": "उच्चरक्तचापः", "hypothyroidism": "हाइपोथायरॉइडिज्म",
+    "pcos": "PCOS", "heartDisease": "हृद्रोगः", "anaemia": "रक्तल्पता",
+    "pregnancy": "गर्भावस्था", "kidneyDisease": "वृक्करोगः",
+    "healthAdjusted": "स्वास्थ्यावस्थानुसारं भोजनयोजना परिवर्तिता",
+    "pcosDisclaimer": "एतां योजनां अनुसरणात् पूर्वं चिकित्सकस्य परामर्शं गृह्णातु",
+    "pregnancyDisclaimer": "एतां योजनां अनुसरणात् पूर्वं चिकित्सकस्य परामर्शं गृह्णातु"
+  },
+  "notifications": {
+    "morningPlan": "अद्यतनी भोजनयोजना सिद्धा!",
+    "morningReminder": "भवतः भोजनयोजनां द्रष्टुं न विस्मरतु",
+    "eveningGrocery": "क्रयसूचीं द्रष्टुं समयः",
+    "fridaySabzi": "भवतः सप्ताहान्त शाकसूची सिद्धा!",
+    "saturdayMarket": "शुभक्रयणम्! बाजारसूची सिद्धा",
+    "sundaySpecial": "सप्ताहान्त विशेष भोजनयोजना सिद्धा",
+    "mondayRecipes": "अस्मिन् सप्ताहे प्रयत्नार्थं ५ नूतनव्यञ्जनानि",
+    "festivalEve": "उत्सवभोजनयोजना सिद्धा"
+  },
+  "recipe": {
+    "ingredients": "सामग्री", "instructions": "निर्माणविधिः", "prepTime": "सिद्धतासमयः",
+    "cookTime": "पाकसमयः", "servings": "कतिभ्यः जनेभ्यः", "cuisine": "पाकशैली", "mealType": "भोजनप्रकारः",
+    "difficulty": "कठिनता", "easy": "सुलभम्", "medium": "मध्यमम्", "hard": "कठिनम्",
+    "costPerServing": "प्रति सर्विंग व्ययः", "history": "व्यञ्जनेतिहासः", "last15Days": "अन्तिमाः १५ दिनाः",
+    "madeOn": "निर्मितम्", "rating": "रेटिंग", "noHistory": "अद्यापि कोपि व्यञ्जनेतिहासः नास्ति"
+  },
+  "festival": {
+    "title": "उत्सवाः उपवासाश्च", "upcomingFestivals": "आगामिनः उत्सवाः",
+    "fastingPlan": "उपवासभोजनम्", "festivalPlan": "उत्सवविशेषयोजना",
+    "today": "अद्य", "tomorrow": "श्वः"
+  },
+  "leftover": {
+    "title": "अवशिष्टमन्नं वापरतु", "whatHaveYou": "शीतपेटिकायां किमस्ति?",
+    "addIngredient": "सामग्रीं योजयतु", "getSuggestions": "सुझावान् गृह्णातु",
+    "suggestions": "व्यञ्जनसुझावाः", "loadingSuggestions": "भवतः सामग्र्याः व्यञ्जनानि अन्विष्यन्ते..."
+  }
+}

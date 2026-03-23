@@ -1,0 +1,112 @@
+{
+  "common": {
+    "appName": "Ye Bnao", "loading": "Loading ho raha hai...", "error": "Kuch galat ho gaya", "retry": "Dobara try karo",
+    "save": "Save karo", "cancel": "Cancel", "done": "Done", "next": "Next", "back": "Wapas", "share": "Share karo",
+    "edit": "Edit karo", "delete": "Delete karo", "add": "Add karo", "remove": "Hatao", "search": "Search karo",
+    "filter": "Filter", "close": "Band karo", "ok": "OK", "yes": "Haan", "no": "Nahi", "submit": "Submit karo",
+    "update": "Update karo", "refresh": "Refresh karo", "viewAll": "Sab dekho", "seeMore": "Aur dekho",
+    "noData": "Koi data nahi hai",
+    "priceDisclaimer": "Ye approximate local market prices hain, change ho sakti hain",
+    "doctorDisclaimer": "Is meal plan ko follow karne se pehle doctor se milein"
+  },
+  "nav": { "home": "Home", "sabziGuide": "Sabzi Guide", "grocery": "Grocery", "trends": "Trends", "profile": "Profile" },
+  "language": {
+    "selectLanguage": "Apni language choose karo", "changeLanguage": "Language badlo",
+    "languageChanged": "Language successfully change ho gayi",
+    "rtlRestartNote": "Naya layout apply karne ke liye app ek baar restart hoga"
+  },
+  "auth": {
+    "login": "Login", "logout": "Logout", "phoneLogin": "Phone se Login", "googleLogin": "Google se Login",
+    "enterPhone": "Apna phone number daalo", "enterOTP": "OTP daalo", "sendOTP": "OTP bhejo",
+    "verifyOTP": "OTP verify karo", "resendOTP": "OTP dobara bhejo", "otpSent": "OTP bhej diya gaya",
+    "loginSuccess": "Login ho gaya!", "loginFailed": "Login nahi hua, dobara try karo"
+  },
+  "onboarding": {
+    "welcome": "Ye Bnao mein aapka swagat hai", "subtitle": "Aapka AI cooking companion",
+    "step1Title": "Apne family ke baare mein batao", "step2Title": "Aapka region aur cuisine",
+    "yourName": "Aapka naam", "yourCity": "Aapka sheher", "yourState": "Aapka state",
+    "cuisineStyle": "Cuisine style", "addFamilyMember": "Family member add karo",
+    "memberName": "Member ka naam", "memberAge": "Umar", "dietType": "Diet type",
+    "vegetarian": "Vegetarian", "nonVegetarian": "Non-Veg", "eggetarian": "Eggetarian",
+    "spiceTolerance": "Kitna teekha", "mild": "Halka", "medium": "Medium", "spicy": "Teekha",
+    "verySpicy": "Bahut teekha", "extraSpicy": "Extra teekha",
+    "healthConditions": "Health conditions", "noConditions": "Koi condition nahi",
+    "getStarted": "Shuru karo", "completeProfile": "Profile complete karo"
+  },
+  "home": {
+    "goodMorning": "Good Morning", "goodAfternoon": "Good Afternoon", "goodEvening": "Good Evening",
+    "todaysMealPlan": "Aaj ka khana", "breakfast": "Nashta", "lunch": "Lunch",
+    "eveningSnack": "Shaam ka nashta", "dinner": "Dinner", "generatePlan": "Meal plan banao",
+    "regenerate": "Dobara banao", "confirmMade": "Maine banaya", "rateMeal": "Rate karo",
+    "leftovers": "Bacha hua use karo", "festivalMode": "Festival Mode", "fastingMode": "Vrat Mode",
+    "weekendSpecial": "Weekend Special", "tryNewRecipe": "Kuch naya try karo",
+    "weekendSabziList": "Weekend Sabzi List", "buyThisWeekend": "Is weekend kharido",
+    "buyBeforeGone": "Season khatam ho raha, jaldi lo", "comingSoon": "Jald aane wala",
+    "generatingPlan": "Aapka meal plan ban raha hai...", "planGenerated": "Meal plan ready hai!",
+    "cookTime": "Pakane ka time", "serves": "Kitno ke liye", "costEstimate": "Approx cost",
+    "inSeason": "Season mein hai", "endingSoon": "Season khatam hone wala"
+  },
+  "sabziGuide": {
+    "title": "Sabzi Guide", "seasonalVegetables": "Season ki sabziyaan",
+    "inSeason": "Season mein", "endingSoon": "Jald khatam", "comingSoon": "Jald aane wali",
+    "seasonalCalendar": "Seasonal Calendar", "pricePerKg": "per kg", "storageTip": "Store tip",
+    "healthNote": "Health note", "dishSuggestions": "Kya bana sakte hain", "weeklyTips": "Weekly tips",
+    "loadingVegetables": "Seasonal sabziyaan load ho rahi hain...",
+    "jan": "Jan", "feb": "Feb", "mar": "Mar", "apr": "Apr", "may": "May", "jun": "Jun",
+    "jul": "Jul", "aug": "Aug", "sep": "Sep", "oct": "Oct", "nov": "Nov", "dec": "Dec"
+  },
+  "grocery": {
+    "title": "Grocery List", "vegetables": "Sabziyaan", "dalAndGrains": "Dal aur Anaj",
+    "spices": "Masale", "dairy": "Dairy", "miscellaneous": "Other items",
+    "addItem": "Item add karo", "clearAll": "Sab hatao", "shareOnWhatsApp": "WhatsApp pe share karo",
+    "itemAdded": "Item add ho gaya", "itemRemoved": "Item hata diya", "listCleared": "List clear ho gayi",
+    "emptyList": "Grocery list khaali hai", "generateFromPlan": "Meal plan se banao",
+    "whatsappMessage": "Is hafte ki grocery list"
+  },
+  "trends": {
+    "title": "Food Trends", "trendingNow": "Abhi trending", "localTrends": "Aapke area mein trending",
+    "nationalTrends": "India mein trending", "seasonal": "Season ki picks", "loadingTrends": "Trends load ho rahe hain..."
+  },
+  "profile": {
+    "title": "Profile", "settings": "Settings", "familyMembers": "Family members",
+    "editProfile": "Profile edit karo", "notifications": "Notifications", "language": "Language",
+    "subscription": "Subscription", "freePlan": "Free Plan", "premiumPlan": "Premium – ₹49/mahina",
+    "upgradeToPremium": "Premium lo", "recipeHistory": "Recipe history",
+    "about": "About us", "helpSupport": "Help & Support", "logout": "Logout", "deleteAccount": "Account delete karo"
+  },
+  "health": {
+    "diabetes": "Diabetes", "hypertension": "High BP", "hypothyroidism": "Thyroid",
+    "pcos": "PCOS", "heartDisease": "Heart problem", "anaemia": "Anaemia",
+    "pregnancy": "Pregnancy", "kidneyDisease": "Kidney problem",
+    "healthAdjusted": "Health ke hisaab se meal plan adjust kiya gaya",
+    "pcosDisclaimer": "Ye plan follow karne se pehle doctor se milein",
+    "pregnancyDisclaimer": "Ye plan follow karne se pehle doctor se milein"
+  },
+  "notifications": {
+    "morningPlan": "Aaj ki meal plan ready hai!",
+    "morningReminder": "Meal plan check karna mat bhoolna",
+    "eveningGrocery": "Grocery list check karo",
+    "fridaySabzi": "Weekend Sabzi List ready hai!",
+    "saturdayMarket": "Happy shopping! Market list ready hai",
+    "sundaySpecial": "Weekend special plan ready hai",
+    "mondayRecipes": "5 nayi recipes try karo is hafte",
+    "festivalEve": "Tyohar ki meal plan ready hai"
+  },
+  "recipe": {
+    "ingredients": "Ingredients", "instructions": "Steps", "prepTime": "Tayari ka time",
+    "cookTime": "Pakane ka time", "servings": "Kitno ke liye", "cuisine": "Cuisine", "mealType": "Meal type",
+    "difficulty": "Difficulty", "easy": "Easy", "medium": "Medium", "hard": "Hard",
+    "costPerServing": "Cost per serving", "history": "Recipe history", "last15Days": "Pichle 15 din",
+    "madeOn": "Banaya tha", "rating": "Rating", "noHistory": "Abhi tak koi history nahi"
+  },
+  "festival": {
+    "title": "Tyohar aur Vrat", "upcomingFestivals": "Aane wale tyohar",
+    "fastingPlan": "Vrat ka khana", "festivalPlan": "Tyohar special",
+    "today": "Aaj", "tomorrow": "Kal"
+  },
+  "leftover": {
+    "title": "Bacha hua use karo", "whatHaveYou": "Fridge mein kya hai?",
+    "addIngredient": "Ingredient daalo", "getSuggestions": "Suggestions lo",
+    "suggestions": "Recipe suggestions", "loadingSuggestions": "Aapke ingredients se recipes dhundh rahe hain..."
+  }
+}
