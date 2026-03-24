@@ -29,7 +29,7 @@ api.interceptors.request.use(async (config) => {
 
 export const mealPlanAPI = {
   generate: (data) => api.post('/api/meal-plan/generate', data),
-  getHistory: (userId) => api.get(`/api/meal-plan/history/${userId}`),
+  regenerateMeal: (data) => api.post('/api/meal-plan/regenerate-meal', data),
   saveFeedback: (data) => api.post('/api/meal-plan/feedback', data),
 };
 

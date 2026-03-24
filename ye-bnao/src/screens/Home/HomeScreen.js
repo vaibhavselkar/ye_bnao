@@ -1,48 +1,58 @@
 import React, { useState, useEffect } from 'react';
 import {
   View, Text, StyleSheet, ScrollView, TouchableOpacity,
-  SafeAreaView, RefreshControl, ActivityIndicator, Alert, Linking,
+  SafeAreaView, ActivityIndicator, Alert, Linking,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTranslation } from 'react-i18next';
 import { COLORS } from '../../constants/colors';
 import { mealPlanAPI } from '../../services/api';
 
-const DEMO_PLAN = {
-  breakfast: { name: 'Poha', nameLocal: 'पोहा', desc: 'Flattened rice with mustard seeds, onion & peas', time: '15 min', cost: '₹30', ingredients: ['1 cup poha', '1 onion', 'green peas', 'mustard seeds', 'curry leaves', 'turmeric', 'salt', 'lemon juice'], steps: ['Rinse poha and drain', 'Heat oil, add mustard seeds', 'Add onion and peas, sauté', 'Add poha and spices', 'Mix well, garnish with lemon and coriander'] },
-  lunch: { name: 'Dal Tadka & Rice', nameLocal: 'दाल तड़का और चावल', desc: 'Yellow lentils with basmati rice', time: '30 min', cost: '₹60', ingredients: ['1 cup toor dal', '2 cups rice', 'tomato', 'onion', 'ghee', 'cumin', 'garlic', 'red chilli'], steps: ['Pressure cook dal and rice separately', 'Make tadka with ghee, cumin, garlic', 'Add tomato and spices', 'Pour over cooked dal', 'Serve hot with rice'] },
-  snack: { name: 'Masala Chai & Biscuits', nameLocal: 'मसाला चाय', desc: 'Spiced tea with milk and cardamom', time: '10 min', cost: '₹20', ingredients: ['tea leaves', 'milk', 'sugar', 'cardamom', 'ginger'], steps: ['Boil water with ginger', 'Add tea leaves and spices', 'Add milk and sugar', 'Simmer for 2 minutes', 'Strain and serve'] },
-  dinner: { name: 'Roti & Aloo Sabzi', nameLocal: 'रोटी और आलू सब्ज़ी', desc: 'Whole wheat flatbread with spiced potato curry', time: '25 min', cost: '₹50', ingredients: ['2 cups wheat flour', '3 potatoes', 'onion', 'tomato', 'spices'], steps: ['Knead dough and rest 20 min', 'Boil and cube potatoes', 'Make sabzi with onion-tomato base', 'Roll and cook rotis on tawa', 'Serve hot together'] },
-};
+const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const MEAL_TYPES = ['breakfast', 'lunch', 'snack', 'dinner'];
+const MEAL_ICONS = { breakfast: '☀️', lunch: '🌞', snack: '☕', dinner: '🌙' };
+const MEAL_LABELS = { breakfast: 'Breakfast', lunch: 'Lunch', snack: 'Evening Snack', dinner: 'Dinner' };
 
 export default function HomeScreen({ navigation }) {
   const { t } = useTranslation();
-  const [mealPlan, setMealPlan] = useState(null);
+  const [weekPlan, setWeekPlan] = useState(null);
+  const [selectedDay, setSelectedDay] = useState(new Date().getDay() === 0 ? 6 : new Date().getDay() - 1);
   const [loading, setLoading] = useState(false);
-  const [refreshing, setRefreshing] = useState(false);
+  const [changingMeal, setChangingMeal] = useState(null); // 'breakfast'|'lunch' etc
   const [profile, setProfile] = useState(null);
 
   const hours = new Date().getHours();
-  const greeting = hours < 12 ? t('home.goodMorning', 'Good Morning') : hours < 17 ? t('home.goodAfternoon', 'Good Afternoon') : t('home.goodEvening', 'Good Evening');
-  const dayOfWeek = new Date().getDay();
-  const showWeekendBanner = dayOfWeek >= 5 || dayOfWeek === 0;
+  const greeting = hours < 12 ? 'Good Morning' : hours < 17 ? 'Good Afternoon' : 'Good Evening';
 
   useEffect(() => { loadData(); }, []);
 
   const loadData = async () => {
     try {
-      const [savedProfile, cached] = await AsyncStorage.multiGet(['family_profile', 'today_meal_plan']);
+      const [savedProfile, cached] = await AsyncStorage.multiGet(['family_profile', 'week_meal_plan']);
       if (savedProfile[1]) setProfile(JSON.parse(savedProfile[1]));
       if (cached[1]) {
-        const { plan, date } = JSON.parse(cached[1]);
-        if (date === new Date().toDateString()) setMealPlan(plan);
+        const { plan, week } = JSON.parse(cached[1]);
+        // Check if cached plan is from this week
+        const cachedWeek = week;
+        const currentWeek = getWeekNumber();
+        if (cachedWeek === currentWeek) setWeekPlan(plan);
       }
     } catch {}
   };
 
+  const getWeekNumber = () => {
+    const d = new Date();
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() + 3 - (d.getDay() + 6) % 7);
+    const week1 = new Date(d.getFullYear(), 0, 4);
+    return 1 + Math.round(((d - week1) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
+  };
+
   const generatePlan = async () => {
     if (!profile) {
-      Alert.alert('No Profile', 'Please complete your profile first', [{ text: 'Setup', onPress: () => navigation.navigate('Onboarding') }]);
+      Alert.alert('No Profile', 'Please complete your profile first', [
+        { text: 'Setup', onPress: () => navigation.navigate('Onboarding') },
+      ]);
       return;
     }
     setLoading(true);
@@ -50,54 +60,53 @@ export default function HomeScreen({ navigation }) {
       const lang = await AsyncStorage.getItem('app_language') || 'en';
       const historyRaw = await AsyncStorage.getItem('recipe_history');
       const history = historyRaw ? JSON.parse(historyRaw) : [];
-      const response = await mealPlanAPI.generate({ profile, language: lang, date: new Date().toISOString(), history: history.slice(0, 20) });
-      const plan = response.data.mealPlan;
-      setMealPlan(plan);
-      await AsyncStorage.setItem('today_meal_plan', JSON.stringify({ plan, date: new Date().toDateString() }));
-    } catch {
-      setMealPlan(DEMO_PLAN);
-      await AsyncStorage.setItem('today_meal_plan', JSON.stringify({ plan: DEMO_PLAN, date: new Date().toDateString() }));
+      const response = await mealPlanAPI.generate({ profile, language: lang, history: history.slice(0, 20) });
+      const plan = response.data.weekPlan;
+      setWeekPlan(plan);
+      await AsyncStorage.setItem('week_meal_plan', JSON.stringify({ plan, week: getWeekNumber() }));
+    } catch (err) {
+      Alert.alert('Error', 'Could not generate meal plan. Please check your internet and try again.\n\n' + (err?.response?.data?.error || err.message));
     } finally {
       setLoading(false);
     }
   };
 
-  const sharePlan = async () => {
-    if (!mealPlan) return;
-    const text = `🍽️ Aaj ka khana:\n\n☀️ Nashta: ${mealPlan.breakfast?.name}\n🌞 Dopahar: ${mealPlan.lunch?.name}\n☕ Shaam: ${mealPlan.snack?.name}\n🌙 Raat: ${mealPlan.dinner?.name}\n\n— Ye Bnao App`;
-    try { await Linking.openURL(`whatsapp://send?text=${encodeURIComponent(text)}`); }
-    catch { Alert.alert('WhatsApp not available on this device'); }
+  const changeMeal = async (mealType) => {
+    if (!profile || !weekPlan) return;
+    setChangingMeal(mealType);
+    try {
+      const lang = await AsyncStorage.getItem('app_language') || 'en';
+      const response = await mealPlanAPI.regenerateMeal({
+        profile, language: lang, dayIndex: selectedDay, mealType, currentWeekPlan: weekPlan,
+      });
+      const newMeal = response.data.meal;
+      const updatedWeek = { ...weekPlan };
+      updatedWeek.week = weekPlan.week.map((d, i) =>
+        i === selectedDay ? { ...d, [mealType]: newMeal } : d
+      );
+      setWeekPlan(updatedWeek);
+      await AsyncStorage.setItem('week_meal_plan', JSON.stringify({ plan: updatedWeek, week: getWeekNumber() }));
+    } catch {
+      Alert.alert('Error', 'Could not change this meal. Try again.');
+    } finally {
+      setChangingMeal(null);
+    }
   };
 
-  const MealCard = ({ type, meal, icon }) => (
-    <TouchableOpacity style={styles.mealCard} onPress={() => meal && navigation.navigate('RecipeDetail', { meal, type })} activeOpacity={0.85}>
-      <View style={styles.mealHeader}>
-        <Text style={styles.mealIcon}>{icon}</Text>
-        <Text style={styles.mealType}>{type}</Text>
-        <Text style={styles.mealArrow}>›</Text>
-      </View>
-      {meal ? (
-        <>
-          <Text style={styles.mealName}>{meal.name}</Text>
-          <Text style={styles.mealNameLocal}>{meal.nameLocal}</Text>
-          <Text style={styles.mealDesc} numberOfLines={2}>{meal.desc}</Text>
-          <View style={styles.mealMeta}>
-            <Text style={styles.mealMetaBadge}>⏱ {meal.time}</Text>
-            <Text style={styles.mealMetaBadge}>💰 {meal.cost}</Text>
-          </View>
-        </>
-      ) : (
-        <Text style={styles.noMeal}>Generate meal plan to see suggestions</Text>
-      )}
-    </TouchableOpacity>
-  );
+  const sharePlan = async () => {
+    if (!weekPlan?.week?.[selectedDay]) return;
+    const day = weekPlan.week[selectedDay];
+    const text = `🍽️ ${DAYS[selectedDay]} ka khana:\n\n☀️ Nashta: ${day.breakfast?.name}\n🌞 Dopahar: ${day.lunch?.name}\n☕ Shaam: ${day.snack?.name}\n🌙 Raat: ${day.dinner?.name}\n\n— Ye Bnao App`;
+    try { await Linking.openURL(`whatsapp://send?text=${encodeURIComponent(text)}`); }
+    catch { Alert.alert('WhatsApp not available'); }
+  };
+
+  const todayMeals = weekPlan?.week?.[selectedDay];
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView
-        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={async () => { setRefreshing(true); await generatePlan(); setRefreshing(false); }} tintColor={COLORS.primary} />}
-        showsVerticalScrollIndicator={false}
-      >
+      <ScrollView showsVerticalScrollIndicator={false}>
+
         {/* Header */}
         <View style={styles.header}>
           <View>
@@ -109,49 +118,84 @@ export default function HomeScreen({ navigation }) {
           </TouchableOpacity>
         </View>
 
-        {/* Date */}
-        <View style={styles.dateBanner}>
-          <Text style={styles.dateText}>📅 {new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long' })}</Text>
-        </View>
-
-        {/* Weekend Sabzi Banner */}
-        {showWeekendBanner && (
-          <TouchableOpacity style={styles.weekendBanner} onPress={() => navigation.navigate('SabziGuide')} activeOpacity={0.85}>
-            <Text style={styles.wbEmoji}>🥬</Text>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.wbTitle}>{t('home.weekendSabziList', 'Weekend Sabzi List')} 🛒</Text>
-              <Text style={styles.wbSub}>See what to buy this weekend →</Text>
-            </View>
-          </TouchableOpacity>
-        )}
+        {/* Day selector */}
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.dayScroll} contentContainerStyle={styles.dayScrollContent}>
+          {DAYS.map((day, i) => {
+            const isToday = i === (new Date().getDay() === 0 ? 6 : new Date().getDay() - 1);
+            return (
+              <TouchableOpacity
+                key={day}
+                style={[styles.dayChip, selectedDay === i && styles.dayChipActive]}
+                onPress={() => setSelectedDay(i)}
+              >
+                <Text style={[styles.dayChipText, selectedDay === i && styles.dayChipTextActive]}>{day}</Text>
+                {isToday && <View style={[styles.todayDot, selectedDay === i && styles.todayDotActive]} />}
+              </TouchableOpacity>
+            );
+          })}
+        </ScrollView>
 
         {/* Generate / Meal Plan */}
-        {!mealPlan ? (
+        {!weekPlan ? (
           <View style={styles.generateBox}>
-            <Text style={styles.generateTitle}>{t('home.todaysMealPlan', "Today's Meal Plan")}</Text>
-            <Text style={styles.generateSub}>Let AI plan your meals based on your family's preferences</Text>
+            <Text style={styles.generateEmoji}>🍱</Text>
+            <Text style={styles.generateTitle}>Weekly Meal Plan</Text>
+            <Text style={styles.generateSub}>AI will plan all 7 days based on your family's preferences</Text>
             <TouchableOpacity style={styles.generateBtn} onPress={generatePlan} disabled={loading}>
-              {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.generateBtnText}>✨ {t('home.generatePlan', 'Generate Meal Plan')}</Text>}
+              {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.generateBtnText}>✨ Generate Week Plan</Text>}
             </TouchableOpacity>
           </View>
         ) : (
           <View style={styles.planSection}>
             <View style={styles.planHeader}>
-              <Text style={styles.planTitle}>{t('home.todaysMealPlan', "Today's Meal Plan")}</Text>
-              <TouchableOpacity onPress={generatePlan} disabled={loading}>
-                <Text style={styles.regenBtn}>{loading ? '...' : '🔄 ' + t('home.regenerate', 'Redo')}</Text>
+              <Text style={styles.planTitle}>📅 {DAYS[selectedDay]}'s Meals</Text>
+              <TouchableOpacity onPress={generatePlan} disabled={loading} style={styles.regenBtn}>
+                {loading ? <ActivityIndicator size="small" color={COLORS.primary} /> : <Text style={styles.regenBtnText}>🔄 New Week</Text>}
               </TouchableOpacity>
             </View>
-            <MealCard type={t('home.breakfast', 'Breakfast')} meal={mealPlan.breakfast} icon="☀️" />
-            <MealCard type={t('home.lunch', 'Lunch')} meal={mealPlan.lunch} icon="🌞" />
-            <MealCard type={t('home.eveningSnack', 'Evening Snack')} meal={mealPlan.snack} icon="☕" />
-            <MealCard type={t('home.dinner', 'Dinner')} meal={mealPlan.dinner} icon="🌙" />
+
+            {MEAL_TYPES.map((type) => {
+              const meal = todayMeals?.[type];
+              const isChanging = changingMeal === type;
+              return (
+                <View key={type} style={styles.mealCard}>
+                  <View style={styles.mealHeader}>
+                    <Text style={styles.mealIcon}>{MEAL_ICONS[type]}</Text>
+                    <Text style={styles.mealType}>{MEAL_LABELS[type]}</Text>
+                    <TouchableOpacity
+                      style={styles.changeBtn}
+                      onPress={() => changeMeal(type)}
+                      disabled={isChanging || !!changingMeal}
+                    >
+                      {isChanging
+                        ? <ActivityIndicator size="small" color={COLORS.primary} />
+                        : <Text style={styles.changeBtnText}>🔄 Change</Text>}
+                    </TouchableOpacity>
+                  </View>
+                  {meal ? (
+                    <TouchableOpacity onPress={() => navigation.navigate('RecipeDetail', { meal, type })} activeOpacity={0.8}>
+                      <Text style={styles.mealName}>{meal.name}</Text>
+                      {meal.nameEn && meal.nameEn !== meal.name && <Text style={styles.mealNameEn}>{meal.nameEn}</Text>}
+                      <Text style={styles.mealDesc} numberOfLines={2}>{meal.desc}</Text>
+                      <View style={styles.mealMeta}>
+                        <Text style={styles.mealMetaBadge}>⏱ {meal.time}</Text>
+                        <Text style={styles.mealMetaBadge}>💰 {meal.cost}</Text>
+                        <Text style={styles.mealMetaBadge}>👆 Tap for recipe</Text>
+                      </View>
+                    </TouchableOpacity>
+                  ) : (
+                    <Text style={styles.noMeal}>Loading...</Text>
+                  )}
+                </View>
+              );
+            })}
+
             <View style={styles.actionRow}>
               <TouchableOpacity style={styles.waBtn} onPress={sharePlan}>
                 <Text style={styles.waBtnText}>📱 Share on WhatsApp</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.leftoverBtn} onPress={() => navigation.navigate('Leftover')}>
-                <Text style={styles.leftoverBtnText}>🥣 {t('home.leftovers', 'Leftovers')}</Text>
+                <Text style={styles.leftoverBtnText}>🥣 Leftovers</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -162,9 +206,9 @@ export default function HomeScreen({ navigation }) {
           <Text style={styles.sectionTitle}>Quick Access</Text>
           <View style={styles.quickGrid}>
             {[
-              { icon: '📅', label: t('festival.title', 'Festivals'), screen: 'Festival' },
-              { icon: '📖', label: t('recipe.history', 'History'), screen: 'RecipeHistory' },
-              { icon: '⭐', label: t('home.tryNewRecipe', 'Try New'), screen: 'Trends' },
+              { icon: '🥬', label: 'Sabzi Guide', screen: 'SabziGuide' },
+              { icon: '📅', label: 'Festivals', screen: 'Festival' },
+              { icon: '⭐', label: 'Try New', screen: 'Trends' },
               { icon: '💬', label: 'Feedback', screen: 'Feedback' },
             ].map(({ icon, label, screen }) => (
               <TouchableOpacity key={screen} style={styles.quickCard} onPress={() => navigation.navigate(screen)}>
@@ -188,33 +232,38 @@ const styles = StyleSheet.create({
   userName: { fontSize: 22, fontWeight: 'bold', color: COLORS.text.primary },
   avatar: { width: 46, height: 46, borderRadius: 23, backgroundColor: COLORS.primary, justifyContent: 'center', alignItems: 'center' },
   avatarText: { fontSize: 24 },
-  dateBanner: { marginHorizontal: 16, backgroundColor: COLORS.secondary, borderRadius: 10, paddingVertical: 8, paddingHorizontal: 14, marginBottom: 12 },
-  dateText: { fontSize: 14, fontWeight: '600', color: COLORS.text.primary },
-  weekendBanner: { flexDirection: 'row', alignItems: 'center', marginHorizontal: 16, backgroundColor: '#E8F5E9', borderRadius: 14, padding: 14, marginBottom: 14, borderWidth: 1.5, borderColor: COLORS.sabzi.green },
-  wbEmoji: { fontSize: 34, marginRight: 12 },
-  wbTitle: { fontSize: 15, fontWeight: 'bold', color: '#1B5E20' },
-  wbSub: { fontSize: 12, color: '#388E3C', marginTop: 2 },
-  generateBox: { margin: 16, backgroundColor: COLORS.surface, borderRadius: 16, padding: 24, alignItems: 'center', borderWidth: 1, borderColor: COLORS.border, elevation: 2, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.08, shadowRadius: 6 },
+  dayScroll: { marginBottom: 4 },
+  dayScrollContent: { paddingHorizontal: 16, paddingVertical: 8, gap: 8 },
+  dayChip: { paddingHorizontal: 16, paddingVertical: 10, borderRadius: 20, backgroundColor: COLORS.surface, borderWidth: 1, borderColor: COLORS.border, alignItems: 'center', minWidth: 52 },
+  dayChipActive: { backgroundColor: COLORS.primary, borderColor: COLORS.primary },
+  dayChipText: { fontSize: 13, fontWeight: '600', color: COLORS.text.secondary },
+  dayChipTextActive: { color: '#fff' },
+  todayDot: { width: 5, height: 5, borderRadius: 3, backgroundColor: COLORS.primary, marginTop: 3 },
+  todayDotActive: { backgroundColor: '#fff' },
+  generateBox: { margin: 16, backgroundColor: COLORS.surface, borderRadius: 16, padding: 28, alignItems: 'center', borderWidth: 1, borderColor: COLORS.border, elevation: 2 },
+  generateEmoji: { fontSize: 52, marginBottom: 12 },
   generateTitle: { fontSize: 20, fontWeight: 'bold', color: COLORS.text.primary },
   generateSub: { fontSize: 14, color: COLORS.text.muted, marginTop: 6, marginBottom: 20, textAlign: 'center' },
   generateBtn: { backgroundColor: COLORS.primary, borderRadius: 14, paddingVertical: 14, paddingHorizontal: 28 },
   generateBtnText: { color: '#fff', fontSize: 17, fontWeight: 'bold' },
   planSection: { marginHorizontal: 16 },
   planHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 },
-  planTitle: { fontSize: 20, fontWeight: 'bold', color: COLORS.text.primary },
-  regenBtn: { fontSize: 14, color: COLORS.primary, fontWeight: '600' },
-  mealCard: { backgroundColor: COLORS.surface, borderRadius: 14, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: COLORS.border, elevation: 1, shadowColor: '#000', shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.05, shadowRadius: 3 },
+  planTitle: { fontSize: 18, fontWeight: 'bold', color: COLORS.text.primary },
+  regenBtn: { paddingVertical: 6, paddingHorizontal: 12, borderRadius: 10, borderWidth: 1, borderColor: COLORS.primary },
+  regenBtnText: { fontSize: 13, color: COLORS.primary, fontWeight: '600' },
+  mealCard: { backgroundColor: COLORS.surface, borderRadius: 14, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: COLORS.border, elevation: 1 },
   mealHeader: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
-  mealIcon: { fontSize: 20, marginRight: 8 },
+  mealIcon: { fontSize: 18, marginRight: 6 },
   mealType: { flex: 1, fontSize: 11, fontWeight: '700', color: COLORS.text.muted, textTransform: 'uppercase', letterSpacing: 0.8 },
-  mealArrow: { fontSize: 20, color: COLORS.border },
+  changeBtn: { paddingVertical: 4, paddingHorizontal: 10, borderRadius: 10, borderWidth: 1, borderColor: COLORS.border, minWidth: 80, alignItems: 'center' },
+  changeBtnText: { fontSize: 12, color: COLORS.primary, fontWeight: '600' },
   mealName: { fontSize: 18, fontWeight: 'bold', color: COLORS.text.primary },
-  mealNameLocal: { fontSize: 15, color: COLORS.primary, marginTop: 1 },
+  mealNameEn: { fontSize: 13, color: COLORS.text.muted, marginTop: 1 },
   mealDesc: { fontSize: 13, color: COLORS.text.secondary, marginTop: 4, lineHeight: 19 },
-  mealMeta: { flexDirection: 'row', gap: 8, marginTop: 8 },
-  mealMetaBadge: { fontSize: 12, color: COLORS.text.muted, backgroundColor: COLORS.background, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 8 },
-  noMeal: { fontSize: 14, color: COLORS.text.muted, fontStyle: 'italic', marginTop: 4 },
-  actionRow: { flexDirection: 'row', gap: 10, marginTop: 6, marginBottom: 16 },
+  mealMeta: { flexDirection: 'row', gap: 6, marginTop: 8, flexWrap: 'wrap' },
+  mealMetaBadge: { fontSize: 11, color: COLORS.text.muted, backgroundColor: COLORS.background, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 8 },
+  noMeal: { fontSize: 14, color: COLORS.text.muted, fontStyle: 'italic' },
+  actionRow: { flexDirection: 'row', gap: 10, marginTop: 4, marginBottom: 16 },
   waBtn: { flex: 1, backgroundColor: '#25D366', borderRadius: 12, paddingVertical: 12, alignItems: 'center' },
   waBtnText: { color: '#fff', fontWeight: '700', fontSize: 14 },
   leftoverBtn: { flex: 1, backgroundColor: COLORS.background, borderRadius: 12, paddingVertical: 12, alignItems: 'center', borderWidth: 1.5, borderColor: COLORS.primary },

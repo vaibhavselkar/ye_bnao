@@ -34,65 +34,101 @@ const HEALTH_RULES = {
   kidneyDisease: 'Low potassium, controlled protein. Avoid excess tomatoes.',
 };
 
-// ─── Meal Plan ───────────────────────────────────────────────────────────────
+// ─── Meal Plan (Full Week) ────────────────────────────────────────────────────
 
-async function generateMealPlan({ profile, language, date, history = [] }) {
-  const today = new Date(date);
-  const dayName = today.toLocaleDateString('en-IN', { weekday: 'long' });
-  const monthName = today.toLocaleDateString('en-IN', { month: 'long' });
+const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const DAYS_LOCAL = { en: DAYS, hi: ['सोमवार','मंगलवार','बुधवार','गुरुवार','शुक्रवार','शनिवार','रविवार'] };
 
-  const healthConditions = profile.members
-    ?.flatMap(m => m.health || [])
-    ?.filter(Boolean) || [];
-
+function buildFamilyContext(profile) {
+  const members = profile.members || [];
+  const diet = profile.diet || members[0]?.diet || 'vegetarian';
+  const spice = profile.spice || members[0]?.spice || 3;
+  const focus = profile.foodFocus || 'normal';
+  const count = profile.memberCount || members.length || 1;
+  const healthConditions = members.flatMap(m => m.health || []).filter(Boolean);
   const healthRules = healthConditions
-    .map(h => HEALTH_RULES[h.toLowerCase().replace(/\s/g, '')] || '')
-    .filter(Boolean)
-    .join(' ');
-
-  const recentDishes = history.map(h => h.name).join(', ') || 'none';
-
-  const prompt = `You are an expert Indian home cook and nutritionist. Generate a daily meal plan for an Indian family.
-
-FAMILY PROFILE:
-- Name: ${profile.name}
-- Location: ${profile.city || 'India'}, ${profile.state || 'Maharashtra'}
-- Cuisine: ${profile.cuisine || 'Maharashtrian'}
-- Family members: ${JSON.stringify(profile.members || [])}
-- Day: ${dayName}, ${monthName}
-
-DIET RESTRICTIONS:
-${profile.members?.map(m => `${m.name || 'Member'}: ${m.diet}, spice ${m.spice}/5`).join('\n') || 'Vegetarian'}
-
-HEALTH CONDITIONS: ${healthConditions.join(', ') || 'none'}
-${healthRules ? `HEALTH DIETARY RULES: ${healthRules}` : ''}
-
-RECENT DISHES (avoid repeating): ${recentDishes}
-
-RESPONSE LANGUAGE: ${language} — Respond ENTIRELY in ${language}. All dish names, descriptions, ingredients, and steps must be in ${language}.
-
-Return ONLY this JSON (no extra text):
-{
-  "breakfast": {
-    "name": "dish name in ${language}",
-    "nameEn": "dish name in English",
-    "desc": "brief description in ${language}",
-    "time": "XX min",
-    "cost": "₹XX",
-    "serves": "4",
-    "ingredients": ["ingredient 1 in ${language}", "ingredient 2"],
-    "steps": ["step 1 in ${language}", "step 2"],
-    "healthNote": "health note if applicable in ${language}"
-  },
-  "lunch": { "name": "", "nameEn": "", "desc": "", "time": "", "cost": "", "serves": "", "ingredients": [], "steps": [], "healthNote": "" },
-  "snack": { "name": "", "nameEn": "", "desc": "", "time": "", "cost": "", "serves": "", "ingredients": [], "steps": [], "healthNote": "" },
-  "dinner": { "name": "", "nameEn": "", "desc": "", "time": "", "cost": "", "serves": "", "ingredients": [], "steps": [], "healthNote": "" }
+    .map(h => HEALTH_RULES[h.toLowerCase().replace(/\s/g, '')] || '').filter(Boolean).join(' ');
+  return { diet, spice, focus, count, healthConditions, healthRules };
 }
 
-Make dishes authentic to ${profile.cuisine || 'Indian'} cuisine, appropriate for the season (${monthName}), practical to cook at home, and varied across meals.
-${healthConditions.includes('PCOS') || healthConditions.includes('pregnancy') ? 'Include appropriate health disclaimer in healthNote.' : ''}`;
+const MEAL_SCHEMA = `{ "name": "", "nameEn": "", "desc": "", "time": "XX min", "cost": "₹XX", "ingredients": [], "steps": [] }`;
+
+async function generateWeekPlan({ profile, language, history = [] }) {
+  const month = new Date().toLocaleString('en-IN', { month: 'long' });
+  const { diet, spice, focus, count, healthConditions, healthRules } = buildFamilyContext(profile);
+  const recentDishes = history.map(h => h.name).join(', ') || 'none';
+  const spiceLabel = spice <= 2 ? 'mild/less spicy' : spice >= 4 ? 'very spicy' : 'medium spicy';
+
+  const prompt = `You are an expert Indian home cook. Generate a FULL WEEK (Monday–Sunday) meal plan for an Indian family.
+
+FAMILY:
+- Name: ${profile.name}
+- Members: ${count} people
+- Location: ${profile.city || 'India'}, ${profile.state || 'Maharashtra'}
+- Cuisine: ${profile.cuisine || 'Mixed Indian'}
+- Diet: ${diet}
+- Spice level: ${spiceLabel} (${spice}/5)
+- Food focus: ${focus}
+- Health conditions: ${healthConditions.join(', ') || 'none'}
+${healthRules ? `- Health rules: ${healthRules}` : ''}
+- Avoid repeating: ${recentDishes}
+- Season: ${month}
+
+LANGUAGE: ${language} — ALL text (names, descriptions, ingredients, steps) must be in ${language}.
+
+Return ONLY valid JSON:
+{
+  "week": [
+    {
+      "day": "Monday",
+      "breakfast": ${MEAL_SCHEMA},
+      "lunch": ${MEAL_SCHEMA},
+      "snack": ${MEAL_SCHEMA},
+      "dinner": ${MEAL_SCHEMA}
+    }
+  ]
+}
+
+Rules:
+- Exactly 7 days (Monday to Sunday)
+- No repeated dish across the entire week
+- Authentic ${profile.cuisine || 'Indian'} recipes, practical for home cooking
+- Scale ingredients for ${count} people
+- ${diet === 'nonVegetarian' ? 'Include chicken/fish/eggs 3-4 times in the week' : diet === 'eggetarian' ? 'Eggs allowed, no meat' : 'Strictly vegetarian, no eggs/meat'}`;
 
   return callGemini(prompt, 8192);
+}
+
+async function regenerateSingleMeal({ profile, language, dayIndex, mealType, currentWeekPlan }) {
+  const month = new Date().toLocaleString('en-IN', { month: 'long' });
+  const { diet, spice, count } = buildFamilyContext(profile);
+  const spiceLabel = spice <= 2 ? 'mild' : spice >= 4 ? 'very spicy' : 'medium spicy';
+  const dayName = DAYS[dayIndex] || 'Monday';
+
+  // Collect all existing meals to avoid repeating
+  const existingMeals = [];
+  if (currentWeekPlan?.week) {
+    currentWeekPlan.week.forEach(d => {
+      ['breakfast','lunch','snack','dinner'].forEach(type => {
+        if (d[type]?.nameEn) existingMeals.push(d[type].nameEn);
+      });
+    });
+  }
+
+  const prompt = `You are an expert Indian home cook. Suggest ONE alternative ${mealType} for ${dayName} for an Indian family.
+
+FAMILY:
+- Cuisine: ${profile.cuisine || 'Mixed Indian'}
+- Diet: ${diet}, Spice: ${spiceLabel}, Members: ${count}
+- Season: ${month}
+- Do NOT suggest any of these (already in plan): ${existingMeals.join(', ')}
+
+LANGUAGE: ${language}
+
+Return ONLY valid JSON (just the single meal object):
+${MEAL_SCHEMA}`;
+
+  return callGemini(prompt, 1500);
 }
 
 // ─── Seasonal Vegetables ─────────────────────────────────────────────────────
@@ -183,4 +219,4 @@ Suggest 3 recipes using primarily these ingredients. Return ONLY this JSON (no e
   return callGemini(prompt, 800);
 }
 
-module.exports = { generateMealPlan, getSeasonalVegetables, getLocalTrends, getLeftoverSuggestions };
+module.exports = { generateWeekPlan, regenerateSingleMeal, getSeasonalVegetables, getLocalTrends, getLeftoverSuggestions };
