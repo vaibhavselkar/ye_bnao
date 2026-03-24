@@ -41,23 +41,26 @@ const DAYS_LOCAL = { en: DAYS, hi: ['सोमवार','मंगलवार'
 
 function buildFamilyContext(profile) {
   const members = profile.members || [];
-  const diet = profile.diet || members[0]?.diet || 'vegetarian';
-  const spice = profile.spice || members[0]?.spice || 3;
+  const diets = profile.diets || [profile.diet || members[0]?.diet || 'vegetarian'];
+  const spices = profile.spices || [profile.spice || members[0]?.spice || 3];
+  const diet = diets.join(', ');
+  const spice = Math.max(...spices);
+  const spiceLabel = spices.map(s => s <= 2 ? 'mild' : s >= 4 ? 'very spicy' : 'medium').join(' & ');
   const focus = profile.foodFocus || 'normal';
   const count = profile.memberCount || members.length || 1;
   const healthConditions = members.flatMap(m => m.health || []).filter(Boolean);
   const healthRules = healthConditions
     .map(h => HEALTH_RULES[h.toLowerCase().replace(/\s/g, '')] || '').filter(Boolean).join(' ');
-  return { diet, spice, focus, count, healthConditions, healthRules };
+  return { diet, spice, spiceLabel, focus, count, healthConditions, healthRules };
 }
 
-const MEAL_SCHEMA = `{ "name": "", "nameEn": "", "desc": "", "time": "XX min", "cost": "₹XX", "ingredients": [], "steps": [] }`;
+// Week plan uses compact schema (no steps) for speed. Steps loaded on RecipeDetail tap.
+const MEAL_SCHEMA = `{ "name": "", "nameEn": "", "desc": "", "time": "XX min", "cost": "₹XX", "ingredients": ["item1","item2"] }`;
 
 async function generateWeekPlan({ profile, language, history = [] }) {
   const month = new Date().toLocaleString('en-IN', { month: 'long' });
-  const { diet, spice, focus, count, healthConditions, healthRules } = buildFamilyContext(profile);
+  const { diet, spice, spiceLabel, focus, count, healthConditions, healthRules } = buildFamilyContext(profile);
   const recentDishes = history.map(h => h.name).join(', ') || 'none';
-  const spiceLabel = spice <= 2 ? 'mild/less spicy' : spice >= 4 ? 'very spicy' : 'medium spicy';
 
   const prompt = `You are an expert Indian home cook. Generate a FULL WEEK (Monday–Sunday) meal plan for an Indian family.
 

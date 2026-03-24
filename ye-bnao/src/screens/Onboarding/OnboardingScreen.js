@@ -16,8 +16,10 @@ const DIET_OPTIONS = [
 
 const SPICE_OPTIONS = [
   { value: 1, label: '😌 Less Spicy' },
+  { value: 2, label: '🙂 Mild' },
   { value: 3, label: '🌶 Medium' },
-  { value: 5, label: '🔥 Very Spicy' },
+  { value: 4, label: '🔥 Spicy' },
+  { value: 5, label: '💥 Very Spicy' },
 ];
 
 const FOCUS_OPTIONS = [
@@ -34,8 +36,8 @@ export default function OnboardingScreen({ navigation }) {
   const [city, setCity] = useState('');
   const [stateCode, setStateCode] = useState('MH');
   const [memberCount, setMemberCount] = useState(2);
-  const [diet, setDiet] = useState('vegetarian');
-  const [spice, setSpice] = useState(3);
+  const [diets, setDiets] = useState(['vegetarian']);
+  const [spices, setSpices] = useState([3]);
   const [foodFocus, setFoodFocus] = useState('normal');
 
   const selectedState = INDIAN_STATES.find(s => s.code === stateCode);
@@ -46,10 +48,13 @@ export default function OnboardingScreen({ navigation }) {
     navigation.replace('Main');
   };
 
+  const toggleItem = (list, setList, val) =>
+    list.includes(val) ? (list.length > 1 ? setList(list.filter(x => x !== val)) : null) : setList([...list, val]);
+
   const handleSkip = async () => {
     await saveAndGo({
       name: 'User', city: '', state: 'MH', cuisine: 'Mixed Indian',
-      memberCount: 2, diet: 'vegetarian', spice: 3, foodFocus: 'normal',
+      memberCount: 2, diets: ['vegetarian'], spices: [3], foodFocus: 'normal',
       members: [{ id: '1', name: 'User', age: '25', diet: 'vegetarian', spice: 3, health: [] }],
       isDefault: true,
     });
@@ -63,10 +68,10 @@ export default function OnboardingScreen({ navigation }) {
       state: stateCode,
       cuisine: selectedState?.cuisine || 'Mixed Indian',
       memberCount,
-      diet,
-      spice,
+      diets,
+      spices,
       foodFocus,
-      members: [{ id: '1', name: name.trim(), age: '25', diet, spice, health: [] }],
+      members: [{ id: '1', name: name.trim(), age: '25', diet: diets[0], spice: Math.max(...spices), health: [] }],
     };
     await saveAndGo(profile);
   };
@@ -133,22 +138,22 @@ export default function OnboardingScreen({ navigation }) {
               </TouchableOpacity>
             </View>
 
-            {/* Diet */}
-            <Text style={styles.label}>Diet Type</Text>
+            {/* Diet — multi-select */}
+            <Text style={styles.label}>Diet Type (select all that apply)</Text>
             <View style={styles.chipRow}>
               {DIET_OPTIONS.map(o => (
-                <TouchableOpacity key={o.value} style={[styles.chip, diet === o.value && styles.chipActive]} onPress={() => setDiet(o.value)}>
-                  <Text style={[styles.chipText, diet === o.value && styles.chipTextActive]}>{o.label}</Text>
+                <TouchableOpacity key={o.value} style={[styles.chip, diets.includes(o.value) && styles.chipActive]} onPress={() => toggleItem(diets, setDiets, o.value)}>
+                  <Text style={[styles.chipText, diets.includes(o.value) && styles.chipTextActive]}>{o.label}</Text>
                 </TouchableOpacity>
               ))}
             </View>
 
-            {/* Spice */}
-            <Text style={styles.label}>Spice Level</Text>
+            {/* Spice — multi-select */}
+            <Text style={styles.label}>Spice Level (select all you like)</Text>
             <View style={styles.chipRow}>
               {SPICE_OPTIONS.map(o => (
-                <TouchableOpacity key={o.value} style={[styles.chip, spice === o.value && styles.chipActive]} onPress={() => setSpice(o.value)}>
-                  <Text style={[styles.chipText, spice === o.value && styles.chipTextActive]}>{o.label}</Text>
+                <TouchableOpacity key={o.value} style={[styles.chip, spices.includes(o.value) && styles.chipActive]} onPress={() => toggleItem(spices, setSpices, o.value)}>
+                  <Text style={[styles.chipText, spices.includes(o.value) && styles.chipTextActive]}>{o.label}</Text>
                 </TouchableOpacity>
               ))}
             </View>
