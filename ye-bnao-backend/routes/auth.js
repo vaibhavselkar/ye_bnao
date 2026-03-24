@@ -56,8 +56,17 @@ router.post('/send-otp', async (req, res) => {
       `,
     });
 
+    // Check if this phone is already registered
+    const phone = `+91${cleanPhone}`;
+    const uid = 'ph_' + crypto.createHash('sha256').update(phone).digest('hex').substring(0, 24);
+    let isExisting = false;
+    try {
+      await getAdmin().auth().getUser(uid);
+      isExisting = true;
+    } catch (_) {}
+
     const token = jwt.sign({ phone: cleanPhone, email, otp }, JWT_SECRET, { expiresIn: '10m' });
-    res.json({ success: true, token });
+    res.json({ success: true, token, isExisting });
   } catch (err) {
     console.error('send-otp error:', err.message);
     res.status(500).json({ error: 'Failed to send OTP' });

@@ -16,7 +16,7 @@ export async function sendOTP(phone, email) {
   });
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || 'Failed to send OTP');
-  return data.token;
+  return { token: data.token, isExisting: data.isExisting || false };
 }
 
 /**

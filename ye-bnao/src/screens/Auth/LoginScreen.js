@@ -18,6 +18,7 @@ export default function LoginScreen({ navigation }) {
   const [otp, setOtp] = useState('');
   const [otpSent, setOtpSent] = useState(false);
   const [token, setToken] = useState(null);
+  const [isExisting, setIsExisting] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const handleSendOTP = async () => {
@@ -31,10 +32,14 @@ export default function LoginScreen({ navigation }) {
     }
     setLoading(true);
     try {
-      const t = await sendOTP(phone, email);
+      const { token: t, isExisting: existing } = await sendOTP(phone, email);
       setToken(t);
+      setIsExisting(existing);
       setOtpSent(true);
-      Alert.alert('OTP Sent', `Check your email ${email} for the 6-digit OTP`);
+      Alert.alert(
+        existing ? '👋 Welcome back!' : '🎉 Account Created!',
+        `OTP sent to ${email}`
+      );
     } catch (e) {
       Alert.alert('Error', e.message || 'Failed to send OTP. Try again.');
     } finally {
@@ -106,7 +111,7 @@ export default function LoginScreen({ navigation }) {
             </>
           ) : (
             <>
-              <Text style={styles.sentInfo}>OTP sent to {email}</Text>
+              <Text style={styles.sentInfo}>{isExisting ? '👋 Welcome back! ' : '🎉 New account! '}OTP sent to {email}</Text>
               <Text style={styles.label}>Enter OTP</Text>
               <TextInput
                 style={styles.otpInput}
