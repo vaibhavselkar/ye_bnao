@@ -2,12 +2,18 @@ const express = require('express');
 const router = express.Router();
 const admin = require('firebase-admin');
 const jwt = require('jsonwebtoken');
-const { Resend } = require('resend');
+const nodemailer = require('nodemailer');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'ye-bnao-otp-secret-key-2024';
 
-function getResend() {
-  return new Resend(process.env.RESEND_API_KEY);
+function getTransporter() {
+  return nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_APP_PASSWORD,
+    },
+  });
 }
 
 function getAdmin() {
@@ -30,8 +36,8 @@ router.post('/send-otp', async (req, res) => {
 
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
-    const { error } = await getResend().emails.send({
-      from: 'Ye Bnao <onboarding@resend.dev>',
+    await getTransporter().sendMail({
+      from: `"Ye Bnao" <${process.env.GMAIL_USER}>`,
       to: email,
       subject: `${otp} is your Ye Bnao OTP`,
       html: `
@@ -45,11 +51,6 @@ router.post('/send-otp', async (req, res) => {
         </div>
       `,
     });
-
-    if (error) {
-      console.error('Resend error:', error);
-      return res.status(500).json({ error: 'Failed to send OTP email' });
-    }
 
     const token = jwt.sign({ phone: cleanPhone, email, otp }, JWT_SECRET, { expiresIn: '10m' });
     res.json({ success: true, token });
