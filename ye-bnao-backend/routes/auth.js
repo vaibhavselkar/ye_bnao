@@ -4,8 +4,11 @@ const admin = require('firebase-admin');
 const jwt = require('jsonwebtoken');
 const { Resend } = require('resend');
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const JWT_SECRET = process.env.JWT_SECRET || 'ye-bnao-otp-secret-key-2024';
+
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 function getAdmin() {
   if (admin.apps.length) return admin;
@@ -27,7 +30,7 @@ router.post('/send-otp', async (req, res) => {
 
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
-    const { error } = await resend.emails.send({
+    const { error } = await getResend().emails.send({
       from: 'Ye Bnao <onboarding@resend.dev>',
       to: email,
       subject: `${otp} is your Ye Bnao OTP`,
