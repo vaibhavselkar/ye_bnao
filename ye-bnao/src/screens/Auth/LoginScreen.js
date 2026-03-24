@@ -3,7 +3,6 @@ import {
   View, Text, StyleSheet, TextInput, TouchableOpacity,
   SafeAreaView, KeyboardAvoidingView, Platform, ActivityIndicator, Alert,
 } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTranslation } from 'react-i18next';
 import { COLORS } from '../../constants/colors';
 import { sendOTP, verifyOTP } from '../../services/firebaseAuth';
@@ -57,8 +56,12 @@ export default function LoginScreen({ navigation }) {
       const userData = await verifyOTP(token, otp);
       setUser(userData);
       await initTrial();
-      const profile = await AsyncStorage.getItem('family_profile');
-      navigation.replace(profile ? 'Main' : 'Onboarding');
+      if (userData.profile) {
+        // Returning user — profile restored from server, go straight to app
+        navigation.replace('Main');
+      } else {
+        navigation.replace('Onboarding');
+      }
     } catch (e) {
       Alert.alert('Error', e.message || 'Invalid OTP. Please try again.');
     } finally {

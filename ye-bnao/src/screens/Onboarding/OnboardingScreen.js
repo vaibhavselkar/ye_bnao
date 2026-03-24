@@ -7,6 +7,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { COLORS } from '../../constants/colors';
 import { INDIAN_STATES } from '../../constants/states';
 import { initTrial } from '../../utils/subscription';
+import api from '../../services/api';
 
 const DIET_OPTIONS = [
   { value: 'vegetarian', label: '🥗 Vegetarian' },
@@ -38,13 +39,17 @@ export default function OnboardingScreen({ navigation }) {
   const [memberCount, setMemberCount] = useState(2);
   const [diets, setDiets] = useState(['vegetarian']);
   const [spices, setSpices] = useState([3]);
-  const [foodFocus, setFoodFocus] = useState('normal');
+  const [foodFocuses, setFoodFocuses] = useState(['normal']);
 
   const selectedState = INDIAN_STATES.find(s => s.code === stateCode);
 
   const saveAndGo = async (profile) => {
     await AsyncStorage.setItem('family_profile', JSON.stringify(profile));
     await initTrial();
+    // Persist to server so profile survives reinstalls
+    try {
+      await api.post('/api/profile/save', { profile });
+    } catch (_) {} // non-blocking — local save is enough to proceed
     navigation.replace('Main');
   };
 
@@ -54,7 +59,7 @@ export default function OnboardingScreen({ navigation }) {
   const handleSkip = async () => {
     await saveAndGo({
       name: 'User', city: '', state: 'MH', cuisine: 'Mixed Indian',
-      memberCount: 2, diets: ['vegetarian'], spices: [3], foodFocus: 'normal',
+      memberCount: 2, diets: ['vegetarian'], spices: [3], foodFocuses: ['normal'],
       members: [{ id: '1', name: 'User', age: '25', diet: 'vegetarian', spice: 3, health: [] }],
       isDefault: true,
     });
@@ -70,7 +75,7 @@ export default function OnboardingScreen({ navigation }) {
       memberCount,
       diets,
       spices,
-      foodFocus,
+      foodFocuses,
       members: [{ id: '1', name: name.trim(), age: '25', diet: diets[0], spice: Math.max(...spices), health: [] }],
     };
     await saveAndGo(profile);
@@ -158,12 +163,12 @@ export default function OnboardingScreen({ navigation }) {
               ))}
             </View>
 
-            {/* Food Focus */}
-            <Text style={styles.label}>What kind of food?</Text>
+            {/* Food Focus — multi-select */}
+            <Text style={styles.label}>Food Goals (select all that apply)</Text>
             <View style={styles.chipRow}>
               {FOCUS_OPTIONS.map(o => (
-                <TouchableOpacity key={o.value} style={[styles.chip, foodFocus === o.value && styles.chipActive]} onPress={() => setFoodFocus(o.value)}>
-                  <Text style={[styles.chipText, foodFocus === o.value && styles.chipTextActive]}>{o.label}</Text>
+                <TouchableOpacity key={o.value} style={[styles.chip, foodFocuses.includes(o.value) && styles.chipActive]} onPress={() => toggleItem(foodFocuses, setFoodFocuses, o.value)}>
+                  <Text style={[styles.chipText, foodFocuses.includes(o.value) && styles.chipTextActive]}>{o.label}</Text>
                 </TouchableOpacity>
               ))}
             </View>

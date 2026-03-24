@@ -46,7 +46,12 @@ export async function verifyOTP(token, otp) {
   };
   await AsyncStorage.setItem('user_data', JSON.stringify(userData));
 
-  return userData;
+  // If profile exists in Firestore, restore it to AsyncStorage (survives reinstalls)
+  if (data.profile) {
+    await AsyncStorage.setItem('family_profile', JSON.stringify(data.profile));
+  }
+
+  return { ...userData, profile: data.profile || null };
 }
 
 export async function signOut() {

@@ -96,7 +96,16 @@ router.post('/verify-otp', async (req, res) => {
     const uid = 'ph_' + crypto.createHash('sha256').update(phone).digest('hex').substring(0, 24);
 
     const customToken = await getAdmin().auth().createCustomToken(uid, { phone, email: payload.email });
-    res.json({ success: true, customToken, uid, phone, email: payload.email });
+
+    // Fetch saved profile from Firestore (survives reinstalls)
+    let profile = null;
+    try {
+      const db = getAdmin().firestore();
+      const doc = await db.collection('profiles').doc(uid).get();
+      if (doc.exists) profile = doc.data();
+    } catch (_) {}
+
+    res.json({ success: true, customToken, uid, phone, email: payload.email, profile });
   } catch (err) {
     console.error('verify-otp error:', err.code, err.message);
     res.status(500).json({ error: err.message });

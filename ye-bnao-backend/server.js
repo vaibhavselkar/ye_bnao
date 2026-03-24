@@ -8,6 +8,7 @@ const sabziRouter = require('./routes/sabzi');
 const trendsRouter = require('./routes/trends');
 const leftoverRouter = require('./routes/leftover');
 const authRouter = require('./routes/auth');
+const profileRouter = require('./routes/profile');
 const requireAuth = require('./middleware/auth');
 
 const app = express();
@@ -27,6 +28,7 @@ app.use('/api/meal-plan', mealPlanRouter);
 app.use('/api/sabzi', sabziRouter);
 app.use('/api/trends', trendsRouter);
 app.use('/api/leftover', leftoverRouter);
+app.use('/api/profile', profileRouter);
 
 // Auth routes (no Firebase token required — these are for logging in)
 app.use('/auth', authRouter);

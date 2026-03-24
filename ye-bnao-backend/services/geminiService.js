@@ -46,7 +46,8 @@ function buildFamilyContext(profile) {
   const diet = diets.join(', ');
   const spice = Math.max(...spices);
   const spiceLabel = spices.map(s => s <= 2 ? 'mild' : s >= 4 ? 'very spicy' : 'medium').join(' & ');
-  const focus = profile.foodFocus || 'normal';
+  const focuses = profile.foodFocuses || (profile.foodFocus ? [profile.foodFocus] : ['normal']);
+  const focus = focuses.join(', ');
   const count = profile.memberCount || members.length || 1;
   const healthConditions = members.flatMap(m => m.health || []).filter(Boolean);
   const healthRules = healthConditions
