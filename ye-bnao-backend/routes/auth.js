@@ -57,8 +57,8 @@ router.post('/send-otp', async (req, res) => {
     });
 
     // Check if this phone is already registered
-    const phone = `+91${cleanPhone}`;
-    const uid = 'ph_' + crypto.createHash('sha256').update(phone).digest('hex').substring(0, 24);
+    const fullPhone = `+91${cleanPhone}`;
+    const uid = 'ph_' + crypto.createHash('sha256').update(fullPhone).digest('hex').substring(0, 24);
     let isExisting = false;
     try {
       await getAdmin().auth().getUser(uid);
