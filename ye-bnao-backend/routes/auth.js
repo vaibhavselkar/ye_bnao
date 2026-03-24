@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const admin = require('firebase-admin');
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
 const nodemailer = require('nodemailer');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'ye-bnao-otp-secret-key-2024';
@@ -18,7 +19,10 @@ function getTransporter() {
 
 function getAdmin() {
   if (admin.apps.length) return admin;
-  const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+  const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT.trim());
+  // Sanitize fields to remove any stray whitespace/newlines
+  serviceAccount.project_id = serviceAccount.project_id.trim();
+  serviceAccount.client_email = serviceAccount.client_email.trim();
   admin.initializeApp({ credential: admin.credential.cert(serviceAccount) });
   return admin;
 }
@@ -78,24 +82,15 @@ router.post('/verify-otp', async (req, res) => {
     }
 
     const phone = `+91${payload.phone}`;
-    const firebaseAdmin = getAdmin();
 
-    let user;
-    try {
-      user = await firebaseAdmin.auth().getUserByPhoneNumber(phone);
-    } catch (e) {
-      if (e.code === 'auth/user-not-found') {
-        user = await firebaseAdmin.auth().createUser({ phoneNumber: phone });
-      } else {
-        throw e;
-      }
-    }
+    // Deterministic UID from phone — no HTTP call needed
+    const uid = 'ph_' + crypto.createHash('sha256').update(phone).digest('hex').substring(0, 24);
 
-    const customToken = await firebaseAdmin.auth().createCustomToken(user.uid);
-    res.json({ success: true, customToken, uid: user.uid, phone, email: payload.email });
+    const customToken = await getAdmin().auth().createCustomToken(uid, { phone, email: payload.email });
+    res.json({ success: true, customToken, uid, phone, email: payload.email });
   } catch (err) {
-    console.error('verify-otp error:', err.message);
-    res.status(500).json({ error: 'Verification failed. Please try again.' });
+    console.error('verify-otp error:', err.code, err.message);
+    res.status(500).json({ error: err.message });
   }
 });
 
