@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   View, Text, StyleSheet, ScrollView, TouchableOpacity,
-  SafeAreaView, ActivityIndicator, Alert, Linking,
+  SafeAreaView, ActivityIndicator, Alert, Linking, Animated, Modal,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTranslation } from 'react-i18next';
@@ -12,6 +12,87 @@ const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const MEAL_TYPES = ['breakfast', 'lunch', 'snack', 'dinner'];
 const MEAL_ICONS = { breakfast: '☀️', lunch: '🌞', snack: '☕', dinner: '🌙' };
 const MEAL_LABELS = { breakfast: 'Breakfast', lunch: 'Lunch', snack: 'Evening Snack', dinner: 'Dinner' };
+
+const COOKING_EMOJIS = ['👩‍🍳', '🥘', '🍳', '🫕', '🥗', '🍱', '🌶️', '🧑‍🍳'];
+const COOKING_MESSAGES = [
+  'Asking the AI chef…',
+  'Planning breakfast for the week…',
+  'Picking the best lunch ideas…',
+  'Adding evening snacks…',
+  'Finalising dinner menu…',
+  'Almost ready!',
+];
+
+function CookingOverlay({ visible }) {
+  const emojiIndex = useRef(0);
+  const msgIndex = useRef(0);
+  const bounce = useRef(new Animated.Value(1)).current;
+  const [emoji, setEmoji] = useState(COOKING_EMOJIS[0]);
+  const [msg, setMsg] = useState(COOKING_MESSAGES[0]);
+
+  useEffect(() => {
+    if (!visible) return;
+    emojiIndex.current = 0;
+    msgIndex.current = 0;
+    setEmoji(COOKING_EMOJIS[0]);
+    setMsg(COOKING_MESSAGES[0]);
+
+    const emojiTimer = setInterval(() => {
+      emojiIndex.current = (emojiIndex.current + 1) % COOKING_EMOJIS.length;
+      setEmoji(COOKING_EMOJIS[emojiIndex.current]);
+      Animated.sequence([
+        Animated.spring(bounce, { toValue: 1.4, useNativeDriver: true, speed: 20 }),
+        Animated.spring(bounce, { toValue: 1, useNativeDriver: true, speed: 20 }),
+      ]).start();
+    }, 900);
+
+    const msgTimer = setInterval(() => {
+      msgIndex.current = Math.min(msgIndex.current + 1, COOKING_MESSAGES.length - 1);
+      setMsg(COOKING_MESSAGES[msgIndex.current]);
+    }, 5000);
+
+    return () => { clearInterval(emojiTimer); clearInterval(msgTimer); };
+  }, [visible]);
+
+  return (
+    <Modal visible={visible} transparent animationType="fade">
+      <View style={cookStyles.overlay}>
+        <View style={cookStyles.card}>
+          <Animated.Text style={[cookStyles.emoji, { transform: [{ scale: bounce }] }]}>{emoji}</Animated.Text>
+          <Text style={cookStyles.title}>Cooking up your plan…</Text>
+          <Text style={cookStyles.msg}>{msg}</Text>
+          <View style={cookStyles.dotsRow}>
+            {[0, 1, 2].map(i => <DotBlink key={i} delay={i * 300} />)}
+          </View>
+        </View>
+      </View>
+    </Modal>
+  );
+}
+
+function DotBlink({ delay }) {
+  const opacity = useRef(new Animated.Value(0.2)).current;
+  useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.delay(delay),
+        Animated.timing(opacity, { toValue: 1, duration: 400, useNativeDriver: true }),
+        Animated.timing(opacity, { toValue: 0.2, duration: 400, useNativeDriver: true }),
+      ])
+    ).start();
+  }, []);
+  return <Animated.View style={[cookStyles.dot, { opacity }]} />;
+}
+
+const cookStyles = StyleSheet.create({
+  overlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.55)', justifyContent: 'center', alignItems: 'center' },
+  card: { backgroundColor: '#fff', borderRadius: 24, padding: 36, alignItems: 'center', width: 280 },
+  emoji: { fontSize: 72, marginBottom: 16 },
+  title: { fontSize: 20, fontWeight: 'bold', color: '#C0392B', marginBottom: 8 },
+  msg: { fontSize: 14, color: '#666', textAlign: 'center', minHeight: 40 },
+  dotsRow: { flexDirection: 'row', gap: 8, marginTop: 20 },
+  dot: { width: 10, height: 10, borderRadius: 5, backgroundColor: '#C0392B' },
+});
 
 export default function HomeScreen({ navigation }) {
   const { t } = useTranslation();
@@ -105,6 +186,7 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
+      <CookingOverlay visible={loading} />
       <ScrollView showsVerticalScrollIndicator={false}>
 
         {/* Header */}
@@ -142,7 +224,7 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.generateTitle}>Weekly Meal Plan</Text>
             <Text style={styles.generateSub}>AI will plan all 7 days based on your family's preferences</Text>
             <TouchableOpacity style={styles.generateBtn} onPress={generatePlan} disabled={loading}>
-              {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.generateBtnText}>✨ Generate Week Plan</Text>}
+              <Text style={styles.generateBtnText}>✨ Generate Week Plan</Text>
             </TouchableOpacity>
           </View>
         ) : (
