@@ -56,7 +56,7 @@ export default function SplashScreen({ navigation }) {
       } catch {
         navigate('LanguageSelection');
       }
-    }, 3000);
+    }, 1000);
 
     return () => {
       unsubscribe();
