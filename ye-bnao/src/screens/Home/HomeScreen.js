@@ -167,8 +167,8 @@ export default function HomeScreen({ navigation }) {
       );
       setWeekPlan(updatedWeek);
       await AsyncStorage.setItem('week_meal_plan', JSON.stringify({ plan: updatedWeek, week: getWeekNumber() }));
-    } catch {
-      Alert.alert('Error', 'Could not change this meal. Try again.');
+    } catch (err) {
+      Alert.alert('Error', 'Could not change this meal.\n\n' + (err?.response?.data?.error || err?.response?.data?.details || err.message));
     } finally {
       setChangingMeal(null);
     }
