@@ -132,7 +132,7 @@ LANGUAGE: ${language}
 Return ONLY valid JSON (just the single meal object):
 ${MEAL_SCHEMA}`;
 
-  return callGemini(prompt, 1500);
+  return callGemini(prompt, 2500);
 }
 
 // ─── Seasonal Vegetables ─────────────────────────────────────────────────────
