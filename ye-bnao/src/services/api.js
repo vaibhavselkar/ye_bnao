@@ -1,6 +1,7 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from 'expo-constants';
+import auth from '@react-native-firebase/auth';
 
 const BASE_URL =
   process.env.EXPO_PUBLIC_API_URL ||
@@ -14,15 +15,18 @@ const api = axios.create({
 });
 
 api.interceptors.request.use(async (config) => {
-  // For real users: Firebase ID token stored after login
-  // For guests: literal string "guest"
-  const token = await AsyncStorage.getItem('auth_token');
-  const user = await AsyncStorage.getItem('user_data');
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  } else if (user) {
-    const parsed = JSON.parse(user);
-    if (parsed.isGuest) config.headers.Authorization = 'Bearer guest';
+  const firebaseUser = auth().currentUser;
+  if (firebaseUser) {
+    // Always get a fresh token (auto-refreshes if expired)
+    const idToken = await firebaseUser.getIdToken();
+    await AsyncStorage.setItem('auth_token', idToken);
+    config.headers.Authorization = `Bearer ${idToken}`;
+  } else {
+    const user = await AsyncStorage.getItem('user_data');
+    if (user) {
+      const parsed = JSON.parse(user);
+      if (parsed.isGuest) config.headers.Authorization = 'Bearer guest';
+    }
   }
   return config;
 });
