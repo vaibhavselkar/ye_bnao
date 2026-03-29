@@ -1,0 +1,6 @@
+android/app/build
+android/.gradle
+android/build
+dist
+.expo
+node_modules/.cache
