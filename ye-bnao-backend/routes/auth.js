@@ -38,8 +38,30 @@ router.post('/send-otp', async (req, res) => {
       return res.status(400).json({ error: 'Enter a valid 10-digit phone number' });
     }
 
-    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const fullPhone = `+91${cleanPhone}`;
+    const uid = 'ph_' + crypto.createHash('sha256').update(fullPhone).digest('hex').substring(0, 24);
 
+    // Check if user already exists
+    let isExisting = false;
+    try {
+      await getAdmin().auth().getUser(uid);
+      isExisting = true;
+    } catch (_) {}
+
+    // Existing user — skip OTP, sign in directly
+    if (isExisting) {
+      const customToken = await getAdmin().auth().createCustomToken(uid, { phone: fullPhone, email });
+      let profile = null;
+      try {
+        const db = getAdmin().firestore();
+        const doc = await db.collection('profiles').doc(uid).get();
+        if (doc.exists) profile = doc.data();
+      } catch (_) {}
+      return res.json({ success: true, isExisting: true, skipOTP: true, customToken, uid, phone: fullPhone, email, profile });
+    }
+
+    // New user — send OTP
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
     await getTransporter().sendMail({
       from: `"Ye Bnao" <${process.env.GMAIL_USER}>`,
       to: email,
@@ -55,21 +77,11 @@ router.post('/send-otp', async (req, res) => {
         </div>
       `,
     });
-
-    // Check if this phone is already registered
-    const fullPhone = `+91${cleanPhone}`;
-    const uid = 'ph_' + crypto.createHash('sha256').update(fullPhone).digest('hex').substring(0, 24);
-    let isExisting = false;
-    try {
-      await getAdmin().auth().getUser(uid);
-      isExisting = true;
-    } catch (_) {}
-
     const token = jwt.sign({ phone: cleanPhone, email, otp }, JWT_SECRET, { expiresIn: '10m' });
-    res.json({ success: true, token, isExisting });
+    res.json({ success: true, token, isExisting: false, skipOTP: false });
   } catch (err) {
     console.error('send-otp error:', err.message);
-    res.status(500).json({ error: 'Failed to send OTP' });
+    res.status(500).json({ error: err.message });
   }
 });
 
