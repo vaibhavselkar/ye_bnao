@@ -10,58 +10,48 @@ export default function SplashScreen({ navigation }) {
 
   useEffect(() => {
     Animated.parallel([
-      Animated.timing(fadeAnim, { toValue: 1, duration: 800, useNativeDriver: true }),
+      Animated.timing(fadeAnim, { toValue: 1, duration: 600, useNativeDriver: true }),
       Animated.spring(scaleAnim, { toValue: 1, tension: 50, friction: 7, useNativeDriver: true }),
     ]).start();
 
     let navigated = false;
-
     const navigate = (screen) => {
-      if (!navigated) {
-        navigated = true;
-        navigation.replace(screen);
-      }
+      if (!navigated) { navigated = true; navigation.replace(screen); }
     };
 
-    // Wait for Firebase to resolve auth state, then route
-    const unsubscribe = onAuthStateChanged(async (firebaseUser) => {
+    const boot = async () => {
       try {
-        const lang = await AsyncStorage.getItem('app_language');
+        const [langEntry, userEntry, profileEntry] = await AsyncStorage.multiGet([
+          'app_language', 'user_data', 'family_profile',
+        ]);
+        const lang = langEntry[1];
+        const user = userEntry[1];
+        const profile = profileEntry[1];
+
         if (!lang) { navigate('LanguageSelection'); return; }
 
-        // Guest users are stored locally without a Firebase account
-        const storedUser = await AsyncStorage.getItem('user_data');
-        const isGuest = storedUser ? JSON.parse(storedUser).isGuest : false;
+        // If we have stored user data, go straight in — no need to wait for Firebase
+        if (user) {
+          navigate(profile ? 'Main' : 'Onboarding');
+          return;
+        }
 
-        const isLoggedIn = !!firebaseUser || isGuest;
-        if (!isLoggedIn) { navigate('Login'); return; }
-
-        const profile = await AsyncStorage.getItem('family_profile');
-        navigate(profile ? 'Main' : 'Onboarding');
+        // No stored user — wait briefly for Firebase, then go to Login
+        const unsubscribe = onAuthStateChanged((firebaseUser) => {
+          unsubscribe();
+          if (firebaseUser) {
+            navigate(profile ? 'Main' : 'Onboarding');
+          } else {
+            navigate('Login');
+          }
+        });
+        setTimeout(() => navigate('Login'), 2000);
       } catch {
         navigate('LanguageSelection');
       }
-    });
-
-    // Fallback — if Firebase auth takes too long (e.g. no internet)
-    const fallback = setTimeout(async () => {
-      try {
-        const lang = await AsyncStorage.getItem('app_language');
-        const user = await AsyncStorage.getItem('user_data');
-        const profile = await AsyncStorage.getItem('family_profile');
-        if (!lang) navigate('LanguageSelection');
-        else if (!user) navigate('Login');
-        else if (!profile) navigate('Onboarding');
-        else navigate('Main');
-      } catch {
-        navigate('LanguageSelection');
-      }
-    }, 1000);
-
-    return () => {
-      unsubscribe();
-      clearTimeout(fallback);
     };
+
+    boot();
   }, []);
 
   return (
