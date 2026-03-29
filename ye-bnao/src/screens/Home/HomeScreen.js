@@ -139,6 +139,13 @@ export default function HomeScreen({ navigation }) {
     setLoading(true);
     try {
       const lang = await AsyncStorage.getItem('app_language') || 'en';
+      // Always refresh Firebase token before generating
+      const { getCurrentUser } = require('../../services/firebaseAuth');
+      const firebaseUser = getCurrentUser();
+      if (firebaseUser) {
+        const freshToken = await firebaseUser.getIdToken(true);
+        await AsyncStorage.setItem('auth_token', freshToken);
+      }
       const historyRaw = await AsyncStorage.getItem('recipe_history');
       const history = historyRaw ? JSON.parse(historyRaw) : [];
       const response = await mealPlanAPI.generate({ profile, language: lang, history: history.slice(0, 20) });
@@ -157,6 +164,13 @@ export default function HomeScreen({ navigation }) {
     setChangingMeal(mealType);
     try {
       const lang = await AsyncStorage.getItem('app_language') || 'en';
+      // Always refresh Firebase token before changing meal
+      const { getCurrentUser } = require('../../services/firebaseAuth');
+      const firebaseUser = getCurrentUser();
+      if (firebaseUser) {
+        const freshToken = await firebaseUser.getIdToken(true); // force refresh
+        await AsyncStorage.setItem('auth_token', freshToken);
+      }
       const response = await mealPlanAPI.regenerateMeal({
         profile, language: lang, dayIndex: selectedDay, mealType, currentWeekPlan: weekPlan,
       });
