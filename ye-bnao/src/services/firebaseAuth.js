@@ -16,7 +16,18 @@ export async function sendOTP(phone, email) {
   });
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || 'Failed to send OTP');
-  return { token: data.token, isExisting: data.isExisting || false };
+
+  // Existing user — sign in directly without OTP
+  if (data.skipOTP) {
+    const credential = await auth().signInWithCustomToken(data.customToken);
+    const idToken = await credential.user.getIdToken();
+    await AsyncStorage.setItem('auth_token', idToken);
+    await AsyncStorage.setItem('user_data', JSON.stringify({ uid: data.uid, phone: data.phone, email: data.email }));
+    if (data.profile) await AsyncStorage.setItem('family_profile', JSON.stringify(data.profile));
+    return { skipOTP: true, isExisting: true, profile: data.profile, uid: data.uid };
+  }
+
+  return { token: data.token, isExisting: false, skipOTP: false };
 }
 
 /**

@@ -31,14 +31,22 @@ export default function LoginScreen({ navigation }) {
     }
     setLoading(true);
     try {
-      const { token: t, isExisting: existing } = await sendOTP(phone, email);
-      setToken(t);
-      setIsExisting(existing);
+      const result = await sendOTP(phone, email);
+
+      // Existing user — signed in directly, no OTP needed
+      if (result.skipOTP) {
+        setUser({ uid: result.uid });
+        await initTrial();
+        Alert.alert('👋 Welcome back!', 'Logging you in...');
+        navigation.replace(result.profile ? 'Main' : 'Onboarding');
+        return;
+      }
+
+      // New user — show OTP input
+      setToken(result.token);
+      setIsExisting(false);
       setOtpSent(true);
-      Alert.alert(
-        existing ? '👋 Welcome back!' : '🎉 Account Created!',
-        `OTP sent to ${email}`
-      );
+      Alert.alert('🎉 OTP Sent!', `Check your email: ${email}`);
     } catch (e) {
       Alert.alert('Error', e.message || 'Failed to send OTP. Try again.');
     } finally {
